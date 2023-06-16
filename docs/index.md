@@ -10,7 +10,7 @@ hero:
   text: Isboyjc
   tagline: 这是一份开放的面试题库
   image:
-    src: https://qiniu.isboyjc.com/picgo/202303141640806.svg
+    src: https://qiniu.isboyjc.com/picgo/202306170350886.svg
     alt: isboyjc
   actions:
     - theme: brand
