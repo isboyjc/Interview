@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-17 03:03:54
+ * @LastEditTime: 2023-06-17 03:17:19
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -78,7 +78,7 @@ const {
     'interview/other': '其他'
   },
   generateDirectoryName: 'interview',
-  generateDirectoryPath: resolve('../')
+  generateDirectoryPath: resolve('./')
 })
 
 // 导航
