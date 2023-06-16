@@ -32,7 +32,7 @@
 
 ## 相关
 
-[defer 和 async](../060asynchronous/060110_defer_async.md)
+[defer 和 async](../070asynchronous/060110_defer_async.md)
 
 [setTimeout、setInterval、requestAnimationFrame 各有什么特点](../110browser/110010_settimeout_setinterval_requestanimationframe.md)
 
