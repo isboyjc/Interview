@@ -15,16 +15,19 @@ hero:
   actions:
     - theme: brand
       text: 快速了解
-      link: /interview/
+      link: /interview/quick/010_quick
     - theme: alt
       text: HTML
-      link: /interview/html/
+      link: /interview/html/010base/010010_stylization
     - theme: alt
       text: CSS
-      link: /interview/css/
+      link: /interview/css/010base/010010_css_load
     - theme: alt
       text: JavaScript
-      link: /interview/javascript/
+      link: /interview/javascript/core/010base/010010_stronglytype_and_weaklytype
+    - theme: alt
+      text: 其他
+      link: /interview/other/occupation
 features:
   - title: 安全
     icon: 🌟
@@ -45,3 +48,9 @@ features:
     icon: 👀
     details: 共同纠错、讨论、输出！
 ---
+
+<script setup>
+import Home from '@theme/components/Home.vue'
+</script>
+
+<Home />

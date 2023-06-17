@@ -1,6 +1,5 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
-import NotFound from './NotFound.vue';
 
 const { Layout } = DefaultTheme
 </script>
@@ -15,3 +14,9 @@ const { Layout } = DefaultTheme
     </template>
   </Layout>
 </template>
+
+<style>
+.VPHome{
+  padding-bottom: 0!important;
+}
+</style>

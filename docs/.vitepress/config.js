@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-17 20:58:55
+ * @LastEditTime: 2023-06-18 05:03:16
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -19,7 +19,8 @@ const resolve = (dir) => dir ? path.resolve(__dirname, '../', dir) : __dirname
 
 const {
   sidebarCatalogTree,
-  navbarCatalogTree
+  navbarCatalogTree,
+  getKeyForCatalogTree
 } = catalogGeneration(resolve('interview'), {
   ignoreList: [
     'interview/notype', 
@@ -84,46 +85,42 @@ const {
   generateDirectoryPath: resolve('./')
 })
 
+function getKeyForCatalogTreeToNav(key, arr = navbarCatalogTree){
+  let obj = getKeyForCatalogTree(key, arr)
+  return {
+    ...obj,
+    link: obj?.depthLastKey || obj.link
+  }
+}
+
 // 导航
 const nav = [
-  // { text: '分类', activeMatch: `^/interview/`, items: [
-  //   {
-  //     text: 'HTML', 
-  //     link: navbarCatalogTree.find(v => v.key === 'interview/html')?.depthLastKey
-  //   },
-  //   {
-  //     text: 'CSS', 
-  //     link: navbarCatalogTree.find(v => v.key === 'interview/css')?.depthLastKey
-  //   },
-  //   {
-  //     text: 'JavaScript', 
-  //     link: navbarCatalogTree.find(v => v.key === 'interview/javascript')?.depthLastKey
-  //   },
-  //   {
-  //     text: '其他', 
-  //     link: navbarCatalogTree.find(v => v.key === 'interview/other')?.depthLastKey
-  //   },
-  // ]},
   {
     activeMatch: `^/interview/quick`,
-    ...navbarCatalogTree.find(v => v.key === 'interview/quick')
+    ...sidebarCatalogTree.find(v => v.key === 'interview/quick'),
   },
   {
-    activeMatch: `^/interview/html`,
-    ...navbarCatalogTree.find(v => v.key === 'interview/html')
+    text: '模块分类',
+    activeMatch: `^/interview`,
+    items: [
+      getKeyForCatalogTreeToNav('interview/html'),
+      getKeyForCatalogTreeToNav('interview/css'),
+      getKeyForCatalogTreeToNav('interview/javascript'),
+      (function(){
+        let obj = getKeyForCatalogTreeToNav('interview/other', sidebarCatalogTree)
+        return {
+          text: obj.text,
+          items: obj.items.map(v => {
+            return getKeyForCatalogTreeToNav(v.key, sidebarCatalogTree)
+          })
+        }
+      })()
+    ]
   },
-  {
-    activeMatch: `^/interview/css`,
-    ...navbarCatalogTree.find(v => v.key === 'interview/css')
-  },
-  {
-    activeMatch: `^/interview/javascript`,
-    ...navbarCatalogTree.find(v => v.key === 'interview/javascript')
-  },
-  {
-    activeMatch: `^/interview/other`,
-    ...navbarCatalogTree.find(v => v.key === 'interview/other')
-  },
+  // {
+  //   activeMatch: `^/interview/other`,
+  //   ...sidebarCatalogTree.find(v => v.key === 'interview/other'),
+  // },
 ]
 
 // 侧边栏
@@ -148,6 +145,7 @@ export default defineConfig({
   rewrites: {
     // 'packages/:pkg/src/(.*)': ':pkg/index.md'
   },
+
   themeConfig: {
     outline: [2, 6],
     outlineTitle: '快看这页儿写了啥...',
@@ -186,7 +184,7 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/isboyjc/Interview/tree/main/docs/:path',
-      text: '编辑页面'
+      text: '编辑此页面'
     },
 
     footer: {
@@ -195,23 +193,21 @@ export default defineConfig({
     },
 
     search: {
-      search: {
-        provider: 'local',
-        options: {
-          locales: {
-            zh: {
-              translations: {
-                button: {
-                  buttonText: '搜索文档',
-                  buttonAriaLabel: '搜索文档'
-                },
-                modal: {
-                  noResultsText: '无法找到相关结果',
-                  resetButtonTitle: '清除查询条件',
-                  footer: {
-                    selectText: '选择',
-                    navigateText: '切换'
-                  }
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
                 }
               }
             }
@@ -219,5 +215,9 @@ export default defineConfig({
         }
       }
     }
+  },
+
+  vite: {
+    plugins: [],
   }
 })

@@ -60,7 +60,7 @@ export default function catalogGeneration(fullPath, options) {
     fs.writeFileSync(path.resolve(dirPath, `${dirName}.json`), JSON.stringify(sidebarCatalogTree, null,2));
     fs.writeFileSync(path.resolve(dirPath, `${navName}.json`), JSON.stringify(navbarCatalogTree, null,2));
   }
-  return { sidebarCatalogTree, navbarCatalogTree }
+  return { sidebarCatalogTree, navbarCatalogTree, getKeyForCatalogTree, getCatalogDepthLast }
 }
 
 /**
@@ -165,7 +165,7 @@ function sidebarTreeToNavTree(arr, idx = -1){
       if(Array.isArray(childrens) && childrens.length > 0){
         if(childrens.some(v => v?.items && Array.isArray(v.items) && v.items.length > 0)){
           return newArr.push(Object.assign({}, itemObj, {
-            depthLastKey: getDepthLastKey(itemObj),
+            depthLastKey: getCatalogDepthLast(itemObj).link,
             items: sidebarTreeToNavTree(childrens, index),
           }))
         }else{
@@ -176,22 +176,42 @@ function sidebarTreeToNavTree(arr, idx = -1){
       }
     }
 
-    return newArr.push({... itemObj, depthLastKey: getDepthLastKey(itemObj)})
+    return newArr.push({... itemObj, depthLastKey: getCatalogDepthLast(itemObj).link})
   })
   return newArr
 } 
 
 /**
  * @param {*} obj 目录树对象
- * @description 获取当前对象最深层级Key
+ * @description 获取目录对象最深层级
  * @return {*}
  * @Date 2023-06-17 02:05:06
  * @Author isboyjc
  */
-function getDepthLastKey(obj){
+function getCatalogDepthLast(obj){
   if(obj?.items && Array.isArray(obj.items) && obj.items.length > 0){
-    return getDepthLastKey(obj.items[0])
+    return getCatalogDepthLast(obj.items[0])
   }
 
-  return obj.link
+  return obj
+}
+
+/**
+ * @param {*} key 路径
+ * @description 查找目录树中key值相同的对象
+ * @return {*}
+ * @Date 2023-06-18 03:41:37
+ * @Author isboyjc
+ */
+function getKeyForCatalogTree(key, arr){
+  for(let i = 0; i < arr.length; i++){
+    let item = arr[i]
+
+    if(item.key.indexOf(key) !== -1) return item
+    
+    if(item?.items && Array.isArray(item.items) && item.items.length > 0){
+      let obj = getKeyForCatalogTree(key, item.items)
+      if(obj) return obj
+    }
+  }
 }
