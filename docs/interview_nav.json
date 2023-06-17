@@ -198,17 +198,17 @@
     "depthLastKey": "/interview/html/010base/010010_stylization"
   },
   {
-    "text": "JavaScript · 141",
+    "text": "JavaScript · 143",
     "itemNums": 3,
-    "itemDepthNums": 141,
+    "itemDepthNums": 143,
     "collapsed": true,
     "collapsible": true,
     "key": "interview/javascript",
     "items": [
       {
-        "text": "理论题 · 96",
+        "text": "理论题 · 97",
         "itemNums": 12,
-        "itemDepthNums": 96,
+        "itemDepthNums": 97,
         "collapsed": true,
         "collapsible": true,
         "key": "interview/javascript/core",
@@ -225,9 +225,9 @@
             "depthLastKey": "/interview/javascript/core/010base/010010_stronglytype_and_weaklytype"
           },
           {
-            "text": "数据类型 · 17",
-            "itemNums": 17,
-            "itemDepthNums": 17,
+            "text": "数据类型 · 18",
+            "itemNums": 18,
+            "itemDepthNums": 18,
             "collapsed": true,
             "collapsible": true,
             "key": "interview/javascript/core/020datatype",
@@ -360,9 +360,9 @@
         "depthLastKey": "/interview/javascript/output/010_js_op"
       },
       {
-        "text": "手写题 · 30",
-        "itemNums": 30,
-        "itemDepthNums": 30,
+        "text": "手写题 · 31",
+        "itemNums": 31,
+        "itemDepthNums": 31,
         "collapsed": true,
         "collapsible": true,
         "key": "interview/javascript/write",
@@ -374,14 +374,25 @@
     "depthLastKey": "/interview/javascript/core/010base/010010_stronglytype_and_weaklytype"
   },
   {
-    "text": "其他 · 7",
-    "itemNums": 7,
-    "itemDepthNums": 7,
+    "text": "其他 · 2",
+    "itemNums": 2,
+    "itemDepthNums": 2,
     "collapsed": true,
     "collapsible": true,
     "key": "interview/other",
-    "link": "/interview/other/big_data_render",
-    "childKey": "/interview/other/big_data_render",
-    "depthLastKey": "/interview/other/big_data_render"
+    "link": "/interview/other/occupation",
+    "childKey": "/interview/other/occupation",
+    "depthLastKey": "/interview/other/occupation"
+  },
+  {
+    "text": "快速了解 · 8",
+    "itemNums": 8,
+    "itemDepthNums": 8,
+    "collapsed": true,
+    "collapsible": true,
+    "key": "interview/quick",
+    "link": "/interview/quick/010_quick",
+    "childKey": "/interview/quick/010_quick",
+    "depthLastKey": "/interview/quick/010_quick"
   }
 ]

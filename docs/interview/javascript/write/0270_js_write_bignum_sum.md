@@ -36,3 +36,7 @@ function bigIntAdd(a ,b){
    return sum;
 }
 ```
+
+## 扩展
+
+[Number() 存储空间是多大？如后台发送一个超过最大存储数字怎么办？](../core/020datatype/020110_number_storage.md)

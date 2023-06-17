@@ -6,6 +6,8 @@
 
 ## 题解
 
+::: details 点我查看题解
+
 `for...of` 是 `ES6` 新增的遍历语法，具有迭代器（`iterator`）接口，就可以用其循环遍历它的成员 (属性值 `value`)。可以中断该循环。
 
 普通的对象，`for...of` 结构迭代不能直接使用，因为普通对象不具备迭代器（`iterator`）接口。
@@ -51,7 +53,9 @@ for(let item of obj) {
 }
 ```
 
-## 相关
+:::
+
+## 扩展
 
 [for...of、 for...in 和 forEach、map 的区别](../040array/040060_foreach_map_forof_forin.md)
 

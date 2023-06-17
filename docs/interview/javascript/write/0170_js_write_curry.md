@@ -46,6 +46,6 @@ console.log(curriedAdd(1)(2, 3)); // 6
 console.log(curriedAdd(1, 2, 3)); // 6
 ```
 
-## 相关
+## 扩展
 
 [什么是柯里化，应用场景](../core//050function/050040_function_currying.md)

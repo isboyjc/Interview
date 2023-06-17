@@ -2,12 +2,13 @@
 
 ## 题干
 
-`Number()` 存储空间
+- `Number()` 存储空间
 
-超过最大存储数字
+-  超过最大存储数字
 
 ## 题解
 
+::: details 点我查看题解
 在 `JS` 中，`Number()` 是一个内置对象，用来表示数字。它采用  [IEEE754标准](https://zh.wikipedia.org/wiki/IEEE_754) 定义的 `64` 位浮点格式来存储数字。这个格式用 `64` 位存储数值，其中 `0` 到 `51` 存储数字（片段），`52` 到 `62` 存储指数，`63` 位存储符号 `1`。
 
 这种格式能表示的最大值（`Number.MAX_VALUE`）为 `±1.7976931348623157e+308`，最小值（`Number.MIN_VALUE`）为 `±5e-3241`。如果超过这个范围，就会出现溢出或下溢的情况，导致数值不精确或变成无穷大。
@@ -23,30 +24,9 @@
 
 - 使用第三方库来处理大数，比如 `bignumber.js` 或 `decimal.js` 等。这些库提供了一些方法和工具来操作和格式化大数。
 
+:::
+
+
 ## 扩展
 
-### JS 实现大数字相加方法
-
-```js
-function bigIntAdd(a ,b){
-   // 取两个数字的最大长度
-   let maxLength = Math.max(a.length, b.length);
-   // 用0去补齐长度
-   a = a.padStart(maxLength , 0);// "0009007199254740991"
-   b = b.padStart(maxLength , 0);//" 1234567899999999999"
-
-   // 定义加法过程中需要用到的变量
-   let t = 0;
-   let f = 0;   // "进位"
-   let sum = "";
-   for(let i=maxLength-1 ; i>=0 ; i--){
-      t = parseInt(a[i]) + parseInt(b[i]) + f;
-      f = Math.floor(t/10);
-      sum = t%10 + sum;
-   }
-   if(f!==0){
-      sum = '' + f + sum;
-   }
-   return sum;
-}
-```
+[JS 实现大数字相加方法](../../write/0270_js_write_bignum_sum.md)

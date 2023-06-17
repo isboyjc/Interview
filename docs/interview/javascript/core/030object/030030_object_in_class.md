@@ -6,6 +6,8 @@
 
 ## 题解
 
+::: details 点我查看题解
+
 在 JS 中，可以使用 `instanceof` 操作符来判断一个对象是否属于某个类。`instanceof` 操作符可以用于判断一个对象是否是某个类的实例，它的语法如下：
 
 ```js
@@ -32,3 +34,5 @@ console.log(person instanceof Object); // 输出 true，因为所有对象都是
 ```
 
 在上面的示例中，我们定义了一个 `Person` 类，然后创建了一个 `person` 对象。最后，我们使用 `instanceof` 操作符来判断 `person` 是否是 `Person` 类的实例，结果返回 `true`。
+
+:::

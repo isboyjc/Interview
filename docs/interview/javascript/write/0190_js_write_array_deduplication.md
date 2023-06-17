@@ -85,6 +85,6 @@ function unique(arr) {
 console.log(unique(arr)); // [1 ,2 ,3 ,4 ,5]
 ```
 
-## 相关
+## 扩展
 
 [JS 实现数组去重方法](../core/040array/040030_array_deduplication.md)

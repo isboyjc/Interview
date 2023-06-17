@@ -107,7 +107,7 @@ console.log(obj); // {a: 1, b: 2, c: {-4}}
 console.log(obj3); // {a: 1, b: 2, c: {-4}}
 ```
 
-## 相关
+## 扩展
 
 [介绍下深拷贝、浅拷贝，两者区别，object.assign 是哪种](../core/030object/030060_object_deepcopy_lightcopy.md)
 

@@ -54,7 +54,7 @@ export default function catalogGeneration(fullPath, options) {
 
   const dirName = `${options?.generateDirectoryName || folderPath}_dir`
   const navName = `${options?.generateDirectoryName || folderPath}_nav`
-  console.log(dirName, navName)
+
   const dirPath = options?.generateDirectoryPath
   if(dirName && dirPath){
     fs.writeFileSync(path.resolve(dirPath, `${dirName}.json`), JSON.stringify(sidebarCatalogTree, null,2));
@@ -122,6 +122,7 @@ function getSidebar(options) {
         items
       }
     }else{
+      // console.log(dir)
       // 文件
       const file = fs.readFileSync(path.resolve(fullPath, dir)).toString()
       let text = dir

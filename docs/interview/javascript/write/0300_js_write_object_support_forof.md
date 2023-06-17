@@ -54,7 +54,7 @@ for(let item of obj) {
 
 
 
-## 相关
+## 扩展
 
 [如何使用 for...of 遍历普通对象](../core/030object/030050_forof_in_object.md)
 

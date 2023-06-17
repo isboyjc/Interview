@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-17 03:17:19
+ * @LastEditTime: 2023-06-17 20:58:55
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -22,11 +22,10 @@ const {
   navbarCatalogTree
 } = catalogGeneration(resolve('interview'), {
   ignoreList: [
-    'interview/index',
+    'interview/notype', 
     'interview/vue', 
     'interview/react', 
     'interview/webpack', 
-    // 'interview/other', 
     'interview/algorithm'
   ],
   collapsed: true,
@@ -34,6 +33,8 @@ const {
   // showItemNums: true,
   showItemDepthNums: true,
   fileNameHash: {
+    'interview/quick': '快速了解',
+
     'interview/html': 'HTML',
     'interview/html/010base': '基础',
     'interview/html/020labels_attributes': '标签&属性',
@@ -71,11 +72,13 @@ const {
     'interview/javascript/write': '手写题',
     'interview/javascript/output': '输出题',
 
+    'interview/other': '其他',
+
+
     'interview/vue': 'Vue',
     'interview/react': 'React',
     'interview/webpack': 'Webpack',
     'interview/algorithm': '算法',
-    'interview/other': '其他'
   },
   generateDirectoryName: 'interview',
   generateDirectoryPath: resolve('./')
@@ -83,7 +86,6 @@ const {
 
 // 导航
 const nav = [
-  { text: '快速了解', link: '/interview/index.md' },
   // { text: '分类', activeMatch: `^/interview/`, items: [
   //   {
   //     text: 'HTML', 
@@ -102,6 +104,10 @@ const nav = [
   //     link: navbarCatalogTree.find(v => v.key === 'interview/other')?.depthLastKey
   //   },
   // ]},
+  {
+    activeMatch: `^/interview/quick`,
+    ...navbarCatalogTree.find(v => v.key === 'interview/quick')
+  },
   {
     activeMatch: `^/interview/html`,
     ...navbarCatalogTree.find(v => v.key === 'interview/html')
@@ -122,6 +128,7 @@ const nav = [
 
 // 侧边栏
 const sidebar = {
+  "/interview/quick": sidebarCatalogTree.find(v => v.key === 'interview/quick')?.items,
   "/interview/html": sidebarCatalogTree.find(v => v.key === 'interview/html')?.items,
   "/interview/css": sidebarCatalogTree.find(v => v.key === 'interview/css')?.items,
   "/interview/javascript": sidebarCatalogTree.find(v => v.key === 'interview/javascript')?.items,

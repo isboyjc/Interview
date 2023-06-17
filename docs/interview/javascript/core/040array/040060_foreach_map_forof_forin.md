@@ -9,6 +9,8 @@
 
 ## 题解
 
+::: details 点我查看题解
+
 `for...of`、`for...in`、`forEach` 和 `map` 都是 `JS` 中用于遍历数组的方法，但它们的用法和效果略有不同。
 
 
@@ -89,7 +91,9 @@ let newArray = array.map(function callback(currentValue, index, array) {
 
 - `forEach` 无返回值，`map` 有返回值且返回一个新的数组。
 
-## 相关
+:::
+
+## 扩展
 
 [如何使用 for...of 遍历普通对象](../030object/030050_forof_in_object.md)
 

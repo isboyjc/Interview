@@ -640,17 +640,17 @@
     ]
   },
   {
-    "text": "JavaScript · 141",
+    "text": "JavaScript · 143",
     "itemNums": 3,
-    "itemDepthNums": 141,
+    "itemDepthNums": 143,
     "collapsed": true,
     "collapsible": true,
     "key": "interview/javascript",
     "items": [
       {
-        "text": "理论题 · 96",
+        "text": "理论题 · 97",
         "itemNums": 12,
-        "itemDepthNums": 96,
+        "itemDepthNums": 97,
         "collapsed": true,
         "collapsible": true,
         "key": "interview/javascript/core",
@@ -706,9 +706,9 @@
             ]
           },
           {
-            "text": "数据类型 · 17",
-            "itemNums": 17,
-            "itemDepthNums": 17,
+            "text": "数据类型 · 18",
+            "itemNums": 18,
+            "itemDepthNums": 18,
             "collapsed": true,
             "collapsible": true,
             "key": "interview/javascript/core/020datatype",
@@ -742,6 +742,11 @@
                 "text": "JS 中 0.1+0.2 != 0.3？",
                 "key": "/interview/javascript/core/020datatype/020060_0.1_0.2_sum",
                 "link": "/interview/javascript/core/020datatype/020060_0.1_0.2_sum"
+              },
+              {
+                "text": "怎样让 0.1+0.2 等于0.3",
+                "key": "/interview/javascript/core/020datatype/020060_0.1_0.2_sum2",
+                "link": "/interview/javascript/core/020datatype/020060_0.1_0.2_sum2"
               },
               {
                 "text": "typeof NaN 的结果是什么？",
@@ -1343,9 +1348,9 @@
         ]
       },
       {
-        "text": "手写题 · 30",
-        "itemNums": 30,
-        "itemDepthNums": 30,
+        "text": "手写题 · 31",
+        "itemNums": 31,
+        "itemDepthNums": 31,
         "collapsed": true,
         "collapsible": true,
         "key": "interview/javascript/write",
@@ -1409,6 +1414,11 @@
             "text": "JS 实现 apply 方法",
             "key": "/interview/javascript/write/0120_js_write_apply",
             "link": "/interview/javascript/write/0120_js_write_apply"
+          },
+          {
+            "text": "JS 实现类型判断方法",
+            "key": "/interview/javascript/write/0125_js_type_judgment",
+            "link": "/interview/javascript/write/0125_js_type_judgment"
           },
           {
             "text": "JS 实现防抖 debounce 方法",
@@ -1505,47 +1515,72 @@
     ]
   },
   {
-    "text": "其他 · 7",
-    "itemNums": 7,
-    "itemDepthNums": 7,
+    "text": "其他 · 2",
+    "itemNums": 2,
+    "itemDepthNums": 2,
     "collapsed": true,
     "collapsible": true,
     "key": "interview/other",
     "items": [
-      {
-        "text": "十万+ 级数据渲染？",
-        "key": "/interview/other/big_data_render",
-        "link": "/interview/other/big_data_render"
-      },
-      {
-        "text": "大文件上传如何设计实现？",
-        "key": "/interview/other/big_file_update",
-        "link": "/interview/other/big_file_update"
-      },
-      {
-        "text": "B站弹幕不挡人如何实现？",
-        "key": "/interview/other/bullet_chat",
-        "link": "/interview/other/bullet_chat"
-      },
-      {
-        "text": "自我介绍",
-        "key": "/interview/other/introduction",
-        "link": "/interview/other/introduction"
-      },
       {
         "text": "职业问题",
         "key": "/interview/other/occupation",
         "link": "/interview/other/occupation"
       },
       {
-        "text": "其他问题概述",
-        "key": "/interview/other/other",
-        "link": "/interview/other/other"
-      },
-      {
         "text": "项目问题",
         "key": "/interview/other/project",
         "link": "/interview/other/project"
+      }
+    ]
+  },
+  {
+    "text": "快速了解 · 8",
+    "itemNums": 8,
+    "itemDepthNums": 8,
+    "collapsed": true,
+    "collapsible": true,
+    "key": "interview/quick",
+    "items": [
+      {
+        "text": "快速了解",
+        "key": "/interview/quick/010_quick",
+        "link": "/interview/quick/010_quick"
+      },
+      {
+        "text": "自我介绍",
+        "key": "/interview/quick/015_self_introduction",
+        "link": "/interview/quick/015_self_introduction"
+      },
+      {
+        "text": "刷题是否应该",
+        "key": "/interview/quick/020_interview_question_brushing",
+        "link": "/interview/quick/020_interview_question_brushing"
+      },
+      {
+        "text": "面试紧张",
+        "key": "/interview/quick/021_nervous_interview",
+        "link": "/interview/quick/021_nervous_interview"
+      },
+      {
+        "text": "遇到不会的问题",
+        "key": "/interview/quick/022_encounter_problems_that_wonot_happen",
+        "link": "/interview/quick/022_encounter_problems_that_wonot_happen"
+      },
+      {
+        "text": "面试官问有什么想问",
+        "key": "/interview/quick/023_interviewer_question",
+        "link": "/interview/quick/023_interviewer_question"
+      },
+      {
+        "text": "新增题目",
+        "key": "/interview/quick/030_add",
+        "link": "/interview/quick/030_add"
+      },
+      {
+        "text": "发现错误",
+        "key": "/interview/quick/040_error",
+        "link": "/interview/quick/040_error"
       }
     ]
   }
