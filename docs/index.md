@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: 快速了解
-      link: /interview/quick/010_quick
+      link: /quick/010_quick
     - theme: alt
       text: HTML
       link: /interview/html/010base/010010_stylization
