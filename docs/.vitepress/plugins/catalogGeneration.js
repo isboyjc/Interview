@@ -19,7 +19,7 @@ import path from 'path'
  * @Date 2023-06-11 14:59:25
  * @Author isboyjc
  */
-export default function catalogGeneration(fullPath, options) {
+export function catalogGeneration(fullPath, options) {
   let base = options?.base || '/'
   base = base === "/" ? '/docs' : base
 
@@ -60,7 +60,7 @@ export default function catalogGeneration(fullPath, options) {
     fs.writeFileSync(path.resolve(dirPath, `${dirName}.json`), JSON.stringify(sidebarCatalogTree, null,2));
     fs.writeFileSync(path.resolve(dirPath, `${navName}.json`), JSON.stringify(navbarCatalogTree, null,2));
   }
-  return { sidebarCatalogTree, navbarCatalogTree, getKeyForCatalogTree, getCatalogDepthLast }
+  return { sidebarCatalogTree, navbarCatalogTree }
 }
 
 /**
@@ -78,7 +78,7 @@ export default function catalogGeneration(fullPath, options) {
  * @Date 2023-06-11 14:59:25
  * @Author isboyjc
  */
-function getSidebar(options) {
+export function getSidebar(options) {
   const {
     ignoreList, 
     collapsible, 
@@ -156,7 +156,7 @@ function getSidebar(options) {
  * @Date 2023-06-17 01:35:20
  * @Author isboyjc
  */
-function sidebarTreeToNavTree(arr, idx = -1){
+export function sidebarTreeToNavTree(arr, idx = -1){
   let newArr = []
   arr.map((item, index) => {
     let itemObj = {... item}
@@ -188,7 +188,7 @@ function sidebarTreeToNavTree(arr, idx = -1){
  * @Date 2023-06-17 02:05:06
  * @Author isboyjc
  */
-function getCatalogDepthLast(obj){
+export function getCatalogDepthLast(obj){
   if(obj?.items && Array.isArray(obj.items) && obj.items.length > 0){
     return getCatalogDepthLast(obj.items[0])
   }
@@ -203,7 +203,7 @@ function getCatalogDepthLast(obj){
  * @Date 2023-06-18 03:41:37
  * @Author isboyjc
  */
-function getKeyForCatalogTree(key, arr){
+export function getKeyForCatalogTree(key, arr){
   for(let i = 0; i < arr.length; i++){
     let item = arr[i]
 

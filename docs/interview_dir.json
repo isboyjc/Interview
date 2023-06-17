@@ -1533,55 +1533,5 @@
         "link": "/interview/other/project"
       }
     ]
-  },
-  {
-    "text": "快速了解 · 8",
-    "itemNums": 8,
-    "itemDepthNums": 8,
-    "collapsed": true,
-    "collapsible": true,
-    "key": "interview/quick",
-    "items": [
-      {
-        "text": "快速了解",
-        "key": "/interview/quick/010_quick",
-        "link": "/interview/quick/010_quick"
-      },
-      {
-        "text": "自我介绍",
-        "key": "/interview/quick/015_self_introduction",
-        "link": "/interview/quick/015_self_introduction"
-      },
-      {
-        "text": "刷题是否应该",
-        "key": "/interview/quick/020_interview_question_brushing",
-        "link": "/interview/quick/020_interview_question_brushing"
-      },
-      {
-        "text": "面试紧张",
-        "key": "/interview/quick/021_nervous_interview",
-        "link": "/interview/quick/021_nervous_interview"
-      },
-      {
-        "text": "遇到不会的问题",
-        "key": "/interview/quick/022_encounter_problems_that_wonot_happen",
-        "link": "/interview/quick/022_encounter_problems_that_wonot_happen"
-      },
-      {
-        "text": "面试官问有什么想问",
-        "key": "/interview/quick/023_interviewer_question",
-        "link": "/interview/quick/023_interviewer_question"
-      },
-      {
-        "text": "新增题目",
-        "key": "/interview/quick/030_add",
-        "link": "/interview/quick/030_add"
-      },
-      {
-        "text": "发现错误",
-        "key": "/interview/quick/040_error",
-        "link": "/interview/quick/040_error"
-      }
-    ]
   }
 ]

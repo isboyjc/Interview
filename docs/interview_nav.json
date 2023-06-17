@@ -383,16 +383,5 @@
     "link": "/interview/other/occupation",
     "childKey": "/interview/other/occupation",
     "depthLastKey": "/interview/other/occupation"
-  },
-  {
-    "text": "快速了解 · 8",
-    "itemNums": 8,
-    "itemDepthNums": 8,
-    "collapsed": true,
-    "collapsible": true,
-    "key": "interview/quick",
-    "link": "/interview/quick/010_quick",
-    "childKey": "/interview/quick/010_quick",
-    "depthLastKey": "/interview/quick/010_quick"
   }
 ]

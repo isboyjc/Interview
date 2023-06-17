@@ -8,7 +8,7 @@ import navbarCatalogTree from "/interview_nav.json"
 console.log('sidebarCatalogTree: ', sidebarCatalogTree)
 console.log('navbarCatalogTree: ', navbarCatalogTree)
 
-let arr = navbarCatalogTree.map((v) => {
+let coreData = navbarCatalogTree.map((v) => {
   if(!v?.items){
     return sidebarCatalogTree.find(j => j.key === v.key)
   }
@@ -19,8 +19,9 @@ let arr = navbarCatalogTree.map((v) => {
 
 const data = useData()
 
-console.log(data)
 const nav = data.site.value.themeConfig.nav
+console.log(nav.find(v => v.key === 'quick'))
+
 const friendlyLinks = [
   {
     text: 'Toolsdog',
@@ -35,8 +36,10 @@ const friendlyLinks = [
     link: 'https://isboyjc.com'
   },
 ]
+
 const items = [
-  ...arr, 
+  nav.find(v => v.key === 'quick'),
+  ...coreData, 
   {
     text: '友情链接',
     items: friendlyLinks

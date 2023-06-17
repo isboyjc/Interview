@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-18 05:03:16
+ * @LastEditTime: 2023-06-18 05:42:37
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -11,7 +11,7 @@ import path from 'path'
 import { fileURLToPath } from 'url';
 
 // import { withMermaid } from "vitepress-plugin-mermaid";
-import catalogGeneration from "./plugins/catalogGeneration"
+import {catalogGeneration, getKeyForCatalogTree, getCatalogDepthLast} from "./plugins/catalogGeneration"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -19,8 +19,7 @@ const resolve = (dir) => dir ? path.resolve(__dirname, '../', dir) : __dirname
 
 const {
   sidebarCatalogTree,
-  navbarCatalogTree,
-  getKeyForCatalogTree
+  navbarCatalogTree
 } = catalogGeneration(resolve('interview'), {
   ignoreList: [
     'interview/notype', 
@@ -89,15 +88,21 @@ function getKeyForCatalogTreeToNav(key, arr = navbarCatalogTree){
   let obj = getKeyForCatalogTree(key, arr)
   return {
     ...obj,
+    activeMatch: obj?.link ? `^${obj.link}` : `^/${obj.key}`,
     link: obj?.depthLastKey || obj.link
   }
 }
 
+let quick = catalogGeneration(resolve('quick'))
+
+
 // 导航
 const nav = [
   {
-    activeMatch: `^/interview/quick`,
-    ...sidebarCatalogTree.find(v => v.key === 'interview/quick'),
+    activeMatch: `^/quick`,
+    key: 'quick',
+    text: '快速了解',
+    items: quick.navbarCatalogTree
   },
   {
     text: '模块分类',
@@ -110,6 +115,7 @@ const nav = [
         let obj = getKeyForCatalogTreeToNav('interview/other', sidebarCatalogTree)
         return {
           text: obj.text,
+          activeMatch: obj.activeMatch,
           items: obj.items.map(v => {
             return getKeyForCatalogTreeToNav(v.key, sidebarCatalogTree)
           })
@@ -125,7 +131,7 @@ const nav = [
 
 // 侧边栏
 const sidebar = {
-  "/interview/quick": sidebarCatalogTree.find(v => v.key === 'interview/quick')?.items,
+  "/quick": quick.sidebarCatalogTree,
   "/interview/html": sidebarCatalogTree.find(v => v.key === 'interview/html')?.items,
   "/interview/css": sidebarCatalogTree.find(v => v.key === 'interview/css')?.items,
   "/interview/javascript": sidebarCatalogTree.find(v => v.key === 'interview/javascript')?.items,
