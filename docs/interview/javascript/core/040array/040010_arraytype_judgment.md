@@ -36,3 +36,9 @@ console.log(new Date() instanceof Date) // true
 console.log(Object.prototype.toString.call([])) // [object Array]
 ```
 :::
+
+
+
+## 扩展
+
+[JS 实现类型判断方法](../../write/0125_js_type_judgment.md)
