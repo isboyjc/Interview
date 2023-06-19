@@ -21,7 +21,7 @@ import path from 'path'
  */
 export function catalogGeneration(fullPath, options) {
   let base = options?.base || '/'
-  base = base === "/" ? '/docs' : base
+   base = base === "/" ? `${path.sep}docs` : base
 
   let idx = fullPath.indexOf(base)
   if(idx === -1) return console.error("base path error")
