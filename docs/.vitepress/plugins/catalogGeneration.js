@@ -27,7 +27,7 @@ export function catalogGeneration(fullPath, options) {
   if(idx === -1) return console.error("base path error")
 
   let folderPath = fullPath.substring(idx + base.length)
-  folderPath = folderPath.startsWith('/') ? folderPath.substring(1) : folderPath;
+  folderPath = folderPath.startsWith(path.sep) ? folderPath.substring(1) : folderPath;
 
   const ignoreList = (options?.ignoreList || []).map(v => v.replace(/^\//, '').replace(/\.md$/, ''))
   const collapsible = options?.collapsible === undefined ? true : options.collapsible
