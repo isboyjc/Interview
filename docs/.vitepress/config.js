@@ -1,16 +1,16 @@
 /*
- * @LastEditTime: 2023-06-18 05:42:37
+ * @LastEditTime: 2023-06-19 00:34:03
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
  * @LastEditors: isboyjc
  */
-import { defineConfig } from 'vitepress'
+import { defineConfig, defineConfigWithTheme } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 import path from 'path'
 import { fileURLToPath } from 'url';
 
-// import { withMermaid } from "vitepress-plugin-mermaid";
 import {catalogGeneration, getKeyForCatalogTree, getCatalogDepthLast} from "./plugins/catalogGeneration"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -138,7 +138,7 @@ const sidebar = {
   "/interview/other": sidebarCatalogTree.find(v => v.key === 'interview/other')?.items,
 }
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: '不正经的前端 | 面试',
   description: '这是一份开放的面试题库',
   head: [
@@ -225,5 +225,16 @@ export default defineConfig({
 
   vite: {
     plugins: [],
-  }
-})
+  },
+
+  markdown:{
+    config(md){
+      // md.use(taskLists)
+    } 
+  },
+
+
+  // mermaid: {
+  //   // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+  // },
+}))
