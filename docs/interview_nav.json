@@ -383,5 +383,104 @@
     "link": "/interview/other/occupation",
     "childKey": "/interview/other/occupation",
     "depthLastKey": "/interview/other/occupation"
+  },
+  {
+    "text": "Vue · 105",
+    "itemNums": 8,
+    "itemDepthNums": 105,
+    "collapsed": true,
+    "collapsible": true,
+    "key": "interview/vue",
+    "items": [
+      {
+        "text": "基础 · 25",
+        "itemNums": 25,
+        "itemDepthNums": 25,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/vue/010base",
+        "link": "/interview/vue/010base/010010_vue",
+        "childKey": "/interview/vue/010base/010010_vue",
+        "depthLastKey": "/interview/vue/010base/010010_vue"
+      },
+      {
+        "text": "数据 · 10",
+        "itemNums": 10,
+        "itemDepthNums": 10,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/vue/020data",
+        "link": "/interview/vue/020data/020010_vue2or3_reactivity",
+        "childKey": "/interview/vue/020data/020010_vue2or3_reactivity",
+        "depthLastKey": "/interview/vue/020data/020010_vue2or3_reactivity"
+      },
+      {
+        "text": "组件 · 18",
+        "itemNums": 18,
+        "itemDepthNums": 18,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/vue/030component",
+        "link": "/interview/vue/030component/030010_components_and_plugins",
+        "childKey": "/interview/vue/030component/030010_components_and_plugins",
+        "depthLastKey": "/interview/vue/030component/030010_components_and_plugins"
+      },
+      {
+        "text": "状态 · 7",
+        "itemNums": 7,
+        "itemDepthNums": 7,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/vue/040state",
+        "link": "/interview/vue/040state/040010_vuex",
+        "childKey": "/interview/vue/040state/040010_vuex",
+        "depthLastKey": "/interview/vue/040state/040010_vuex"
+      },
+      {
+        "text": "路由 · 10",
+        "itemNums": 10,
+        "itemDepthNums": 10,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/vue/050router",
+        "link": "/interview/vue/050router/050010_vuerouter_mode",
+        "childKey": "/interview/vue/050router/050010_vuerouter_mode",
+        "depthLastKey": "/interview/vue/050router/050010_vuerouter_mode"
+      },
+      {
+        "text": "原理 · 20",
+        "itemNums": 20,
+        "itemDepthNums": 20,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/vue/060source",
+        "link": "/interview/vue/060source/060010_source_vmodel",
+        "childKey": "/interview/vue/060source/060010_source_vmodel",
+        "depthLastKey": "/interview/vue/060source/060010_source_vmodel"
+      },
+      {
+        "text": "实践 · 8",
+        "itemNums": 8,
+        "itemDepthNums": 8,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/vue/070practice",
+        "link": "/interview/vue/070practice/070010_optimize_first_screen_rendering",
+        "childKey": "/interview/vue/070practice/070010_optimize_first_screen_rendering",
+        "depthLastKey": "/interview/vue/070practice/070010_optimize_first_screen_rendering"
+      },
+      {
+        "text": "其他 · 7",
+        "itemNums": 7,
+        "itemDepthNums": 7,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/vue/080other",
+        "link": "/interview/vue/080other/080010_what_is_ssr",
+        "childKey": "/interview/vue/080other/080010_what_is_ssr",
+        "depthLastKey": "/interview/vue/080other/080010_what_is_ssr"
+      }
+    ],
+    "depthLastKey": "/interview/vue/010base/010010_vue"
   }
 ]

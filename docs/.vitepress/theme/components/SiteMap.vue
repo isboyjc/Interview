@@ -5,9 +5,6 @@ import { useData } from 'vitepress'
 import sidebarCatalogTree from "/interview_dir.json"
 import navbarCatalogTree from "/interview_nav.json"
 
-console.log('sidebarCatalogTree: ', sidebarCatalogTree)
-console.log('navbarCatalogTree: ', navbarCatalogTree)
-
 let coreData = navbarCatalogTree.map((v) => {
   if(!v?.items){
     return sidebarCatalogTree.find(j => j.key === v.key)
@@ -19,27 +16,38 @@ let coreData = navbarCatalogTree.map((v) => {
 
 const data = useData()
 
-const nav = data.site.value.themeConfig.nav
-console.log(nav.find(v => v.key === 'quick'))
-
 const friendlyLinks = [
   {
-    text: 'Toolsdog',
+    text: 'isboyjc · 不正经的前端',
+    link: 'https://isboyjc.com'
+  },
+  {
+    text: 'isboyjc · 掘金',
+    link: 'https://juejin.cn/user/2999123452373735'
+  },
+  {
+    text: 'isboyjc · GitHub',
+    link: 'https://github.com/isboyjc'
+  },
+  {
+    text: 'isboyjc · Toolsdog',
     link: 'http://toolsdog.isboyjc.com/'
-  },
-  {
-    text: '占位1',
-    link: 'https://isboyjc.com'
-  },
-  {
-    text: '占位2',
-    link: 'https://isboyjc.com'
-  },
+  }
 ]
 
+const nav = data.site.value.themeConfig.nav
+
 const items = [
-  nav.find(v => v.key === 'quick'),
+  {
+    text: '快速了解',
+    items: [
+      {text: '快速了解', link: '/quick/010_quick'},
+      { text: "新增题目", link: "/quick/030_add" },
+      { text: '发现错误', link: '/quick/040_error' }
+    ]
+  },
   ...coreData, 
+  nav.find(v => v.key === 'about'),
   {
     text: '友情链接',
     items: friendlyLinks

@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-19 00:34:03
+ * @LastEditTime: 2023-06-23 18:13:35
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -23,10 +23,10 @@ const {
 } = catalogGeneration(resolve('interview'), {
   ignoreList: [
     'interview/notype', 
-    'interview/vue', 
     'interview/react', 
     'interview/webpack', 
-    'interview/algorithm'
+    'interview/algorithm',
+    'interview/framework_comparison',
   ],
   collapsed: true,
   // collapsible: false,
@@ -72,12 +72,20 @@ const {
     'interview/javascript/write': '手写题',
     'interview/javascript/output': '输出题',
 
+    'interview/vue': 'Vue',
+    'interview/vue/010base': '基础',
+    'interview/vue/020data': '数据',
+    'interview/vue/030component': '组件',
+    'interview/vue/040state': '状态',
+    'interview/vue/050router': '路由',
+    'interview/vue/060source': '原理',
+    'interview/vue/070practice': '实践',
+    'interview/vue/080other': '其他',
+
+    'interview/react': 'React',
+
     'interview/other': '其他',
 
-
-    'interview/vue': 'Vue',
-    'interview/react': 'React',
-    'interview/webpack': 'Webpack',
     'interview/algorithm': '算法',
   },
   generateDirectoryName: 'interview',
@@ -93,7 +101,50 @@ function getKeyForCatalogTreeToNav(key, arr = navbarCatalogTree){
   }
 }
 
-let quick = catalogGeneration(resolve('quick'))
+
+// 快速了解
+const quick = [
+  {
+    text: '快速了解',
+    link: '/quick/010_quick'
+  },
+  {
+    text: '参与共建',
+    items: [
+      {
+        text: '新增题目',
+        link: '/quick/030_add'
+      },
+      {
+        text: '发现错误',
+        link: '/quick/040_error',
+      },
+    ]
+  }
+]
+
+const about = [
+  {
+    text: '一份好的自我介绍',
+    link: '/about/010_self_introduction',
+  },
+  {
+    text: '刷题是否应该',
+    link: '/about/020_interview_question_brushing'
+  },
+  {
+    text: '面试紧张怎么办',
+    link: '/about/030_nervous_interview',
+  },
+  {
+    text: '遇到不会的问题',
+    link: '/about/040_encounter_problems_that_wonot_happen',
+  },
+  {
+    text: '面试官问有什么想问',
+    link: '/about/050_interviewer_question',
+  },
+]
 
 
 // 导航
@@ -102,15 +153,26 @@ const nav = [
     activeMatch: `^/quick`,
     key: 'quick',
     text: '快速了解',
-    items: quick.navbarCatalogTree
+    items: quick
   },
   {
-    text: '模块分类',
+    text: '大前端 · 类',
     activeMatch: `^/interview`,
     items: [
-      getKeyForCatalogTreeToNav('interview/html'),
-      getKeyForCatalogTreeToNav('interview/css'),
-      getKeyForCatalogTreeToNav('interview/javascript'),
+      {
+        text: '语言',
+        items: [
+          getKeyForCatalogTreeToNav('interview/html'),
+          getKeyForCatalogTreeToNav('interview/css'),
+          getKeyForCatalogTreeToNav('interview/javascript'),
+        ]
+      },
+      {
+        text: '框架 & 库',
+        items: [
+          getKeyForCatalogTreeToNav('interview/vue'),
+        ]
+      },
       (function(){
         let obj = getKeyForCatalogTreeToNav('interview/other', sidebarCatalogTree)
         return {
@@ -123,6 +185,12 @@ const nav = [
       })()
     ]
   },
+  {
+    activeMatch: `^/about`,
+    key: 'about',
+    text: '关于面试',
+    items: about
+  }
   // {
   //   activeMatch: `^/interview/other`,
   //   ...sidebarCatalogTree.find(v => v.key === 'interview/other'),
@@ -131,10 +199,12 @@ const nav = [
 
 // 侧边栏
 const sidebar = {
-  "/quick": quick.sidebarCatalogTree,
+  "/quick": quick,
+  "/about": about,
   "/interview/html": sidebarCatalogTree.find(v => v.key === 'interview/html')?.items,
   "/interview/css": sidebarCatalogTree.find(v => v.key === 'interview/css')?.items,
   "/interview/javascript": sidebarCatalogTree.find(v => v.key === 'interview/javascript')?.items,
+  "/interview/vue": sidebarCatalogTree.find(v => v.key === 'interview/vue')?.items,
   "/interview/other": sidebarCatalogTree.find(v => v.key === 'interview/other')?.items,
 }
 
@@ -195,7 +265,7 @@ export default withMermaid(defineConfig({
 
     footer: {
       message: '不正经的前端 | 面试',
-      copyright: 'Copyright © 2019-present isboyjc ｜ 京ICP备2022012153号-1'
+      copyright: 'Copyright © 2019-present isboyjc'
     },
 
     search: {

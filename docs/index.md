@@ -26,6 +26,9 @@ hero:
       text: JavaScript
       link: /interview/javascript/core/010base/010010_stronglytype_and_weaklytype
     - theme: alt
+      text: Vue
+      link: /interview/vue/010base/010010_vue
+    - theme: alt
       text: 其他
       link: /interview/other/occupation
 features:
@@ -37,7 +40,7 @@ features:
     details: 高频、小众面试题应有尽有
   - title: 关联
     icon: 🔗
-    details: 知识点关联，更易学习和理解
+    details: 以问答的形式对知识点关联，更易学习和理解
   - title: 体系
     icon: ✨
     details: 逐渐形成知识体系，更易查漏补缺
