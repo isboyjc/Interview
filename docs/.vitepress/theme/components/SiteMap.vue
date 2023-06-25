@@ -5,13 +5,10 @@ import { useData } from 'vitepress'
 import sidebarCatalogTree from "/interview_dir.json"
 import navbarCatalogTree from "/interview_nav.json"
 
-let coreData = navbarCatalogTree.map((v) => {
-  if(!v?.items){
-    return sidebarCatalogTree.find(j => j.key === v.key)
-  }
-
-  return v
-}).reverse()
+let coreData = [
+  ...navbarCatalogTree.find(v => v.key === 'interview/frontend')?.items,
+  ...navbarCatalogTree.find(v => v.key === 'interview/base')?.items
+]
 
 
 const data = useData()
