@@ -55,8 +55,6 @@ features:
     details: 共同纠错、讨论、输出！
 ---
 
-<script setup>
-import Home from '@theme/components/Home.vue'
-</script>
+<script setup></script>
 
-<Home />
+<HomeContent />

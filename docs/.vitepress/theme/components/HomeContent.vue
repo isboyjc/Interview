@@ -1,6 +1,4 @@
 <script setup>
-import SiteMap from './SiteMap.vue'
-import Random from './Random.vue'
 </script>
 
 <template>
@@ -9,6 +7,7 @@ import Random from './Random.vue'
   <!-- <Random />
   <div class="home"></div> -->
 
+  <!-- <DataPanel /> -->
 
   <SiteMap />
 </template>

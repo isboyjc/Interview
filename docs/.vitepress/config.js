@@ -1,20 +1,37 @@
 /*
- * @LastEditTime: 2023-06-25 22:40:40
+ * @LastEditTime: 2023-06-26 06:02:01
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
  * @LastEditors: isboyjc
  */
-import { defineConfig, defineConfigWithTheme } from 'vitepress'
-import { withMermaid } from "vitepress-plugin-mermaid";
-
 import path from 'path'
 import { fileURLToPath } from 'url';
 
+import { defineConfig, defineConfigWithTheme } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid";
+
+// vite插件
+// 原子CSS UnoCSS
+import UnoCSS from "unocss/vite";
+
+// 组件自动引入
+import Components from 'unplugin-vue-components/vite'
+
+// Iconify 解析插件
+import Icons from 'unplugin-icons/vite'
+// Iconify 自动引入解析器
+import IconsResolver from 'unplugin-icons/resolver'
+// icon 加载 loader
+import { FileSystemIconLoader } from 'unplugin-icons/loaders'
+
+
 import {catalogGeneration, getKeyForCatalogTree, getCatalogDepthLast} from "./plugins/catalogGeneration"
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import socialLinks from "./link"
+import {me, title, logo, site, description, ico, appleIcon, github, keywords} from "./meta"
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const resolve = (dir) => dir ? path.resolve(__dirname, '../', dir) : __dirname
 
 const {
@@ -221,130 +238,129 @@ const sidebar = {
 }
 
 export default withMermaid(defineConfig({
-  lang: 'zh-CN',
-  title: '不正经的前端 | 面试',
-  description: '这是一份开放的面试题库',
-  head: [
-    ['link', { rel: 'icon', href: 'https://qiniu.isboyjc.com/picgo/202302150128528.ico', type: 'image/ico' }],
-    ['script', { 
-      async: true, 
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-EHYCMJEYM4' 
-    }],
-    ['script', {},
-      `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-EHYCMJEYM4');
-      `
-    ]
-    // ['link', { rel: 'alternate icon', href: 'https://cdn.jsdelivr.net/gh/isboyjc/static/woniu.png', type: 'image/png', sizes: '16x16' }],
-  ],
-  // 清洁路由 - 删除.html后缀，需服务器支持
-  // cleanUrls: true,
-  // 路由重写
-  rewrites: {
-    // 'packages/:pkg/src/(.*)': ':pkg/index.md'
+  // base
+  title,
+  description,
+  lastUpdated: true,
+  useWebFonts: false,
+  locales: {
+    root: { label: '简体中文', lang: 'zh-CN' },
   },
+  markdown: {
+    lineNumbers: true,
+  },
+  // rewrites: {
+  //   'packages/:pkg/src/(.*)': ':pkg/index.md'
+  // },
+  
+  head: [
+    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
+    ['meta', { name: 'keywords', content: keywords }],
+    ['meta', { name: 'author', content: me.name }],
+    ['meta', { property: 'og:type', content: 'article' }],
+    ['meta', { name: 'application-name', content: title }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: title }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
 
+    ['link', { rel: 'shortcut icon', href: ico }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: ico }],
+    // ['link', { rel: 'mask-icon', href: '.svg', color: '#06f' }],
+    // ['meta', { name: 'theme-color', content: '#06f' }],
+
+    ['link', { rel: 'apple-touch-icon', sizes: '120x120', href: appleIcon }],
+
+    // webfont
+    ['link', { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }],
+    ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.gstatic.com' }],
+
+    // og
+    ['meta', { property: 'og:description', content: description }],
+    ['meta', { property: 'og:url', content: site }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+
+    // umami analytics：https://umami.is/
+    ['script', { 'async': '', 'defer': '', 'data-website-id': `${process.env.UMAMI_WEBSITE_ID || ''}`, 'src': `${process.env.UMAMI_ENDPOINT || ''}` }],
+  ],
+
+  // 主题
   themeConfig: {
-    outline: [2, 6],
+    outline: 'deep',
     outlineTitle: '快看这页儿写了啥...',
-    returnToTopLabel: '',
-    
-    me: {
-      logo: "/logo.jpg",
-      gongzhonghao: "/gongzhonghao.jpeg"
-    },
-    
-    // logo: 'https://qiniu.isboyjc.com/picgo/202303141702350.png',
-    logo: '/logo.jpg',
-
-    nav,
-
-    sidebar,
-
-    socialLinks: [
-      // { icon: 'discord', link: 'https://discord.gg/gtTAKTYGaN' },
-      {
-        icon: {
-          svg: `<svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 496 512"><path fill="" d="M248 8C111 8 0 119 0 256s111 248 248 248s248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7l-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1l114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4l-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>`
-        }, 
-        link: "https://t.me/+dcksy40MdTM4OWFl"
-      },
-      // { icon: 'twitter', link: 'https://twitter.com/isboyjc' },
-      { 
-        icon: {
-          svg: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><path fill="" d="M32 0C14 0 0 14 0 32c0 21 19 30 22 30c2 0 2-1 2-2v-5c-7 2-10-2-11-5c0 0 0-1-2-3c-1-1-5-3-1-3c3 0 5 4 5 4c3 4 7 3 9 2c0-2 2-4 2-4c-8-1-14-4-14-15c0-4 1-7 3-9c0 0-2-4 0-9c0 0 5 0 9 4c3-2 13-2 16 0c4-4 9-4 9-4c2 7 0 9 0 9c2 2 3 5 3 9c0 11-7 14-14 15c1 1 2 3 2 6v8c0 1 0 2 2 2c3 0 22-9 22-30C64 14 50 0 32 0Z"/></svg>`
-        }, 
-        link: 'https://github.com/isboyjc/Interview' 
-      },
-    ],
-
+    returnToTopLabel: '返回顶部',
+    darkModeSwitchLabel: '模式',
+    sidebarMenuLabel: '归档',
     lastUpdatedText:"更新时间",
-
+    docFooter: {
+      prev: '上一页',
+      next: '下一页',
+    },
     editLink: {
-      pattern: 'https://github.com/isboyjc/Interview/tree/main/docs/:path',
+      pattern: `${github}/tree/main/docs/:path`,
       text: '编辑此页面'
     },
+    
+    me,
+
+    logo,
+    
+    nav,
+    sidebar,
+    socialLinks,
 
     footer: {
-      message: '不正经的前端 | 面试',
-      copyright: `Copyright © 2019-${new Date().getFullYear()} isboyjc`
+      message: `浏览量(PV)&nbsp;<span id="busuanzi_value_site_pv" style="font-weight: bold;"></span>&nbsp;次&nbsp;&nbsp;·&nbsp;&nbsp;独立访客(UV)&nbsp;<span id="busuanzi_value_site_uv" style="font-weight: bold;"></span>&nbsp;人次<br />${title} · 欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a>`,
+      copyright: `Copyright © 2019-${new Date().getFullYear()} | <a target="_blank" style="color: var(--vp-c-brand)" href="${github}/blob/main/LICENSE">MIT License</a> | <a target="_blank" style="color: var(--vp-c-brand)" href="${me.github}">${me.name}</a>`
     },
 
-    search: {
-      provider: 'algolia',
-      options: {
-        indexName: 'interview-isboyjc',
-        appId: '893IJYY0YX',
-        apiKey: 'dd7d8c15cd3834c4adba57c9adb4324b',
-        locales: {
-          zh: {
-            placeholder: '搜索文档',
-            translations: {
-              button: {
-                buttonText: '搜索文档',
-                buttonAriaLabel: '搜索文档'
-              },
-              modal: {
-                searchBox: {
-                  resetButtonTitle: '清除查询条件',
-                  resetButtonAriaLabel: '清除查询条件',
-                  cancelButtonText: '取消',
-                  cancelButtonAriaLabel: '取消'
-                },
-                startScreen: {
-                  recentSearchesTitle: '搜索历史',
-                  noRecentSearchesText: '没有搜索历史',
-                  saveRecentSearchButtonTitle: '保存至搜索历史',
-                  removeRecentSearchButtonTitle: '从搜索历史中移除',
-                  favoriteSearchesTitle: '收藏',
-                  removeFavoriteSearchButtonTitle: '从收藏中移除'
-                },
-                errorScreen: {
-                  titleText: '无法获取结果',
-                  helpText: '你可能需要检查你的网络连接'
-                },
-                footer: {
-                  selectText: '选择',
-                  navigateText: '切换',
-                  closeText: '关闭',
-                  searchByText: '搜索提供者'
-                },
-                noResultsScreen: {
-                  noResultsText: '无法找到相关结果',
-                  suggestedQueryText: '你可以尝试查询',
-                  reportMissingResultsText: '你认为该查询应该有结果？',
-                  reportMissingResultsLinkText: '点击反馈'
-                }
-              }
-            }
+    algolia: {
+      indexName: 'interview-isboyjc',
+      appId: '893IJYY0YX',
+      apiKey: 'dd7d8c15cd3834c4adba57c9adb4324b',
+      searchParameters:{
+        facetFilters: ["lang:zh-CN", "version:v3"]
+      },
+      placeholder: '请输入关键词',
+      translations: {
+        button: {
+          buttonText: '搜索文档',
+          buttonAriaLabel: '搜索文档'
+        },
+        modal: {
+          searchBox: {
+            resetButtonTitle: '清除查询条件',
+            resetButtonAriaLabel: '清除查询条件',
+            cancelButtonText: '取消',
+            cancelButtonAriaLabel: '取消'
+          },
+          startScreen: {
+            recentSearchesTitle: '搜索历史',
+            noRecentSearchesText: '没有搜索历史',
+            saveRecentSearchButtonTitle: '保存至搜索历史',
+            removeRecentSearchButtonTitle: '从搜索历史中移除',
+            favoriteSearchesTitle: '收藏',
+            removeFavoriteSearchButtonTitle: '从收藏中移除'
+          },
+          errorScreen: {
+            titleText: '无法获取结果',
+            helpText: '你可能需要检查你的网络连接'
+          },
+          footer: {
+            selectText: '选择',
+            navigateText: '切换',
+            closeText: '关闭',
+            searchByText: '搜索提供者'
+          },
+          noResultsScreen: {
+            noResultsText: '无法找到相关结果',
+            suggestedQueryText: '你可以尝试查询',
+            reportMissingResultsText: '你认为该查询应该有结果？',
+            reportMissingResultsLinkText: '点击反馈'
           }
         }
       }
-    }
+    },
 
     // search: {
     //   provider: 'local',
@@ -371,18 +387,44 @@ export default withMermaid(defineConfig({
     // }
   },
 
-  markdown:{
-    config(md){
-      // md.use(taskLists)
-    } 
+  // vite配置
+  vite: {
+    plugins: [
+      // 自定义插件
+
+      // 插件包
+      Components({
+        // dirs 指定自动引入组件所在目录位置
+        dirs: [resolve('.vitepress/theme/components')],
+        include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+        resolvers: [
+          IconsResolver({
+            prefix: 'icon',
+            // 默认 iconify 集合别名
+            // alias: {
+            //   vsci: 'vscode-icons'
+            // },
+            customCollections: ['custom']
+          })
+        ]
+      }),
+      Icons({
+        compiler: 'vue3',
+        customCollections: {
+          // custom 图标集, 给svg文件设置fill="currentColor"属性，使图标的颜色具有适应性
+          custom: FileSystemIconLoader('public/svg/custom', svg => svg.replace(/^<svg /, '<svg fill="currentColor" '))
+        },
+        autoInstall: true
+      }),
+      UnoCSS({
+        // 详见 unocss.config.js
+      })
+    ],
   },
 
-
-  // mermaid: {
-  //   // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
-  // },
-
-  vite: {
-    plugins: [],
+  // 构建完成钩子
+  async buildEnd(siteConfig) {
+    // console.log(siteConfig)
+    // TODO RSS订阅
   },
 }))

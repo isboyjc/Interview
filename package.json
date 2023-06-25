@@ -1,8 +1,18 @@
 {
   "name": "interview",
-  "version": "1.0.0",
-  "description": "isboyjc blog",
-  "main": "index.js",
+  "version": "0.0.1",
+  "private": true,
+  "description": "这是一份开放的面试题库",
+  "author": "Isboyjc",
+  "packageManager": "pnpm@6.18.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isboyjc/Interview"
+  },
+  "bugs": {
+    "url": "https://github.com/isboyjc/Interview/issues"
+  },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -12,21 +22,45 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "不正经的前端 | 面试",
+    "不正经的前端",
+    "面试",
     "isboyjc",
-    "blog"
+    "前端面试",
+    "interview",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "网络",
+    "计算机网络",
+    "Vue",
+    "React",
+    "浏览器",
+    "GitHub",
+    "Webpack",
+    "Vite",
+    "工程化",
+    "低代码",
+    "简历",
+    "自我介绍"
   ],
-  "author": "isboyjc",
-  "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.22.5",
     "@babel/core": "^7.22.5",
     "@babel/node": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@mermaid-js/mermaid-mindmap": "9.3.0",
+    "@unocss/transformer-directives": "^0.53.3",
+    "@unocss/transformer-variant-group": "^0.53.3",
+    "busuanzi.pure.js": "^1.0.3",
     "chalk": "4.1.2",
     "child_process": "^1.0.2",
+    "dayjs": "^1.11.8",
     "enquirer": "^2.3.6",
     "mermaid": "9.1.7",
+    "unocss": "^0.53.3",
+    "unplugin-icons": "^0.16.3",
+    "unplugin-vue-components": "^0.25.1",
     "vitepress": "^1.0.0-beta.2",
     "vitepress-plugin-mermaid": "^2.0.8",
     "vue": "^3.2.47"
