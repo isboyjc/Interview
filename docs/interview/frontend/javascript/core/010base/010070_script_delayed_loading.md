@@ -32,7 +32,7 @@
 
 [defer 和 async](../070asynchronous/060110_defer_async.md)
 
-[setTimeout、setInterval、requestAnimationFrame 各有什么特点](../110browser/110010_settimeout_setinterval_requestanimationframe.md)
+[setTimeout、setInterval、requestAnimationFrame 各有什么特点](../110browser/110070_settimeout_setinterval_requestanimationframe.md)
 
-[window.onload 和 document.onDOMContentLoaded 有什么区别](../110browser/110100_onload_ondomcontentloaded.md)
+[window.onload 和 document.onDOMContentLoaded 有什么区别](../110browser/110060_onload_ondomcontentloaded.md)
 
