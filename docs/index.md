@@ -33,7 +33,7 @@ hero:
       link: /interview/frontend/vue/010base/010010_vue
     - theme: alt
       text: 网络
-      link: /interview/base/network/010base/010010_osi
+      link: /interview/base/network/010base/010010_osi_model
 features:
   - title: 安全
     icon: 🌟

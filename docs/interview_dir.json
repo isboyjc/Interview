@@ -1,16 +1,16 @@
 [
   {
-    "text": "基础 · 类 · 25",
+    "text": "基础 · 类 · 125",
     "itemNums": 1,
-    "itemDepthNums": 25,
+    "itemDepthNums": 125,
     "collapsed": true,
     "collapsible": true,
     "key": "interview/base",
     "items": [
       {
-        "text": "网络 · 25",
+        "text": "网络 · 125",
         "itemNums": 7,
-        "itemDepthNums": 25,
+        "itemDepthNums": 125,
         "collapsed": true,
         "collapsible": true,
         "key": "interview/base/network",
@@ -25,43 +25,43 @@
             "items": [
               {
                 "text": "介绍下 OSI 七层模型，每一层的职责？",
-                "key": "/interview/base/network/010base/010010_osi",
-                "link": "/interview/base/network/010base/010010_osi"
+                "key": "/interview/base/network/010base/010010_osi_model",
+                "link": "/interview/base/network/010base/010010_osi_model"
               },
               {
                 "text": "讲一下 TCP/IP 四、五层模型，每一层的职责？",
-                "key": "/interview/base/network/010base/010020",
-                "link": "/interview/base/network/010base/010020"
+                "key": "/interview/base/network/010base/010020_tcpip_model",
+                "link": "/interview/base/network/010base/010020_tcpip_model"
               },
               {
                 "text": "TCP/IP 四、五层，OSI 七层模型有什么区别？",
-                "key": "/interview/base/network/010base/010030",
-                "link": "/interview/base/network/010base/010030"
+                "key": "/interview/base/network/010base/010030_osi_model_vs_tcpip_model",
+                "link": "/interview/base/network/010base/010030_osi_model_vs_tcpip_model"
               },
               {
                 "text": "URL 有哪些组成部分",
-                "key": "/interview/base/network/010base/010040",
-                "link": "/interview/base/network/010base/010040"
+                "key": "/interview/base/network/010base/010040_url_constituent_part",
+                "link": "/interview/base/network/010base/010040_url_constituent_part"
               },
               {
                 "text": "URI 和 URL之间的区别",
-                "key": "/interview/base/network/010base/010050",
-                "link": "/interview/base/network/010base/010050"
+                "key": "/interview/base/network/010base/010050_uri_url",
+                "link": "/interview/base/network/010base/010050_uri_url"
               },
               {
                 "text": "IP 地址和 MAC 地址有什么区别？各自用处？",
-                "key": "/interview/base/network/010base/010060",
-                "link": "/interview/base/network/010base/010060"
+                "key": "/interview/base/network/010base/010060_ip_vs_mac",
+                "link": "/interview/base/network/010base/010060_ip_vs_mac"
               },
               {
                 "text": "IP 地址有哪些分类",
-                "key": "/interview/base/network/010base/010070",
-                "link": "/interview/base/network/010base/010070"
+                "key": "/interview/base/network/010base/010070_ip_classification",
+                "link": "/interview/base/network/010base/010070_ip_classification"
               },
               {
                 "text": "如何理解 CDN？说说实现原理？",
-                "key": "/interview/base/network/010base/010080",
-                "link": "/interview/base/network/010base/010080"
+                "key": "/interview/base/network/010base/010080_cdn_and_cdn_source",
+                "link": "/interview/base/network/010base/010080_cdn_and_cdn_source"
               }
             ]
           },
@@ -75,138 +75,638 @@
             "items": [
               {
                 "text": "DNS 是什么？",
-                "key": "/interview/base/network/020dns/020010",
-                "link": "/interview/base/network/020dns/020010"
+                "key": "/interview/base/network/020dns/020010_dns",
+                "link": "/interview/base/network/020dns/020010_dns"
               },
               {
                 "text": "为什么需要 DNS？",
-                "key": "/interview/base/network/020dns/020020",
-                "link": "/interview/base/network/020dns/020020"
+                "key": "/interview/base/network/020dns/020020_why_dns_is_required",
+                "link": "/interview/base/network/020dns/020020_why_dns_is_required"
               },
               {
                 "text": "DNS 记录和报文",
-                "key": "/interview/base/network/020dns/020030",
-                "link": "/interview/base/network/020dns/020030"
+                "key": "/interview/base/network/020dns/020030_dns_records_and_messages",
+                "link": "/interview/base/network/020dns/020030_dns_records_and_messages"
               },
               {
                 "text": "介绍下 DNS 获取流程",
-                "key": "/interview/base/network/020dns/020040",
-                "link": "/interview/base/network/020dns/020040"
+                "key": "/interview/base/network/020dns/020040_dns_acquisition_process",
+                "link": "/interview/base/network/020dns/020040_dns_acquisition_process"
               },
               {
-                "text": "介绍下 DNS 完整的解析过程?",
-                "key": "/interview/base/network/020dns/020050",
-                "link": "/interview/base/network/020dns/020050"
+                "text": "介绍下 DNS 完整的解析流程?",
+                "key": "/interview/base/network/020dns/020050_dns_analysis_process",
+                "link": "/interview/base/network/020dns/020050_dns_analysis_process"
               },
               {
                 "text": "介绍下 DNS 的迭代查询与递归查询",
-                "key": "/interview/base/network/020dns/020060",
-                "link": "/interview/base/network/020dns/020060"
+                "key": "/interview/base/network/020dns/020060_dns_iterative_and_recursive_queries",
+                "link": "/interview/base/network/020dns/020060_dns_iterative_and_recursive_queries"
               },
               {
                 "text": "什么是域名缓存？",
-                "key": "/interview/base/network/020dns/020070",
-                "link": "/interview/base/network/020dns/020070"
+                "key": "/interview/base/network/020dns/020070_domain_name_cache",
+                "link": "/interview/base/network/020dns/020070_domain_name_cache"
               },
               {
                 "text": "DNS解析可优化吗，为什么优化又怎样优化？",
-                "key": "/interview/base/network/020dns/020080",
-                "link": "/interview/base/network/020dns/020080"
+                "key": "/interview/base/network/020dns/020080_dns_optimization",
+                "link": "/interview/base/network/020dns/020080_dns_optimization"
               },
               {
                 "text": "DNS 缓存的 TTL 是什么",
-                "key": "/interview/base/network/020dns/020090",
-                "link": "/interview/base/network/020dns/020090"
+                "key": "/interview/base/network/020dns/020090_dns_ttl",
+                "link": "/interview/base/network/020dns/020090_dns_ttl"
               },
               {
                 "text": "DNS 负载均衡",
-                "key": "/interview/base/network/020dns/020100",
-                "link": "/interview/base/network/020dns/020100"
+                "key": "/interview/base/network/020dns/020100_dns_load_balancing",
+                "link": "/interview/base/network/020dns/020100_dns_load_balancing"
               },
               {
                 "text": "介绍下 DNS 劫持实现思路？",
-                "key": "/interview/base/network/020dns/020110",
-                "link": "/interview/base/network/020dns/020110"
+                "key": "/interview/base/network/020dns/020110_dns_hijacking",
+                "link": "/interview/base/network/020dns/020110_dns_hijacking"
               },
               {
                 "text": "介绍下 DNS 为何同时使用 TCP 和 UDP 协议？",
-                "key": "/interview/base/network/020dns/020120",
-                "link": "/interview/base/network/020dns/020120"
+                "key": "/interview/base/network/020dns/020120_dns_use_tcp_and_udp",
+                "link": "/interview/base/network/020dns/020120_dns_use_tcp_and_udp"
               }
             ]
           },
           {
-            "text": "HTTP / HTTPS · 1",
-            "itemNums": 1,
-            "itemDepthNums": 1,
+            "text": "HTTP / HTTPS · 50",
+            "itemNums": 50,
+            "itemDepthNums": 50,
             "collapsed": true,
             "collapsible": true,
-            "key": "interview/base/network/030http&https",
+            "key": "interview/base/network/030httphttps",
             "items": [
               {
                 "text": "HTTP1.0/1.1/2.0 的区别?",
-                "key": "/interview/base/network/030http&https/030010",
-                "link": "/interview/base/network/030http&https/030010"
+                "key": "/interview/base/network/030httphttps/030010_http1_http1.1_http2",
+                "link": "/interview/base/network/030httphttps/030010_http1_http1.1_http2"
+              },
+              {
+                "text": "为什么 HTTP1.1 不能实现多路复用",
+                "key": "/interview/base/network/030httphttps/030020_http1.1_multiplexing",
+                "link": "/interview/base/network/030httphttps/030020_http1.1_multiplexing"
+              },
+              {
+                "text": "简单讲解一下 HTTP2 的多路复用",
+                "key": "/interview/base/network/030httphttps/030030_http2_multiplexing",
+                "link": "/interview/base/network/030httphttps/030030_http2_multiplexing"
+              },
+              {
+                "text": "HTTP1.1 是如何复用 tcp 连接的？",
+                "key": "/interview/base/network/030httphttps/030040_http1.1_tcp_multiplexing",
+                "link": "/interview/base/network/030httphttps/030040_http1.1_tcp_multiplexing"
+              },
+              {
+                "text": "介绍下 HTTP1.0/1.1/2.0 的队头阻塞问题",
+                "key": "/interview/base/network/030httphttps/030050_head_of_line_blocking",
+                "link": "/interview/base/network/030httphttps/030050_head_of_line_blocking"
+              },
+              {
+                "text": "介绍下 HTTP 3.0，出现原因",
+                "key": "/interview/base/network/030httphttps/030060_http3",
+                "link": "/interview/base/network/030httphttps/030060_http3"
+              },
+              {
+                "text": "什么是 HTTP 3.0 中的底层支持协议 QUIC",
+                "key": "/interview/base/network/030httphttps/030070_http3_quic",
+                "link": "/interview/base/network/030httphttps/030070_http3_quic"
+              },
+              {
+                "text": "HTTP2 的头部压缩算法是怎样的？",
+                "key": "/interview/base/network/030httphttps/030080_http2_head_compression_algorithm",
+                "link": "/interview/base/network/030httphttps/030080_http2_head_compression_algorithm"
+              },
+              {
+                "text": "HTTP 请求报文的是什么样？",
+                "key": "/interview/base/network/030httphttps/030090_htttp_request_message",
+                "link": "/interview/base/network/030httphttps/030090_htttp_request_message"
+              },
+              {
+                "text": "HTTP 常见的请求头有哪些? 作用？",
+                "key": "/interview/base/network/030httphttps/030100_http_request_header",
+                "link": "/interview/base/network/030httphttps/030100_http_request_header"
+              },
+              {
+                "text": "与缓存相关的 HTTP 请求头有哪些",
+                "key": "/interview/base/network/030httphttps/030110_http_cache_request_header",
+                "link": "/interview/base/network/030httphttps/030110_http_cache_request_header"
+              },
+              {
+                "text": "HTTP 响应报文的是什么样？",
+                "key": "/interview/base/network/030httphttps/030120_http_response_message",
+                "link": "/interview/base/network/030httphttps/030120_http_response_message"
+              },
+              {
+                "text": "HTTP 请求的完整工作过程",
+                "key": "/interview/base/network/030httphttps/030130_http_request_working_process",
+                "link": "/interview/base/network/030httphttps/030130_http_request_working_process"
+              },
+              {
+                "text": "HTTP 协议的性能怎么样",
+                "key": "/interview/base/network/030httphttps/030140_performance_of_http_protocol",
+                "link": "/interview/base/network/030httphttps/030140_performance_of_http_protocol"
+              },
+              {
+                "text": "HTTP 协议的优点和缺点",
+                "key": "/interview/base/network/030httphttps/030150_advantages_and_disadvantages_of_http_protocol",
+                "link": "/interview/base/network/030httphttps/030150_advantages_and_disadvantages_of_http_protocol"
+              },
+              {
+                "text": "HTTP 都有哪些请求方法？",
+                "key": "/interview/base/network/030httphttps/030160_http_request_method",
+                "link": "/interview/base/network/030httphttps/030160_http_request_method"
+              },
+              {
+                "text": "常见的 HTTP 请求头和响应头",
+                "key": "/interview/base/network/030httphttps/030170_http_request_and_response_headers",
+                "link": "/interview/base/network/030httphttps/030170_http_request_and_response_headers"
+              },
+              {
+                "text": "GET 和 POST 的区别？应用场景？",
+                "key": "/interview/base/network/030httphttps/030180_get_post",
+                "link": "/interview/base/network/030httphttps/030180_get_post"
+              },
+              {
+                "text": "POST 和 PUT 请求的区别",
+                "key": "/interview/base/network/030httphttps/030190_put_post",
+                "link": "/interview/base/network/030httphttps/030190_put_post"
+              },
+              {
+                "text": "POST 方法真的不能被缓存吗",
+                "key": "/interview/base/network/030httphttps/030200_post_cache",
+                "link": "/interview/base/network/030httphttps/030200_post_cache"
+              },
+              {
+                "text": "post 请求什么时候用 form data 什么时候用 request payload",
+                "key": "/interview/base/network/030httphttps/030210_post_formdata_or_request_payload",
+                "link": "/interview/base/network/030httphttps/030210_post_formdata_or_request_payload"
+              },
+              {
+                "text": "GET 请求中 URL 编码的意义",
+                "key": "/interview/base/network/030httphttps/030220_get_url_coding",
+                "link": "/interview/base/network/030httphttps/030220_get_url_coding"
+              },
+              {
+                "text": "GET 方法 URL 长度限制的原因",
+                "key": "/interview/base/network/030httphttps/030230_get_url_length_limit",
+                "link": "/interview/base/network/030httphttps/030230_get_url_length_limit"
+              },
+              {
+                "text": "介绍 OPTIONS 请求方法，使用场景？",
+                "key": "/interview/base/network/030httphttps/030240_options",
+                "link": "/interview/base/network/030httphttps/030240_options"
+              },
+              {
+                "text": "什么是简单请求和非简单请求？",
+                "key": "/interview/base/network/030httphttps/030250_simple_and_non_simple_requests",
+                "link": "/interview/base/network/030httphttps/030250_simple_and_non_simple_requests"
+              },
+              {
+                "text": "HTTP 请求在交互过程中如果数据传送完了，还不想断开连接怎么办，怎么维持？",
+                "key": "/interview/base/network/030httphttps/030260_http_do_not_want_to_disconnect",
+                "link": "/interview/base/network/030httphttps/030260_http_do_not_want_to_disconnect"
+              },
+              {
+                "text": "HTTP 如何实现长链接？在什么时候会超时？",
+                "key": "/interview/base/network/030httphttps/030270_http_long_link",
+                "link": "/interview/base/network/030httphttps/030270_http_long_link"
+              },
+              {
+                "text": "HTTP 长连接和短连接使用场景分别是什么",
+                "key": "/interview/base/network/030httphttps/030280_http_long_and_short_connections",
+                "link": "/interview/base/network/030httphttps/030280_http_long_and_short_connections"
+              },
+              {
+                "text": "什么是 Cookie、Session，有什么区别？",
+                "key": "/interview/base/network/030httphttps/030290_cookie_session",
+                "link": "/interview/base/network/030httphttps/030290_cookie_session"
+              },
+              {
+                "text": "Cookie、Session 对于 HTTP 有什么用？",
+                "key": "/interview/base/network/030httphttps/030300_what_are_cookies_and_sessions_used_for_http",
+                "link": "/interview/base/network/030httphttps/030300_what_are_cookies_and_sessions_used_for_http"
+              },
+              {
+                "text": "cookie 和 token 都存放在 header 中，为什么不会劫持 token？",
+                "key": "/interview/base/network/030httphttps/030310_hijacking_token_and_cookie",
+                "link": "/interview/base/network/030httphttps/030310_hijacking_token_and_cookie"
+              },
+              {
+                "text": "session 怎么消除",
+                "key": "/interview/base/network/030httphttps/030320_how_to_eliminate_a_session",
+                "link": "/interview/base/network/030httphttps/030320_how_to_eliminate_a_session"
+              },
+              {
+                "text": "请求中 forward 和 redirect 的区别？",
+                "key": "/interview/base/network/030httphttps/030330_forward_redirect",
+                "link": "/interview/base/network/030httphttps/030330_forward_redirect"
+              },
+              {
+                "text": "谈谈对 Keep-Alive 和非 Keep-Alive 的理解？",
+                "key": "/interview/base/network/030httphttps/030340_http_keepalive",
+                "link": "/interview/base/network/030httphttps/030340_http_keepalive"
+              },
+              {
+                "text": "页面有多张图片，HTTP 是怎样的加载表现？",
+                "key": "/interview/base/network/030httphttps/030350_http_loading_images",
+                "link": "/interview/base/network/030httphttps/030350_http_loading_images"
+              },
+              {
+                "text": "HTTP 常见的状态码有哪些，使用场景？",
+                "key": "/interview/base/network/030httphttps/030360_http_status_code",
+                "link": "/interview/base/network/030httphttps/030360_http_status_code"
+              },
+              {
+                "text": "HTTP 状态吗 301 和 302 区别，有哪些用途？",
+                "key": "/interview/base/network/030httphttps/030370_http_status_code_301_302",
+                "link": "/interview/base/network/030httphttps/030370_http_status_code_301_302"
+              },
+              {
+                "text": "HTTP 状态码 304 是什么，网页中是多好还是少好？",
+                "key": "/interview/base/network/030httphttps/030380__http_status_code_304",
+                "link": "/interview/base/network/030httphttps/030380__http_status_code_304"
+              },
+              {
+                "text": "同样是重定向，308，307，303，302，301 的区别？",
+                "key": "/interview/base/network/030httphttps/030390__http_status_code_301_302_303_307_308",
+                "link": "/interview/base/network/030httphttps/030390__http_status_code_301_302_303_307_308"
+              },
+              {
+                "text": "什么是 HTTPS ",
+                "key": "/interview/base/network/030httphttps/030400_https",
+                "link": "/interview/base/network/030httphttps/030400_https"
+              },
+              {
+                "text": "HTTP 和 HTTPS 的区别",
+                "key": "/interview/base/network/030httphttps/030410_http_https",
+                "link": "/interview/base/network/030httphttps/030410_http_https"
+              },
+              {
+                "text": "什么是 TLS/SSL，工作原理？",
+                "key": "/interview/base/network/030httphttps/030420_tls_ssl",
+                "link": "/interview/base/network/030httphttps/030420_tls_ssl"
+              },
+              {
+                "text": "对称加密与非对称加密的区别",
+                "key": "/interview/base/network/030httphttps/030430_symmetric_encryption_and_asymmetric_encryption",
+                "link": "/interview/base/network/030httphttps/030430_symmetric_encryption_and_asymmetric_encryption"
+              },
+              {
+                "text": "什么是数字签名？",
+                "key": "/interview/base/network/030httphttps/030440_digital_signature",
+                "link": "/interview/base/network/030httphttps/030440_digital_signature"
+              },
+              {
+                "text": "什么是数字证书？",
+                "key": "/interview/base/network/030httphttps/030450_digital_certificate",
+                "link": "/interview/base/network/030httphttps/030450_digital_certificate"
+              },
+              {
+                "text": "为什么需要 CA 机构对证书签名",
+                "key": "/interview/base/network/030httphttps/030460_ca_signature",
+                "link": "/interview/base/network/030httphttps/030460_ca_signature"
+              },
+              {
+                "text": "为什么说 HTTPS 比 HTTP 安全? HTTPS 是如何保证安全的",
+                "key": "/interview/base/network/030httphttps/030470_how_to_ensure_safety_for_https",
+                "link": "/interview/base/network/030httphttps/030470_how_to_ensure_safety_for_https"
+              },
+              {
+                "text": "介绍 HTTPS 握手过程",
+                "key": "/interview/base/network/030httphttps/030480_https_handshake_process",
+                "link": "/interview/base/network/030httphttps/030480_https_handshake_process"
+              },
+              {
+                "text": "HTTPS 请求的完整工作过程？",
+                "key": "/interview/base/network/030httphttps/030490_https_request_working_process",
+                "link": "/interview/base/network/030httphttps/030490_https_request_working_process"
+              },
+              {
+                "text": "HTTPS 的优缺点？",
+                "key": "/interview/base/network/030httphttps/030500_https_excellent_vacancy",
+                "link": "/interview/base/network/030httphttps/030500_https_excellent_vacancy"
               }
             ]
           },
           {
-            "text": "TCP / UDP · 1",
-            "itemNums": 1,
-            "itemDepthNums": 1,
+            "text": "TCP / UDP · 30",
+            "itemNums": 30,
+            "itemDepthNums": 30,
             "collapsed": true,
             "collapsible": true,
-            "key": "interview/base/network/040tcp&udp",
+            "key": "interview/base/network/040tcpudp",
             "items": [
               {
                 "text": "TCP、IP、TCP/IP分不清楚？有什么区别",
-                "key": "/interview/base/network/040tcp&udp/040010",
-                "link": "/interview/base/network/040tcp&udp/040010"
+                "key": "/interview/base/network/040tcpudp/040010_tcp_ip_tcpip",
+                "link": "/interview/base/network/040tcpudp/040010_tcp_ip_tcpip"
+              },
+              {
+                "text": "什么是 TCP 协议",
+                "key": "/interview/base/network/040tcpudp/040020_tcp",
+                "link": "/interview/base/network/040tcpudp/040020_tcp"
+              },
+              {
+                "text": "TCP 和 HTTP 的区别定义",
+                "key": "/interview/base/network/040tcpudp/040030_tcp_vs_http",
+                "link": "/interview/base/network/040tcpudp/040030_tcp_vs_http"
+              },
+              {
+                "text": "什么是 UDP 协议",
+                "key": "/interview/base/network/040tcpudp/040040_udp",
+                "link": "/interview/base/network/040tcpudp/040040_udp"
+              },
+              {
+                "text": "如何理解 UDP 和 TCP? 区别? 应用场景?",
+                "key": "/interview/base/network/040tcpudp/040050_tcp_vs_udp",
+                "link": "/interview/base/network/040tcpudp/040050_tcp_vs_udp"
+              },
+              {
+                "text": "什么是 ARP 协议，工作原理？",
+                "key": "/interview/base/network/040tcpudp/040060_arp",
+                "link": "/interview/base/network/040tcpudp/040060_arp"
+              },
+              {
+                "text": "TCP 的主要特点是什么？",
+                "key": "/interview/base/network/040tcpudp/040070_tcp_characteristic",
+                "link": "/interview/base/network/040tcpudp/040070_tcp_characteristic"
+              },
+              {
+                "text": "UDP 的主要特点是什么？",
+                "key": "/interview/base/network/040tcpudp/040080_udp_characteristic",
+                "link": "/interview/base/network/040tcpudp/040080_udp_characteristic"
+              },
+              {
+                "text": "UDP 不可靠？如何实现 UDP 可靠传输？",
+                "key": "/interview/base/network/040tcpudp/040090_how_to_achieve_reliable_udp_transmission",
+                "link": "/interview/base/network/040tcpudp/040090_how_to_achieve_reliable_udp_transmission"
+              },
+              {
+                "text": "介绍 TCP 的重传机制",
+                "key": "/interview/base/network/040tcpudp/040100_tcp_retransmission_mechanism",
+                "link": "/interview/base/network/040tcpudp/040100_tcp_retransmission_mechanism"
+              },
+              {
+                "text": "介绍 TCP 的拥塞控制",
+                "key": "/interview/base/network/040tcpudp/040110_tcp_congestion_control",
+                "link": "/interview/base/network/040tcpudp/040110_tcp_congestion_control"
+              },
+              {
+                "text": "介绍 TCP 的流量控制机制",
+                "key": "/interview/base/network/040tcpudp/040120_tcp_quantity_control",
+                "link": "/interview/base/network/040tcpudp/040120_tcp_quantity_control"
+              },
+              {
+                "text": "什么是 ARQ 协议？",
+                "key": "/interview/base/network/040tcpudp/040130_arq",
+                "link": "/interview/base/network/040tcpudp/040130_arq"
+              },
+              {
+                "text": "什么是停止等待协议？",
+                "key": "/interview/base/network/040tcpudp/040140_stop_waiting_for_protocol",
+                "link": "/interview/base/network/040tcpudp/040140_stop_waiting_for_protocol"
+              },
+              {
+                "text": "什么是滑动窗口协议？",
+                "key": "/interview/base/network/040tcpudp/040150_sliding_window_protocol",
+                "link": "/interview/base/network/040tcpudp/040150_sliding_window_protocol"
+              },
+              {
+                "text": "TCP 的可靠传输机制是如何实现的",
+                "key": "/interview/base/network/040tcpudp/040160_tcp_reliable_transmission_mechanism",
+                "link": "/interview/base/network/040tcpudp/040160_tcp_reliable_transmission_mechanism"
+              },
+              {
+                "text": "介绍下 TCP 的三次握手和四次挥手？",
+                "key": "/interview/base/network/040tcpudp/040170_tcp_three_handshakes_and_four_waves",
+                "link": "/interview/base/network/040tcpudp/040170_tcp_three_handshakes_and_four_waves"
+              },
+              {
+                "text": "TCP 为什么建立连接是三次，关闭连接确是四次？",
+                "key": "/interview/base/network/040tcpudp/040180_why_is_tcp_shaking_hands_three_times_and_waving_hands_four_times",
+                "link": "/interview/base/network/040tcpudp/040180_why_is_tcp_shaking_hands_three_times_and_waving_hands_four_times"
+              },
+              {
+                "text": "TCP 为什么需要三次握手？两次不行？",
+                "key": "/interview/base/network/040tcpudp/040190_why_is_tcp_feasible_for_two_handshakes",
+                "link": "/interview/base/network/040tcpudp/040190_why_is_tcp_feasible_for_two_handshakes"
+              },
+              {
+                "text": "TCP 三次握手过程中可以携带数据吗",
+                "key": "/interview/base/network/040tcpudp/040200_can_tcp_triple_handshake_carry_data",
+                "link": "/interview/base/network/040tcpudp/040200_can_tcp_triple_handshake_carry_data"
+              },
+              {
+                "text": "TCP 为什么需要四次挥手？三次不行？",
+                "key": "/interview/base/network/040tcpudp/040210_is_it_feasible_to_wave_tcp_three_times",
+                "link": "/interview/base/network/040tcpudp/040210_is_it_feasible_to_wave_tcp_three_times"
+              },
+              {
+                "text": "TCP 中为什么四次挥手结束 TIME-WAIT 状态必须等待 2MSL 的时间呢？",
+                "key": "/interview/base/network/040tcpudp/040220_timewait_wait_for_2msl",
+                "link": "/interview/base/network/040tcpudp/040220_timewait_wait_for_2msl"
+              },
+              {
+                "text": "TCP 如果已经建立了连接，但客户端突然故障怎么办？",
+                "key": "/interview/base/network/040tcpudp/040230_tcp_establish_connection_client_failure",
+                "link": "/interview/base/network/040tcpudp/040230_tcp_establish_connection_client_failure"
+              },
+              {
+                "text": "TCP 保活计时器的作用？",
+                "key": "/interview/base/network/040tcpudp/040240_tcp_keep_alive_timer",
+                "link": "/interview/base/network/040tcpudp/040240_tcp_keep_alive_timer"
+              },
+              {
+                "text": "TCP 最大连接数限制",
+                "key": "/interview/base/network/040tcpudp/040250_tcp_maximum_connections_limit",
+                "link": "/interview/base/network/040tcpudp/040250_tcp_maximum_connections_limit"
+              },
+              {
+                "text": "什么是拆包和粘包？怎么解决？",
+                "key": "/interview/base/network/040tcpudp/040260_unpacking_and_gluing",
+                "link": "/interview/base/network/040tcpudp/040260_unpacking_and_gluing"
+              },
+              {
+                "text": "TCP 粘包是怎么产生的？",
+                "key": "/interview/base/network/040tcpudp/040270_how_does_stickiness_occur_for_tcp",
+                "link": "/interview/base/network/040tcpudp/040270_how_does_stickiness_occur_for_tcp"
+              },
+              {
+                "text": "什么是 ICMP，ICMP 有哪些应用？",
+                "key": "/interview/base/network/040tcpudp/040280_icmp",
+                "link": "/interview/base/network/040tcpudp/040280_icmp"
+              },
+              {
+                "text": "什么是洪水攻击（SYN FLOOD）",
+                "key": "/interview/base/network/040tcpudp/040290_syn_flood",
+                "link": "/interview/base/network/040tcpudp/040290_syn_flood"
+              },
+              {
+                "text": "介绍下 TCP 的队头堵塞问题",
+                "key": "/interview/base/network/040tcpudp/040300_tcp_team_leader_blocked",
+                "link": "/interview/base/network/040tcpudp/040300_tcp_team_leader_blocked"
               }
             ]
           },
           {
-            "text": "Socket · 1",
-            "itemNums": 1,
-            "itemDepthNums": 1,
+            "text": "Socket · 7",
+            "itemNums": 7,
+            "itemDepthNums": 7,
             "collapsed": true,
             "collapsible": true,
             "key": "interview/base/network/050socket",
             "items": [
               {
                 "text": "什么是 Socket？",
-                "key": "/interview/base/network/050socket/050010",
-                "link": "/interview/base/network/050socket/050010"
+                "key": "/interview/base/network/050socket/050010_socket",
+                "link": "/interview/base/network/050socket/050010_socket"
+              },
+              {
+                "text": "Socket 和 HTTP 区别？",
+                "key": "/interview/base/network/050socket/050020_socket_vs_http",
+                "link": "/interview/base/network/050socket/050020_socket_vs_http"
+              },
+              {
+                "text": "Socket 和 HTTP 长链接的区别，应用场景？",
+                "key": "/interview/base/network/050socket/050030_socket_vs_http_long_link",
+                "link": "/interview/base/network/050socket/050030_socket_vs_http_long_link"
+              },
+              {
+                "text": "Socket 属于网络的哪一层",
+                "key": "/interview/base/network/050socket/050040_which_layer_of_the_network_does_the_socket_belong_to",
+                "link": "/interview/base/network/050socket/050040_which_layer_of_the_network_does_the_socket_belong_to"
+              },
+              {
+                "text": "Socket 通讯过程",
+                "key": "/interview/base/network/050socket/050050_socket_communication_process",
+                "link": "/interview/base/network/050socket/050050_socket_communication_process"
+              },
+              {
+                "text": "为什么 Socket 需要心跳机制？",
+                "key": "/interview/base/network/050socket/050060_socket_heartbeat_mechanism",
+                "link": "/interview/base/network/050socket/050060_socket_heartbeat_mechanism"
+              },
+              {
+                "text": "分别介绍短轮询、长轮询、SSE 和 Socket，以及区别？",
+                "key": "/interview/base/network/050socket/050070_shortpolling_longpolling_sse_socket",
+                "link": "/interview/base/network/050socket/050070_shortpolling_longpolling_sse_socket"
               }
             ]
           },
           {
-            "text": "网安 · 1",
-            "itemNums": 1,
-            "itemDepthNums": 1,
+            "text": "网安 · 14",
+            "itemNums": 14,
+            "itemDepthNums": 14,
             "collapsed": true,
             "collapsible": true,
             "key": "interview/base/network/060security",
             "items": [
               {
                 "text": "什么是 HTTP 劫持？",
-                "key": "/interview/base/network/060security/060010",
-                "link": "/interview/base/network/060security/060010"
+                "key": "/interview/base/network/060security/060010_what_is_http_hijacking",
+                "link": "/interview/base/network/060security/060010_what_is_http_hijacking"
+              },
+              {
+                "text": "如何劫持 https 的请求，提供思路？",
+                "key": "/interview/base/network/060security/060020_how_to_hijack_https",
+                "link": "/interview/base/network/060security/060020_how_to_hijack_https"
+              },
+              {
+                "text": "什么是 DNS 劫持？",
+                "key": "/interview/base/network/060security/060030_what_is_dns_hijacking",
+                "link": "/interview/base/network/060security/060030_what_is_dns_hijacking"
+              },
+              {
+                "text": "什么是 SQL 注入攻击",
+                "key": "/interview/base/network/060security/060040_what_is_sql_injection_attack",
+                "link": "/interview/base/network/060security/060040_what_is_sql_injection_attack"
+              },
+              {
+                "text": "如何防御 SQL 注入攻击",
+                "key": "/interview/base/network/060security/060050_how_to_defend_against_sql_injection_attacks",
+                "link": "/interview/base/network/060security/060050_how_to_defend_against_sql_injection_attacks"
+              },
+              {
+                "text": "什么是 XSS 攻击？",
+                "key": "/interview/base/network/060security/060060_what_is_an_xss_attack",
+                "link": "/interview/base/network/060security/060060_what_is_an_xss_attack"
+              },
+              {
+                "text": "如何防御 XSS 攻击？",
+                "key": "/interview/base/network/060security/060070_how_to_defend_against_xss_attacks",
+                "link": "/interview/base/network/060security/060070_how_to_defend_against_xss_attacks"
+              },
+              {
+                "text": "什么是 CSRF 攻击？",
+                "key": "/interview/base/network/060security/060080_what_is_a_csrf_attack",
+                "link": "/interview/base/network/060security/060080_what_is_a_csrf_attack"
+              },
+              {
+                "text": "如何防御 CSRF 攻击？",
+                "key": "/interview/base/network/060security/060090_how_to_defend_against_csrf_attacks",
+                "link": "/interview/base/network/060security/060090_how_to_defend_against_csrf_attacks"
+              },
+              {
+                "text": "什么是中间人攻击？",
+                "key": "/interview/base/network/060security/060100_what_is_maninthemiddle_attack",
+                "link": "/interview/base/network/060security/060100_what_is_maninthemiddle_attack"
+              },
+              {
+                "text": "如何防范中间人攻击？",
+                "key": "/interview/base/network/060security/060110_how_to_prevent_maninthemiddle_attack",
+                "link": "/interview/base/network/060security/060110_how_to_prevent_maninthemiddle_attack"
+              },
+              {
+                "text": "网页验证码是干嘛的，是为了解决什么安全问题？",
+                "key": "/interview/base/network/060security/060120_website_verification_code",
+                "link": "/interview/base/network/060security/060120_website_verification_code"
+              },
+              {
+                "text": "有哪些可能引起前端安全的问题?",
+                "key": "/interview/base/network/060security/060130_what_may_cause_frontend_security_issues",
+                "link": "/interview/base/network/060security/060130_what_may_cause_frontend_security_issues"
+              },
+              {
+                "text": "网络劫持有哪几种，如何防范？",
+                "key": "/interview/base/network/060security/060140_what_are_the_types_of_network_hijacking",
+                "link": "/interview/base/network/060security/060140_what_are_the_types_of_network_hijacking"
               }
             ]
           },
           {
-            "text": "其他 · 1",
-            "itemNums": 1,
-            "itemDepthNums": 1,
+            "text": "其他 · 4",
+            "itemNums": 4,
+            "itemDepthNums": 4,
             "collapsed": true,
             "collapsible": true,
             "key": "interview/base/network/070other",
             "items": [
               {
                 "text": "介绍下 JWT 中的 token 如何实现加密",
-                "key": "/interview/base/network/070other/070010",
-                "link": "/interview/base/network/070other/070010"
+                "key": "/interview/base/network/070other/070010_jwt_token_encryption",
+                "link": "/interview/base/network/070other/070010_jwt_token_encryption"
+              },
+              {
+                "text": "介绍下单点登录 SSO",
+                "key": "/interview/base/network/070other/070020_sso",
+                "link": "/interview/base/network/070other/070020_sso"
+              },
+              {
+                "text": "列举常用的网络性能优化方法",
+                "key": "/interview/base/network/070other/070030_network_performance_optimization",
+                "link": "/interview/base/network/070other/070030_network_performance_optimization"
+              },
+              {
+                "text": "地址栏输入 URL 敲下回车后发生了什么?",
+                "key": "/interview/base/network/070other/070040_what_happened_when_entering_the_url",
+                "link": "/interview/base/network/070other/070040_what_happened_when_entering_the_url"
               }
             ]
           }

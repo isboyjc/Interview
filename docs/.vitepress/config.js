@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-25 12:34:06
+ * @LastEditTime: 2023-06-25 22:40:40
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -92,8 +92,8 @@ const {
     'interview/base/network': '网络',
     'interview/base/network/010base': '基础',
     'interview/base/network/020dns': 'DNS',
-    'interview/base/network/030http&https': 'HTTP / HTTPS',
-    'interview/base/network/040tcp&udp': 'TCP / UDP',
+    'interview/base/network/030httphttps': 'HTTP / HTTPS',
+    'interview/base/network/040tcpudp': 'TCP / UDP',
     'interview/base/network/050socket': 'Socket',
     'interview/base/network/060security': '网安',
     'interview/base/network/070other': '其他',
@@ -221,10 +221,24 @@ const sidebar = {
 }
 
 export default withMermaid(defineConfig({
+  lang: 'zh-CN',
   title: '不正经的前端 | 面试',
   description: '这是一份开放的面试题库',
   head: [
     ['link', { rel: 'icon', href: 'https://qiniu.isboyjc.com/picgo/202302150128528.ico', type: 'image/ico' }],
+    ['script', { 
+      async: true, 
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-EHYCMJEYM4' 
+    }],
+    ['script', {},
+      `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EHYCMJEYM4');
+      `
+    ]
     // ['link', { rel: 'alternate icon', href: 'https://cdn.jsdelivr.net/gh/isboyjc/static/woniu.png', type: 'image/png', sizes: '16x16' }],
   ],
   // 清洁路由 - 删除.html后缀，需服务器支持
@@ -277,25 +291,53 @@ export default withMermaid(defineConfig({
 
     footer: {
       message: '不正经的前端 | 面试',
-      copyright: 'Copyright © 2019-present isboyjc'
+      copyright: `Copyright © 2019-${new Date().getFullYear()} isboyjc`
     },
 
     search: {
-      provider: 'local',
+      provider: 'algolia',
       options: {
+        indexName: 'interview-isboyjc',
+        appId: '893IJYY0YX',
+        apiKey: 'dd7d8c15cd3834c4adba57c9adb4324b',
         locales: {
           zh: {
+            placeholder: '搜索文档',
             translations: {
               button: {
                 buttonText: '搜索文档',
                 buttonAriaLabel: '搜索文档'
               },
               modal: {
-                noResultsText: '无法找到相关结果',
-                resetButtonTitle: '清除查询条件',
+                searchBox: {
+                  resetButtonTitle: '清除查询条件',
+                  resetButtonAriaLabel: '清除查询条件',
+                  cancelButtonText: '取消',
+                  cancelButtonAriaLabel: '取消'
+                },
+                startScreen: {
+                  recentSearchesTitle: '搜索历史',
+                  noRecentSearchesText: '没有搜索历史',
+                  saveRecentSearchButtonTitle: '保存至搜索历史',
+                  removeRecentSearchButtonTitle: '从搜索历史中移除',
+                  favoriteSearchesTitle: '收藏',
+                  removeFavoriteSearchButtonTitle: '从收藏中移除'
+                },
+                errorScreen: {
+                  titleText: '无法获取结果',
+                  helpText: '你可能需要检查你的网络连接'
+                },
                 footer: {
                   selectText: '选择',
-                  navigateText: '切换'
+                  navigateText: '切换',
+                  closeText: '关闭',
+                  searchByText: '搜索提供者'
+                },
+                noResultsScreen: {
+                  noResultsText: '无法找到相关结果',
+                  suggestedQueryText: '你可以尝试查询',
+                  reportMissingResultsText: '你认为该查询应该有结果？',
+                  reportMissingResultsLinkText: '点击反馈'
                 }
               }
             }
@@ -303,10 +345,30 @@ export default withMermaid(defineConfig({
         }
       }
     }
-  },
 
-  vite: {
-    plugins: [],
+    // search: {
+    //   provider: 'local',
+    //   options: {
+    //     locales: {
+    //       zh: {
+    //         translations: {
+    //           button: {
+    //             buttonText: '搜索文档',
+    //             buttonAriaLabel: '搜索文档'
+    //           },
+    //           modal: {
+    //             noResultsText: '无法找到相关结果',
+    //             resetButtonTitle: '清除查询条件',
+    //             footer: {
+    //               selectText: '选择',
+    //               navigateText: '切换'
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   },
 
   markdown:{
@@ -319,4 +381,8 @@ export default withMermaid(defineConfig({
   // mermaid: {
   //   // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
   // },
+
+  vite: {
+    plugins: [],
+  },
 }))
