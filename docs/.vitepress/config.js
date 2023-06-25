@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-23 18:13:35
+ * @LastEditTime: 2023-06-25 12:34:06
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -23,10 +23,10 @@ const {
 } = catalogGeneration(resolve('interview'), {
   ignoreList: [
     'interview/notype', 
-    'interview/react', 
-    'interview/webpack', 
-    'interview/algorithm',
-    'interview/framework_comparison',
+    'interview/base/algorithm',
+    // 'interview/base/network',
+    'interview/frontend/react', 
+    'interview/frontend/framework_comparison',
   ],
   collapsed: true,
   // collapsible: false,
@@ -35,63 +35,76 @@ const {
   fileNameHash: {
     'interview/quick': '快速了解',
 
-    'interview/html': 'HTML',
-    'interview/html/010base': '基础',
-    'interview/html/020labels_attributes': '标签&属性',
-    'interview/html/030form': '表单',
-    'interview/html/040other': '其他',
+    'interview/frontend': '大前端 · 类',
+
+    'interview/frontend/html': 'HTML',
+    'interview/frontend/html/010base': '基础',
+    'interview/frontend/html/020labels_attributes': '标签&属性',
+    'interview/frontend/html/030form': '表单',
+    'interview/frontend/html/040other': '其他',
     
-    'interview/css': 'CSS',
-    'interview/css/010base': '基础',
-    'interview/css/020selector': '选择器',
-    'interview/css/030structure_stacking': '结构&层叠',
-    'interview/css/040value_unit': '值&单位',
-    'interview/css/050font_text': '字体&文本',
-    'interview/css/060visual_formatting': '视觉格式化',
-    'interview/css/070box': '盒子',
-    'interview/css/080float': '浮动',
-    'interview/css/090postion': '定位',
-    'interview/css/100layout': '布局',
-    'interview/css/110browser': '浏览器',
-    'interview/css/120other': '其他',
+    'interview/frontend/css': 'CSS',
+    'interview/frontend/css/010base': '基础',
+    'interview/frontend/css/020selector': '选择器',
+    'interview/frontend/css/030structure_stacking': '结构&层叠',
+    'interview/frontend/css/040value_unit': '值&单位',
+    'interview/frontend/css/050font_text': '字体&文本',
+    'interview/frontend/css/060visual_formatting': '视觉格式化',
+    'interview/frontend/css/070box': '盒子',
+    'interview/frontend/css/080float': '浮动',
+    'interview/frontend/css/090postion': '定位',
+    'interview/frontend/css/100layout': '布局',
+    'interview/frontend/css/110browser': '浏览器',
+    'interview/frontend/css/120other': '其他',
 
-    'interview/javascript': 'JavaScript',
-    'interview/javascript/core': '理论题',
-    'interview/javascript/core/010base': '基础',
-    'interview/javascript/core/020datatype': '数据类型',
-    'interview/javascript/core/030object': '对象',
-    'interview/javascript/core/040array': '数组',
-    'interview/javascript/core/050function': '函数',
-    'interview/javascript/core/060scope': '作用域',
-    'interview/javascript/core/070asynchronous': '异步',
-    'interview/javascript/core/080this': 'This',
-    'interview/javascript/core/090prototype': '原型',
-    'interview/javascript/core/100eventloop': '事件循环',
-    'interview/javascript/core/110browser': '浏览器对象',
-    'interview/javascript/core/120other': '其他',
-    'interview/javascript/write': '手写题',
-    'interview/javascript/output': '输出题',
+    'interview/frontend/javascript': 'JavaScript',
+    'interview/frontend/javascript/core': '理论题',
+    'interview/frontend/javascript/core/010base': '基础',
+    'interview/frontend/javascript/core/020datatype': '数据类型',
+    'interview/frontend/javascript/core/030object': '对象',
+    'interview/frontend/javascript/core/040array': '数组',
+    'interview/frontend/javascript/core/050function': '函数',
+    'interview/frontend/javascript/core/060scope': '作用域',
+    'interview/frontend/javascript/core/070asynchronous': '异步',
+    'interview/frontend/javascript/core/080this': 'This',
+    'interview/frontend/javascript/core/090prototype': '原型',
+    'interview/frontend/javascript/core/100eventloop': '事件循环',
+    'interview/frontend/javascript/core/110browser': '浏览器对象',
+    'interview/frontend/javascript/core/120other': '其他',
+    'interview/frontend/javascript/write': '手写题',
+    'interview/frontend/javascript/output': '输出题',
 
-    'interview/vue': 'Vue',
-    'interview/vue/010base': '基础',
-    'interview/vue/020data': '数据',
-    'interview/vue/030component': '组件',
-    'interview/vue/040state': '状态',
-    'interview/vue/050router': '路由',
-    'interview/vue/060source': '原理',
-    'interview/vue/070practice': '实践',
-    'interview/vue/080other': '其他',
+    'interview/frontend/vue': 'Vue',
+    'interview/frontend/vue/010base': '基础',
+    'interview/frontend/vue/020data': '数据',
+    'interview/frontend/vue/030component': '组件',
+    'interview/frontend/vue/040state': '状态',
+    'interview/frontend/vue/050router': '路由',
+    'interview/frontend/vue/060source': '原理',
+    'interview/frontend/vue/070practice': '实践',
+    'interview/frontend/vue/080other': '其他',
 
-    'interview/react': 'React',
+    'interview/frontend/react': 'React',
 
-    'interview/other': '其他',
 
-    'interview/algorithm': '算法',
+    'interview/base': '基础 · 类',
+
+    'interview/base/network': '网络',
+    'interview/base/network/010base': '基础',
+    'interview/base/network/020dns': 'DNS',
+    'interview/base/network/030http&https': 'HTTP / HTTPS',
+    'interview/base/network/040tcp&udp': 'TCP / UDP',
+    'interview/base/network/050socket': 'Socket',
+    'interview/base/network/060security': '网安',
+    'interview/base/network/070other': '其他',
+    
+    'interview/base/algorithm': '算法',
   },
   generateDirectoryName: 'interview',
   generateDirectoryPath: resolve('./')
 })
 
+// 获取指定层级的导航目录树
 function getKeyForCatalogTreeToNav(key, arr = navbarCatalogTree){
   let obj = getKeyForCatalogTree(key, arr)
   return {
@@ -100,7 +113,6 @@ function getKeyForCatalogTreeToNav(key, arr = navbarCatalogTree){
     link: obj?.depthLastKey || obj.link
   }
 }
-
 
 // 快速了解
 const quick = [
@@ -122,7 +134,7 @@ const quick = [
     ]
   }
 ]
-
+// 关于面试
 const about = [
   {
     text: '一份好的自我介绍',
@@ -144,8 +156,15 @@ const about = [
     text: '面试官问有什么想问',
     link: '/about/050_interviewer_question',
   },
+  {
+    text: '职业问题参考',
+    link: '/about/060_occupation',
+  },
+  {
+    text: '项目问题参考',
+    link: '/about/070_project',
+  },
 ]
-
 
 // 导航
 const nav = [
@@ -156,33 +175,30 @@ const nav = [
     items: quick
   },
   {
+    text: '基础 · 类',
+    activeMatch: `^/interview/base`,
+    items: [
+      getKeyForCatalogTreeToNav('interview/base/network'),
+    ]
+  },
+  {
     text: '大前端 · 类',
-    activeMatch: `^/interview`,
+    activeMatch: `^/interview/frontend`,
     items: [
       {
         text: '语言',
         items: [
-          getKeyForCatalogTreeToNav('interview/html'),
-          getKeyForCatalogTreeToNav('interview/css'),
-          getKeyForCatalogTreeToNav('interview/javascript'),
+          getKeyForCatalogTreeToNav('interview/frontend/html'),
+          getKeyForCatalogTreeToNav('interview/frontend/css'),
+          getKeyForCatalogTreeToNav('interview/frontend/javascript'),
         ]
       },
       {
         text: '框架 & 库',
         items: [
-          getKeyForCatalogTreeToNav('interview/vue'),
+          getKeyForCatalogTreeToNav('interview/frontend/vue'),
         ]
-      },
-      (function(){
-        let obj = getKeyForCatalogTreeToNav('interview/other', sidebarCatalogTree)
-        return {
-          text: obj.text,
-          activeMatch: obj.activeMatch,
-          items: obj.items.map(v => {
-            return getKeyForCatalogTreeToNav(v.key, sidebarCatalogTree)
-          })
-        }
-      })()
+      }
     ]
   },
   {
@@ -191,21 +207,17 @@ const nav = [
     text: '关于面试',
     items: about
   }
-  // {
-  //   activeMatch: `^/interview/other`,
-  //   ...sidebarCatalogTree.find(v => v.key === 'interview/other'),
-  // },
 ]
 
 // 侧边栏
 const sidebar = {
   "/quick": quick,
   "/about": about,
-  "/interview/html": sidebarCatalogTree.find(v => v.key === 'interview/html')?.items,
-  "/interview/css": sidebarCatalogTree.find(v => v.key === 'interview/css')?.items,
-  "/interview/javascript": sidebarCatalogTree.find(v => v.key === 'interview/javascript')?.items,
-  "/interview/vue": sidebarCatalogTree.find(v => v.key === 'interview/vue')?.items,
-  "/interview/other": sidebarCatalogTree.find(v => v.key === 'interview/other')?.items,
+  "/interview/frontend/html": getKeyForCatalogTree('interview/frontend/html', sidebarCatalogTree)?.items,
+  "/interview/frontend/css": getKeyForCatalogTree('interview/frontend/css', sidebarCatalogTree)?.items,
+  "/interview/frontend/javascript": getKeyForCatalogTree('interview/frontend/javascript', sidebarCatalogTree)?.items,
+  "/interview/frontend/vue": getKeyForCatalogTree('interview/frontend/vue', sidebarCatalogTree)?.items,
+  "/interview/base/network": getKeyForCatalogTree('interview/base/network', sidebarCatalogTree)?.items
 }
 
 export default withMermaid(defineConfig({
