@@ -57,7 +57,7 @@
     "child_process": "^1.0.2",
     "dayjs": "^1.11.8",
     "enquirer": "^2.3.6",
-    "mermaid": "9.1.7",
+    "mermaid": "10.2.3",
     "unocss": "^0.53.3",
     "unplugin-icons": "^0.16.3",
     "unplugin-vue-components": "^0.25.1",
