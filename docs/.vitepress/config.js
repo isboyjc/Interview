@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-26 06:02:01
+ * @LastEditTime: 2023-06-26 08:45:16
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -317,9 +317,9 @@ export default withMermaid(defineConfig({
     algolia: {
       indexName: 'interview-isboyjc',
       appId: '893IJYY0YX',
-      apiKey: 'dd7d8c15cd3834c4adba57c9adb4324b',
+      apiKey: 'd4ffd044368470111cee00cb39e66dd5',
       searchParameters:{
-        facetFilters: ["lang:zh-CN", "version:v3"]
+        facetFilters: ["version:latest"]
       },
       placeholder: '请输入关键词',
       translations: {
