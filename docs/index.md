@@ -17,17 +17,23 @@ hero:
       text: 快速了解
       link: /quick/010_quick
     - theme: alt
+      text: 关于面试
+      link: /about/010_self_introduction
+    - theme: alt
       text: HTML
-      link: /interview/html/010base/010010_stylization
+      link: /interview/frontend/html/010base/010010_stylization
     - theme: alt
       text: CSS
-      link: /interview/css/010base/010010_css_load
+      link: /interview/frontend/css/010base/010010_css_load
     - theme: alt
       text: JavaScript
-      link: /interview/javascript/core/010base/010010_stronglytype_and_weaklytype
+      link: /interview/frontend/javascript/core/010base/010010_stronglytype_and_weaklytype
     - theme: alt
-      text: 其他
-      link: /interview/other/occupation
+      text: Vue
+      link: /interview/frontend/vue/010base/010010_vue
+    - theme: alt
+      text: 网络
+      link: /interview/base/network/010base/010010_osi_model
 features:
   - title: 安全
     icon: 🌟
@@ -37,10 +43,10 @@ features:
     details: 高频、小众面试题应有尽有
   - title: 关联
     icon: 🔗
-    details: 知识点关联，更易学习和理解
+    details: 以问答的形式对琐碎的知识点关联，更易学习和理解
   - title: 体系
     icon: ✨
-    details: 逐渐形成知识体系，更易查漏补缺
+    details: 关联的知识点逐步形成知识体系，更易查漏补缺
   - title: 目的
     icon: 💡
     details: 面试题不是目的，重要的是以题醒人
@@ -49,8 +55,6 @@ features:
     details: 共同纠错、讨论、输出！
 ---
 
-<script setup>
-import Home from '@theme/components/Home.vue'
-</script>
+<script setup></script>
 
-<Home />
+<HomeContent />

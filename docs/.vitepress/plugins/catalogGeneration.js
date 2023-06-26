@@ -55,9 +55,10 @@ export function catalogGeneration(fullPath, options) {
   const dirName = `${options?.generateDirectoryName || folderPath}_dir`
   const navName = `${options?.generateDirectoryName || folderPath}_nav`
 
-  const dirPath = options?.generateDirectoryPath
+  const dirPath = options?.generateDirectoryPath || ""
   if(dirName && dirPath){
     fs.writeFileSync(path.resolve(dirPath, `${dirName}.json`), JSON.stringify(sidebarCatalogTree, null,2));
+    
     fs.writeFileSync(path.resolve(dirPath, `${navName}.json`), JSON.stringify(navbarCatalogTree, null,2));
   }
   return { sidebarCatalogTree, navbarCatalogTree }
