@@ -2,7 +2,7 @@
  * @LastEditors: isboyjc
  * @Description: 命令执行方法
  * @Date: 2021-10-20 17:05:10
- * @LastEditTime: 2023-06-25 21:24:53
+ * @LastEditTime: 2023-06-28 05:24:17
  * @Author: isboyjc
  */
 import util from 'util';
@@ -12,6 +12,7 @@ import { spawnSync, execSync, spawn, exec } from 'child_process'
 import chalk from 'chalk';
 
 const execPromise = util.promisify(exec);
+
 
 export const runCommand = async (command) => {
   const { error, stdout, stderr } = await execPromise(command);

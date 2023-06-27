@@ -55,6 +55,54 @@ features:
     details: 共同纠错、讨论、输出！
 ---
 
-<script setup></script>
+<script setup>
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers
+} from 'vitepress/theme';
+import { useData } from 'vitepress'
+const data = useData()
+const {icons, me} = data.theme.value 
+
+const members = [
+  {
+    avatar: `https://www.github.com/${me.name}.png`,
+    name: me.name,
+    title: me.desc,
+    desc: 'FE Developer<br/>',
+    links: [
+      { icon: icons.juejin, link: me.juejin },
+      { icon: icons.github, link: me.github },
+      { icon: 'twitter', link: me.twitter },
+    ]
+  },
+  // {
+  //   avatar: '',
+  //   name: '',
+  //   title: '',
+  //   desc: 'FE Developer',
+  //   links: [
+  //     { icon: 'github', link: '' },
+  //     {
+  //      icon: { svg: icons.bilibili } ,link: "",
+  //     },
+  //   ]
+  // },
+]
+</script>
+
+<VPTeamPage>
+  <VPTeamPageTitle>
+    <template #title>
+      核心成员
+    </template>
+  </VPTeamPageTitle>
+  <VPTeamMembers
+    :members="members"
+  />
+</VPTeamPage>
+
+<HomContributors />
 
 <HomeContent />

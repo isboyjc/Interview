@@ -1,30 +1,19 @@
-# Interview
-
-[interview.isboyjc.com](https://interview.isboyjc.com)
+# 不正经的前端 | 面试
 
 这是一份开放的面试题库
 
-Updating...
+欢迎 Star！
+
+正在更新中...
+
+请查看 👉🏻 [interview.isboyjc.com](https://interview.isboyjc.com)
 
 
-## Core Team
+## 核心成员
 
-Updating...
+正在更新中...
 
-## Contributors
+## 贡献者
 
-Updating...
+正在更新中...
 
-## 关于共建
-
-### 如何提交题目
-
-请提 Issues
-
-### 如何提交答案
-
-请 PR
-
-### 如何更正信息
-
-请提 Issues 或 PR

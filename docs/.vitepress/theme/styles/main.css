@@ -1,0 +1,35 @@
+html.dark {
+  color-scheme: dark;
+}
+
+.vp-doc h2 {
+  border-top: 0px;
+  margin-top: 10px;
+}
+
+.VPMenuLink .link {
+  line-height: 28px !important;
+}
+
+.VPSidebarGroup .link {
+  padding: 3px 0 !important;
+}
+
+.VPTeamPageTitle .title {
+  line-height: 32px;
+  font-size: 24px;
+  opacity: .5;
+}
+
+.VPTeamPageTitle .lead {
+  font-size: 14px;
+  opacity: .4;
+}
+
+.medium-zoom-overlay {
+  z-index: 20;
+}
+
+.medium-zoom-image {
+  z-index: 21;
+}

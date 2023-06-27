@@ -7,8 +7,6 @@
   <!-- <Random />
   <div class="home"></div> -->
 
-  <!-- <DataPanel /> -->
-
   <SiteMap />
 </template>
 

@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-26 05:35:05
+ * @LastEditTime: 2023-06-26 18:45:50
  * @Description: 扩展默认主题
  * @Date: 2023-05-10 14:28:25
  * @Author: isboyjc
@@ -11,7 +11,7 @@ import MyLayout from './components/MyLayout.vue'
 import NotFound from './components/NotFound.vue';
 
 import busuanzi from 'busuanzi.pure.js'
-import { registerAnalytics, siteIds, trackPageview } from './plugins/baidutongji'
+import { registerAnalytics, trackPageview } from './plugins/baidutongji'
 
 import googleAnalytics from './plugins/googleAnalytics'
 
@@ -19,6 +19,9 @@ import './styles/main.css'
 import './styles/global.css'
 import './styles/vars.css'
 import 'uno.css'
+
+const baiduSiteIds = "2da9f42d35f8a1d3db441632b9730f1c"
+const gaIds = 'G-EHYCMJEYM4'
 
 export default {
   ...DefaultTheme,
@@ -31,25 +34,25 @@ export default {
     // ctx.app.component('Home', Home)
 
     googleAnalytics({
-      id: 'G-EHYCMJEYM4',
+      id: gaIds,
     })
 
     // 百度统计使用
     if (inBrowser) {
       // 注册百度统计
-      registerAnalytics(siteIds)
+      registerAnalytics(baiduSiteIds)
 
       // 监听 url hash 改变
       window.addEventListener('hashchange', () => {
         const { href: url } = window.location
         // 上报 PV
-        trackPageview(siteIds, url)
+        trackPageview(baiduSiteIds, url)
       })
 
       // 监听路由改变
       router.onAfterRouteChanged = (to) => {
         // 上报 PV
-        trackPageview(siteIds, to)
+        trackPageview(baiduSiteIds, to)
 
         // 数据统计
         busuanzi.fetch()
