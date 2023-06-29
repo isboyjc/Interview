@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-26 08:45:16
+ * @LastEditTime: 2023-06-28 05:19:17
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -12,6 +12,10 @@ import { defineConfig, defineConfigWithTheme } from 'vitepress'
 import { withMermaid } from "vitepress-plugin-mermaid";
 
 // vite插件
+// md 转换
+import { MarkdownTransform } from '../.vitepress/plugins/markdownTransform'
+import { Contributors } from '../.vitepress/plugins/contributors'
+
 // 原子CSS UnoCSS
 import UnoCSS from "unocss/vite";
 
@@ -25,11 +29,13 @@ import IconsResolver from 'unplugin-icons/resolver'
 // icon 加载 loader
 import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 
+import { getChangeLog, getContributorsAt} from '../../utils/changelog'
 
 import {catalogGeneration, getKeyForCatalogTree, getCatalogDepthLast} from "./plugins/catalogGeneration"
 
 import socialLinks from "./link"
 import {me, title, logo, site, description, ico, appleIcon, github, keywords} from "./meta"
+import { icons as customIcons } from "./icon"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const resolve = (dir) => dir ? path.resolve(__dirname, '../', dir) : __dirname
@@ -237,194 +243,210 @@ const sidebar = {
   "/interview/base/network": getKeyForCatalogTree('interview/base/network', sidebarCatalogTree)?.items
 }
 
-export default withMermaid(defineConfig({
-  // base
-  title,
-  description,
-  lastUpdated: true,
-  useWebFonts: false,
-  locales: {
-    root: { label: '简体中文', lang: 'zh-CN' },
-  },
-  markdown: {
-    lineNumbers: true,
-  },
-  // rewrites: {
-  //   'packages/:pkg/src/(.*)': ':pkg/index.md'
-  // },
+
+export default withMermaid(defineConfig(async () => {
+  // const [changeLog, contributions] = await Promise.all([
+  //   getChangeLog(process.env.CI ? 1000 : 100),
+  //   getFunctionContributors(),
+  // ])
+
+  // const changeLog = await getChangeLog(100)
+  // console.log(changeLog)
+
+  // const contributors = await getContributorsAt("docs/interview/frontend/javascript/core/040array/040010_arraytype_judgment.md")
+  // const contributors = await getContributorsAt("docs/.vitepress/plugins/catalogGeneration.js")
+  const contributors = await getContributorsAt("./")
+
+  return {
+    // base
+    title,
+    description,
+    lastUpdated: true,
+    useWebFonts: false,
+    locales: {
+      root: { label: '简体中文', lang: 'zh-CN' },
+    },
+    markdown: {
+      lineNumbers: true,
+    },
+    // rewrites: {
+    //   'packages/:pkg/src/(.*)': ':pkg/index.md'
+    // },
+    
+    head: [
+      ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
+      ['meta', { name: 'keywords', content: keywords }],
+      ['meta', { name: 'author', content: me.name }],
+      ['meta', { property: 'og:type', content: 'article' }],
+      ['meta', { name: 'application-name', content: title }],
+      ['meta', { name: 'apple-mobile-web-app-title', content: title }],
+      ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
   
-  head: [
-    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
-    ['meta', { name: 'keywords', content: keywords }],
-    ['meta', { name: 'author', content: me.name }],
-    ['meta', { property: 'og:type', content: 'article' }],
-    ['meta', { name: 'application-name', content: title }],
-    ['meta', { name: 'apple-mobile-web-app-title', content: title }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
-
-    ['link', { rel: 'shortcut icon', href: ico }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: ico }],
-    // ['link', { rel: 'mask-icon', href: '.svg', color: '#06f' }],
-    // ['meta', { name: 'theme-color', content: '#06f' }],
-
-    ['link', { rel: 'apple-touch-icon', sizes: '120x120', href: appleIcon }],
-
-    // webfont
-    ['link', { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' }],
-    ['link', { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }],
-    ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.googleapis.com' }],
-    ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.gstatic.com' }],
-
-    // og
-    ['meta', { property: 'og:description', content: description }],
-    ['meta', { property: 'og:url', content: site }],
-    ['meta', { property: 'og:locale', content: 'zh_CN' }],
-
-    // umami analytics：https://umami.is/
-    ['script', { 'async': '', 'defer': '', 'data-website-id': `${process.env.UMAMI_WEBSITE_ID || ''}`, 'src': `${process.env.UMAMI_ENDPOINT || ''}` }],
-  ],
-
-  // 主题
-  themeConfig: {
-    outline: 'deep',
-    outlineTitle: '快看这页儿写了啥...',
-    returnToTopLabel: '返回顶部',
-    darkModeSwitchLabel: '模式',
-    sidebarMenuLabel: '归档',
-    lastUpdatedText:"更新时间",
-    docFooter: {
-      prev: '上一页',
-      next: '下一页',
-    },
-    editLink: {
-      pattern: `${github}/tree/main/docs/:path`,
-      text: '编辑此页面'
-    },
-    
-    me,
-
-    logo,
-    
-    nav,
-    sidebar,
-    socialLinks,
-
-    footer: {
-      message: `浏览量(PV)&nbsp;<span id="busuanzi_value_site_pv" style="font-weight: bold;"></span>&nbsp;次&nbsp;&nbsp;·&nbsp;&nbsp;独立访客(UV)&nbsp;<span id="busuanzi_value_site_uv" style="font-weight: bold;"></span>&nbsp;人次<br />${title} · 欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a>`,
-      copyright: `Copyright © 2019-${new Date().getFullYear()} | <a target="_blank" style="color: var(--vp-c-brand)" href="${github}/blob/main/LICENSE">MIT License</a> | <a target="_blank" style="color: var(--vp-c-brand)" href="${me.github}">${me.name}</a>`
-    },
-
-    algolia: {
-      indexName: 'interview-isboyjc',
-      appId: '893IJYY0YX',
-      apiKey: 'd4ffd044368470111cee00cb39e66dd5',
-      searchParameters:{
-        facetFilters: ["version:latest"]
+      ['link', { rel: 'shortcut icon', href: ico }],
+      ['link', { rel: 'icon', type: 'image/x-icon', href: ico }],
+      // ['link', { rel: 'mask-icon', href: '.svg', color: '#06f' }],
+      // ['meta', { name: 'theme-color', content: '#06f' }],
+  
+      ['link', { rel: 'apple-touch-icon', sizes: '120x120', href: appleIcon }],
+  
+      // webfont
+      ['link', { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' }],
+      ['link', { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }],
+      ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.googleapis.com' }],
+      ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.gstatic.com' }],
+  
+      // og
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:url', content: site }],
+      ['meta', { property: 'og:locale', content: 'zh_CN' }],
+  
+      // umami analytics：https://umami.is/
+      ['script', { 'async': '', 'defer': '', 'data-website-id': `${process.env.UMAMI_WEBSITE_ID || ''}`, 'src': `${process.env.UMAMI_ENDPOINT || ''}` }],
+    ],
+  
+    // 主题
+    themeConfig: {
+      outline: 'deep',
+      outlineTitle: '快看这页儿写了啥...',
+      returnToTopLabel: '返回顶部',
+      darkModeSwitchLabel: '模式',
+      sidebarMenuLabel: '归档',
+      lastUpdatedText:"最后更新时间",
+      docFooter: {
+        prev: '上一页',
+        next: '下一页',
       },
-      placeholder: '请输入关键词',
-      translations: {
-        button: {
-          buttonText: '搜索文档',
-          buttonAriaLabel: '搜索文档'
-        },
-        modal: {
-          searchBox: {
-            resetButtonTitle: '清除查询条件',
-            resetButtonAriaLabel: '清除查询条件',
-            cancelButtonText: '取消',
-            cancelButtonAriaLabel: '取消'
-          },
-          startScreen: {
-            recentSearchesTitle: '搜索历史',
-            noRecentSearchesText: '没有搜索历史',
-            saveRecentSearchButtonTitle: '保存至搜索历史',
-            removeRecentSearchButtonTitle: '从搜索历史中移除',
-            favoriteSearchesTitle: '收藏',
-            removeFavoriteSearchButtonTitle: '从收藏中移除'
-          },
-          errorScreen: {
-            titleText: '无法获取结果',
-            helpText: '你可能需要检查你的网络连接'
-          },
-          footer: {
-            selectText: '选择',
-            navigateText: '切换',
-            closeText: '关闭',
-            searchByText: '搜索提供者'
-          },
-          noResultsScreen: {
-            noResultsText: '无法找到相关结果',
-            suggestedQueryText: '你可以尝试查询',
-            reportMissingResultsText: '你认为该查询应该有结果？',
-            reportMissingResultsLinkText: '点击反馈'
+      editLink: {
+        pattern: `${github}/tree/main/docs/:path`,
+        text: '编辑此页面'
+      },
+      
+      // 数据传递
+      me,
+      icons: customIcons,
+  
+      logo,
+      
+      nav,
+      sidebar,
+      socialLinks,
+  
+      footer: {
+        message: `浏览量(PV)&nbsp;<span id="busuanzi_value_site_pv" style="font-weight: bold;"></span>&nbsp;次&nbsp;&nbsp;·&nbsp;&nbsp;独立访客(UV)&nbsp;<span id="busuanzi_value_site_uv" style="font-weight: bold;"></span>&nbsp;人次<br />${title} · 欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a>`,
+        copyright: `Copyright © 2019-${new Date().getFullYear()} | <a target="_blank" style="color: var(--vp-c-brand)" href="${github}/blob/main/LICENSE">MIT License</a> | <a target="_blank" style="color: var(--vp-c-brand)" href="${me.github}">${me.name}</a> and Contributors`
+      },
+  
+      // algolia: {
+      //   indexName: 'interview-isboyjc',
+      //   appId: '893IJYY0YX',
+      //   apiKey: 'd4ffd044368470111cee00cb39e66dd5',
+      //   searchParameters:{
+      //     facetFilters: ["version:latest"]
+      //   },
+      //   placeholder: '请输入关键词',
+      //   translations: {
+      //     button: {
+      //       buttonText: '搜索文档',
+      //       buttonAriaLabel: '搜索文档'
+      //     },
+      //     modal: {
+      //       searchBox: {
+      //         resetButtonTitle: '清除查询条件',
+      //         resetButtonAriaLabel: '清除查询条件',
+      //         cancelButtonText: '取消',
+      //         cancelButtonAriaLabel: '取消'
+      //       },
+      //       startScreen: {
+      //         recentSearchesTitle: '搜索历史',
+      //         noRecentSearchesText: '没有搜索历史',
+      //         saveRecentSearchButtonTitle: '保存至搜索历史',
+      //         removeRecentSearchButtonTitle: '从搜索历史中移除',
+      //         favoriteSearchesTitle: '收藏',
+      //         removeFavoriteSearchButtonTitle: '从收藏中移除'
+      //       },
+      //       errorScreen: {
+      //         titleText: '无法获取结果',
+      //         helpText: '你可能需要检查你的网络连接'
+      //       },
+      //       footer: {
+      //         selectText: '选择',
+      //         navigateText: '切换',
+      //         closeText: '关闭',
+      //         searchByText: '搜索提供者'
+      //       },
+      //       noResultsScreen: {
+      //         noResultsText: '无法找到相关结果',
+      //         suggestedQueryText: '你可以尝试查询',
+      //         reportMissingResultsText: '你认为该查询应该有结果？',
+      //         reportMissingResultsLinkText: '点击反馈'
+      //       }
+      //     }
+      //   }
+      // },
+  
+      search: {
+        provider: 'local',
+        options: {
+          translations: {
+            button: {
+              buttonText: '搜索',
+              buttonAriaLabel: '搜索'
+            },
+            modal: {
+              noResultsText: '无法找到相关结果',
+              resetButtonTitle: '清除查询条件',
+              footer: {
+                selectText: '选择',
+                navigateText: '切换',
+                closeText: '关闭'
+              }
+            }
           }
         }
       }
     },
-
-    // search: {
-    //   provider: 'local',
-    //   options: {
-    //     locales: {
-    //       zh: {
-    //         translations: {
-    //           button: {
-    //             buttonText: '搜索文档',
-    //             buttonAriaLabel: '搜索文档'
-    //           },
-    //           modal: {
-    //             noResultsText: '无法找到相关结果',
-    //             resetButtonTitle: '清除查询条件',
-    //             footer: {
-    //               selectText: '选择',
-    //               navigateText: '切换'
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-  },
-
-  // vite配置
-  vite: {
-    plugins: [
-      // 自定义插件
-
-      // 插件包
-      Components({
-        // dirs 指定自动引入组件所在目录位置
-        dirs: [resolve('.vitepress/theme/components')],
-        include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-        resolvers: [
-          IconsResolver({
-            prefix: 'icon',
-            // 默认 iconify 集合别名
-            // alias: {
-            //   vsci: 'vscode-icons'
-            // },
-            customCollections: ['custom']
-          })
-        ]
-      }),
-      Icons({
-        compiler: 'vue3',
-        customCollections: {
-          // custom 图标集, 给svg文件设置fill="currentColor"属性，使图标的颜色具有适应性
-          custom: FileSystemIconLoader('public/svg/custom', svg => svg.replace(/^<svg /, '<svg fill="currentColor" '))
-        },
-        autoInstall: true
-      }),
-      UnoCSS({
-        // 详见 unocss.config.js
-      })
-    ],
-  },
-
-  // 构建完成钩子
-  async buildEnd(siteConfig) {
-    // console.log(siteConfig)
-    // TODO RSS订阅
-  },
+  
+    // vite配置
+    vite: {
+      plugins: [
+        // 自定义插件
+        MarkdownTransform(),
+        // Contributors(contributors),
+  
+        // 插件包
+        Components({
+          // dirs 指定自动引入组件所在目录位置
+          dirs: [resolve('.vitepress/theme/components')],
+          include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+          resolvers: [
+            IconsResolver({
+              prefix: 'icon',
+              // 默认 iconify 集合别名
+              // alias: {
+              //   vsci: 'vscode-icons'
+              // },
+              customCollections: ['custom']
+            })
+          ]
+        }),
+        Icons({
+          compiler: 'vue3',
+          customCollections: {
+            // custom 图标集, 给svg文件设置fill="currentColor"属性，使图标的颜色具有适应性
+            custom: FileSystemIconLoader('public/svg/custom', svg => svg.replace(/^<svg /, '<svg fill="currentColor" '))
+          },
+          autoInstall: true
+        }),
+        UnoCSS({
+          // 详见 unocss.config.js
+        })
+      ],
+    },
+  
+    // 构建完成钩子
+    async buildEnd(siteConfig) {
+      // console.log(siteConfig)
+      // TODO RSS订阅
+    },
+  }
 }))

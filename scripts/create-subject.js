@@ -1,3 +1,10 @@
+/*
+ * @LastEditTime: 2023-06-28 05:31:23
+ * @Description: 新增题目脚本
+ * @Date: 2023-06-25 13:37:25
+ * @Author: isboyjc
+ * @LastEditors: isboyjc
+ */
 import fs from 'fs';
 import path from 'path';
 import yargs from 'yargs';
@@ -6,9 +13,8 @@ import { prompt } from 'enquirer';
 import chalk from 'chalk';
 
 
-const argv = yargs.parse(process.argv.slice(2))
-
 // 获取命令行参数
+const argv = yargs.parse(process.argv.slice(2))
 let [filePath, fileName, name] = argv._;
 
 // 判断文件是否存在
@@ -23,7 +29,7 @@ if (fileExists) {
   }).then((answer) => {
     if (answer.overwrite) {
       // 如果用户确认覆盖，则写入文件
-      writeFile(name);
+      writeTemplateFile(name);
     } else {
       // 如果用户不确认覆盖，则退出程序
       console.log(chalk.red('文件创建中止！'));
@@ -32,19 +38,15 @@ if (fileExists) {
   });
 } else {
   // 如果文件不存在，则直接写入文件
-  writeFile(name);
+  writeTemplateFile(name);
 }
 
-// 写入文件
-function writeFile(name) {
+// 写入模板文件
+function writeTemplateFile(name) {
   let templatePath = path.join(__dirname, '../template/subject.md');
   let file = fs.readFileSync(templatePath, 'utf-8').toString();
 
-  if(name){
-    let lines = file.split('\n')
-    if(lines[0].startsWith('# ')) lines[0] = lines[0].replace('# ',`# ${name}`)
-    file = lines.join('\n')
-  }
+  if(name) file = file.replace(/(# \w+?)\n/, `$1 ${name}`)
 
   fs.writeFileSync(path.join(filePath, fileName), file);
   console.log(chalk.green(`文件名：${fileName} \n题目名：${name} \n创建成功！`));

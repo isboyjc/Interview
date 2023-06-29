@@ -1,16 +1,11 @@
 /*
- * @LastEditTime: 2023-06-26 04:56:59
+ * @LastEditTime: 2023-06-26 18:37:33
  * @Description: 百度统计
  * @Date: 2023-06-26 04:56:14
  * @Author: isboyjc
  * @LastEditors: isboyjc
  */
 import { inBrowser } from 'vitepress'
-
-/**
- * 统计站点的 ID 列表
- */
-export const siteIds = '2da9f42d35f8a1d3db441632b9730f1c'
 
 /**
  * 注册统计
