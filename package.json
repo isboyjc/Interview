@@ -64,7 +64,7 @@
     "fast-glob": "^3.2.12",
     "md5": "^2.3.0",
     "mermaid": "9.1.7",
-    "node-fetch": "2",
+    "node-fetch": "3",
     "simple-git": "^3.19.1",
     "unocss": "^0.53.3",
     "unplugin-icons": "^0.16.3",
