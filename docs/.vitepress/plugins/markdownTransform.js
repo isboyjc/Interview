@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-28 05:36:05
+ * @LastEditTime: 2023-06-28 20:52:56
  * @Description: Markdown 转换插件，模块编译转换前执行，统一为 md 文件做批处理
  * @Date: 2023-06-26 04:30:12
  * @Author: isboyjc
@@ -28,6 +28,8 @@ export function MarkdownTransform() {
       let contributors = await getContributorsAt(id)
       const { footer } = await getDocsMarkdown([...contributors])
       code = replacer(code, footer, 'FOOTER', 'tail')
+
+      // code = code.replace(/(#\s.+?\n)/, `$1\n\n<PageInfo />\n`)
 
       return code
     },

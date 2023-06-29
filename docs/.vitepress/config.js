@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-28 05:19:17
+ * @LastEditTime: 2023-06-29 15:56:18
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -15,6 +15,9 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 // md 转换
 import { MarkdownTransform } from '../.vitepress/plugins/markdownTransform'
 import { Contributors } from '../.vitepress/plugins/contributors'
+
+// PWA
+import { VitePWA as PWA } from 'vite-plugin-pwa'
 
 // 原子CSS UnoCSS
 import UnoCSS from "unocss/vite";
@@ -436,6 +439,31 @@ export default withMermaid(defineConfig(async () => {
             custom: FileSystemIconLoader('public/svg/custom', svg => svg.replace(/^<svg /, '<svg fill="currentColor" '))
           },
           autoInstall: true
+        }),
+        PWA({
+          outDir: '.vitepress/dist',
+          manifest: {
+            name: '不正经的前端|面试',
+            short_name: '不正经的前端|面试',
+            theme_color: '#ffffff',
+            icons: [
+              {
+                src: '/images/icon/apple-touch-icon.png',
+                sizes: '120x120',
+                type: 'image/png',
+              },
+              {
+                src: '/images/icon/android-chrome-192x192.png',
+                sizes: '192x192',
+                type: 'image/png',
+              },
+              {
+                src: '/images/icon/android-chrome-512x512.png',
+                sizes: '512x512',
+                type: 'image/png',
+              },
+            ],
+          },
         }),
         UnoCSS({
           // 详见 unocss.config.js
