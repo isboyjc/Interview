@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-26 21:24:45
+ * @LastEditTime: 2023-06-29 16:25:28
  * @Description: ...
  * @Date: 2023-06-26 00:39:07
  * @Author: isboyjc
@@ -37,3 +37,10 @@ export const bilibili = ''
 
 // version
 export const docsVersion = version
+
+/* PWA runtime caching urlPattern regular expressions */
+/* eslint-disable prefer-regex-literals */
+export const githubSourceContentRegex = new RegExp('^https://(((raw|user-images|camo).githubusercontent.com))/.*', 'i')
+export const googleFontRegex = new RegExp('^https://fonts.googleapis.com/.*', 'i')
+export const googleStaticFontRegex = new RegExp('^https://fonts.gstatic.com/.*', 'i')
+export const jsdelivrCDNRegex = new RegExp('^https://cdn.jsdelivr.net/.*', 'i')

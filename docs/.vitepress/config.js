@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-29 15:56:18
+ * @LastEditTime: 2023-06-29 16:42:02
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -17,7 +17,8 @@ import { MarkdownTransform } from '../.vitepress/plugins/markdownTransform'
 import { Contributors } from '../.vitepress/plugins/contributors'
 
 // PWA
-import { VitePWA as PWA } from 'vite-plugin-pwa'
+import { withPwa } from '@vite-pwa/vitepress'
+import { pwa } from './plugins/pwa'
 
 // 原子CSS UnoCSS
 import UnoCSS from "unocss/vite";
@@ -247,7 +248,7 @@ const sidebar = {
 }
 
 
-export default withMermaid(defineConfig(async () => {
+export default withPwa(withMermaid(defineConfig(async () => {
   // const [changeLog, contributions] = await Promise.all([
   //   getChangeLog(process.env.CI ? 1000 : 100),
   //   getFunctionContributors(),
@@ -261,6 +262,8 @@ export default withMermaid(defineConfig(async () => {
   const contributors = await getContributorsAt("./")
 
   return {
+    pwa,
+
     // base
     title,
     description,
@@ -440,31 +443,31 @@ export default withMermaid(defineConfig(async () => {
           },
           autoInstall: true
         }),
-        PWA({
-          outDir: '.vitepress/dist',
-          manifest: {
-            name: '不正经的前端|面试',
-            short_name: '不正经的前端|面试',
-            theme_color: '#ffffff',
-            icons: [
-              {
-                src: '/images/icon/apple-touch-icon.png',
-                sizes: '120x120',
-                type: 'image/png',
-              },
-              {
-                src: '/images/icon/android-chrome-192x192.png',
-                sizes: '192x192',
-                type: 'image/png',
-              },
-              {
-                src: '/images/icon/android-chrome-512x512.png',
-                sizes: '512x512',
-                type: 'image/png',
-              },
-            ],
-          },
-        }),
+        // PWA({
+        //   outDir: '.vitepress/dist',
+        //   manifest: {
+        //     name: '不正经的前端|面试',
+        //     short_name: '不正经的前端|面试',
+        //     theme_color: '#ffffff',
+        //     icons: [
+        //       {
+        //         src: '/images/icon/apple-touch-icon.png',
+        //         sizes: '120x120',
+        //         type: 'image/png',
+        //       },
+        //       {
+        //         src: '/images/icon/android-chrome-192x192.png',
+        //         sizes: '192x192',
+        //         type: 'image/png',
+        //       },
+        //       {
+        //         src: '/images/icon/android-chrome-512x512.png',
+        //         sizes: '512x512',
+        //         type: 'image/png',
+        //       },
+        //     ],
+        //   },
+        // }),
         UnoCSS({
           // 详见 unocss.config.js
         })
@@ -477,4 +480,4 @@ export default withMermaid(defineConfig(async () => {
       // TODO RSS订阅
     },
   }
-}))
+})))

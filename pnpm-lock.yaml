@@ -10,11 +10,13 @@ specifiers:
   '@mermaid-js/mermaid-mindmap': 9.3.0
   '@unocss/transformer-directives': ^0.53.3
   '@unocss/transformer-variant-group': ^0.53.3
+  '@vite-pwa/vitepress': ^0.2.0
   busuanzi.pure.js: ^1.0.3
   chalk: 4.1.2
   child_process: ^1.0.2
   dayjs: ^1.11.8
   enquirer: ^2.3.6
+  fast-glob: ^3.2.12
   md5: ^2.3.0
   mermaid: 9.1.7
   node-fetch: '2'
@@ -37,11 +39,13 @@ devDependencies:
   '@mermaid-js/mermaid-mindmap': 9.3.0
   '@unocss/transformer-directives': 0.53.3
   '@unocss/transformer-variant-group': 0.53.3
+  '@vite-pwa/vitepress': 0.2.0_vite-plugin-pwa@0.16.4
   busuanzi.pure.js: 1.0.3
   chalk: 4.1.2
   child_process: 1.0.2
   dayjs: 1.11.8
   enquirer: 2.3.6
+  fast-glob: 3.2.12
   md5: 2.3.0
   mermaid: 9.1.7
   node-fetch: 2.6.11
@@ -2120,6 +2124,14 @@ packages:
       magic-string: 0.30.0
     transitivePeerDependencies:
       - rollup
+    dev: true
+
+  /@vite-pwa/vitepress/0.2.0_vite-plugin-pwa@0.16.4:
+    resolution: {integrity: sha512-dVQVaP6NB9woCFe4UASUqRp7uwBQJOVXlJlqK4krqXcbb3NuXIXIWOnU7HLpJnHqZj5U/81gKtLN6gs5gJBwiQ==}
+    peerDependencies:
+      vite-plugin-pwa: '>=0.16.3 <1'
+    dependencies:
+      vite-plugin-pwa: 0.16.4
     dev: true
 
   /@vitejs/plugin-vue/4.2.3_vite@4.3.9+vue@3.3.4:
