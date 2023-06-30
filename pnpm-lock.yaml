@@ -12,7 +12,7 @@ specifiers:
   '@unocss/transformer-variant-group': ^0.53.3
   '@vite-pwa/vitepress': ^0.2.0
   busuanzi.pure.js: ^1.0.3
-  chalk: 4.1.2
+  chalk: 5.3.0
   child_process: ^1.0.2
   dayjs: ^1.11.8
   enquirer: ^2.3.6
@@ -41,7 +41,7 @@ devDependencies:
   '@unocss/transformer-variant-group': 0.53.3
   '@vite-pwa/vitepress': 0.2.0_vite-plugin-pwa@0.16.4
   busuanzi.pure.js: 1.0.3
-  chalk: 4.1.2
+  chalk: 5.3.0
   child_process: 1.0.2
   dayjs: 1.11.8
   enquirer: 2.3.6
@@ -2528,6 +2528,11 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: true
+
+  /chalk/5.3.0:
+    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
   /charenc/0.0.2:
