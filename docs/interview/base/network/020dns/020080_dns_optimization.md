@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # DNS解析可优化吗，为什么优化又怎样优化？
 
 

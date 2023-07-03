@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 介绍下 DNS 的迭代查询与递归查询
 
 

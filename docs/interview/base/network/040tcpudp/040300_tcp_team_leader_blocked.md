@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 介绍下 TCP 的队头堵塞问题
 
 

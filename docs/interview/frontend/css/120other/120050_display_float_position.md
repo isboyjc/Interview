@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # display、float、position 的关系?
 
 - 首先判断display属性是否为none，如果为none，则position和float属性的值不影响元素最后的表现。

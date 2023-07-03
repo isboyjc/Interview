@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 为什么 Socket 需要心跳机制？
 
 

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # HTTP 状态码 304 是什么，网页中是多好还是少好？
 
 

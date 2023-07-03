@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 介绍下 DNS 获取流程
 
 

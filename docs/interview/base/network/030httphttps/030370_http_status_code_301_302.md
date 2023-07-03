@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # HTTP 状态吗 301 和 302 区别，有哪些用途？
 
 

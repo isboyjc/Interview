@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # post 请求什么时候用 form data 什么时候用 request payload
 
 

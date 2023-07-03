@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # TCP 如果已经建立了连接，但客户端突然故障怎么办？
 
 

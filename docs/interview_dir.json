@@ -715,13 +715,443 @@
     ]
   },
   {
-    "text": "大前端 · 类 · 344",
-    "itemNums": 4,
-    "itemDepthNums": 344,
+    "text": "大前端 · 类 · 431",
+    "itemNums": 6,
+    "itemDepthNums": 431,
     "collapsed": true,
     "collapsible": true,
     "key": "interview/frontend",
     "items": [
+      {
+        "text": "浏览器 · 62",
+        "itemNums": 11,
+        "itemDepthNums": 62,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/frontend/browser",
+        "items": [
+          {
+            "text": "进程&线程 · 12",
+            "itemNums": 12,
+            "itemDepthNums": 12,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/010processthread",
+            "items": [
+              {
+                "text": "什么是线程？什么是进程？",
+                "key": "/interview/frontend/browser/010processthread/010010_process_and_thread",
+                "link": "/interview/frontend/browser/010processthread/010010_process_and_thread"
+              },
+              {
+                "text": "线程与进程的区别",
+                "key": "/interview/frontend/browser/010processthread/010020_process_and_thread_diff",
+                "link": "/interview/frontend/browser/010processthread/010020_process_and_thread_diff"
+              },
+              {
+                "text": "多进程和多线程",
+                "key": "/interview/frontend/browser/010processthread/010030_multiprocess_and_multithreading",
+                "link": "/interview/frontend/browser/010processthread/010030_multiprocess_and_multithreading"
+              },
+              {
+                "text": "进程之间的通信方式",
+                "key": "/interview/frontend/browser/010processthread/010040_process_communication",
+                "link": "/interview/frontend/browser/010processthread/010040_process_communication"
+              },
+              {
+                "text": "JS 为什么是单线程，与异步冲突吗",
+                "key": "/interview/frontend/browser/010processthread/010050_js_singlethreaded_and_asynchronous",
+                "link": "/interview/frontend/browser/010processthread/010050_js_singlethreaded_and_asynchronous"
+              },
+              {
+                "text": "浏览器包含哪些进程",
+                "key": "/interview/frontend/browser/010processthread/010060_browser_processes",
+                "link": "/interview/frontend/browser/010processthread/010060_browser_processes"
+              },
+              {
+                "text": "为什么浏览器要多进程",
+                "key": "/interview/frontend/browser/010processthread/010070_browser_multiprocess",
+                "link": "/interview/frontend/browser/010processthread/010070_browser_multiprocess"
+              },
+              {
+                "text": "浏览器渲染进程的线程有哪些",
+                "key": "/interview/frontend/browser/010processthread/010080_browser_thread_of_rendering_process",
+                "link": "/interview/frontend/browser/010processthread/010080_browser_thread_of_rendering_process"
+              },
+              {
+                "text": "僵尸进程和孤儿进程是什么？",
+                "key": "/interview/frontend/browser/010processthread/010090_zombie_and_orphan_process",
+                "link": "/interview/frontend/browser/010processthread/010090_zombie_and_orphan_process"
+              },
+              {
+                "text": "死锁产生的原因？ 如果解决死锁的问题？",
+                "key": "/interview/frontend/browser/010processthread/010100_deadlock",
+                "link": "/interview/frontend/browser/010processthread/010100_deadlock"
+              },
+              {
+                "text": "如何实现浏览器内多个标签页之间的通信?",
+                "key": "/interview/frontend/browser/010processthread/010110_browser_multiple_tabs_communication",
+                "link": "/interview/frontend/browser/010processthread/010110_browser_multiple_tabs_communication"
+              },
+              {
+                "text": "谈一谈对 Service Worker 的理解",
+                "key": "/interview/frontend/browser/010processthread/010120_service_worker",
+                "link": "/interview/frontend/browser/010processthread/010120_service_worker"
+              }
+            ]
+          },
+          {
+            "text": "内存管理 · 1",
+            "itemNums": 1,
+            "itemDepthNums": 1,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/020memory",
+            "items": [
+              {
+                "text": "什么是堆、栈？",
+                "key": "/interview/frontend/browser/020memory/020010_heap_and_stack",
+                "link": "/interview/frontend/browser/020memory/020010_heap_and_stack"
+              }
+            ]
+          },
+          {
+            "text": "组成 · 5",
+            "itemNums": 5,
+            "itemDepthNums": 5,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/030form",
+            "items": [
+              {
+                "text": "谈一谈对浏览器的理解",
+                "key": "/interview/frontend/browser/030form/030010_browser",
+                "link": "/interview/frontend/browser/030form/030010_browser"
+              },
+              {
+                "text": "谈一谈对浏览器内核的理解",
+                "key": "/interview/frontend/browser/030form/030020_browser_kernel",
+                "link": "/interview/frontend/browser/030form/030020_browser_kernel"
+              },
+              {
+                "text": "常见的浏览器内核有哪些，有什么区别",
+                "key": "/interview/frontend/browser/030form/030030_common_browser_kernel",
+                "link": "/interview/frontend/browser/030form/030030_common_browser_kernel"
+              },
+              {
+                "text": "常见的浏览器使用的都是哪些内核",
+                "key": "/interview/frontend/browser/030form/030040_common_browser_usage_kernel",
+                "link": "/interview/frontend/browser/030form/030040_common_browser_usage_kernel"
+              },
+              {
+                "text": "浏览器的主要组成部分是什么",
+                "key": "/interview/frontend/browser/030form/030050_browser_main_components",
+                "link": "/interview/frontend/browser/030form/030050_browser_main_components"
+              }
+            ]
+          },
+          {
+            "text": "渲染 · 13",
+            "itemNums": 13,
+            "itemDepthNums": 13,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/040render",
+            "items": [
+              {
+                "text": "浏览器渲染的完整过程",
+                "key": "/interview/frontend/browser/040render/040010_browser_rendering",
+                "link": "/interview/frontend/browser/040render/040010_browser_rendering"
+              },
+              {
+                "text": "什么是文档的预解析？",
+                "key": "/interview/frontend/browser/040render/040020_pre_parsing_of_documents",
+                "link": "/interview/frontend/browser/040render/040020_pre_parsing_of_documents"
+              },
+              {
+                "text": "渲染过程中遇到 JS 文件如何处理？",
+                "key": "/interview/frontend/browser/040render/040030_rendering_process_encountered_js",
+                "link": "/interview/frontend/browser/040render/040030_rendering_process_encountered_js"
+              },
+              {
+                "text": "JS 阻塞页面加载？为什么？",
+                "key": "/interview/frontend/browser/040render/040040_js_blocking_page_loading",
+                "link": "/interview/frontend/browser/040render/040040_js_blocking_page_loading"
+              },
+              {
+                "text": "CSS 资源加载会阻塞渲染？怎样优化？",
+                "key": "/interview/frontend/browser/040render/040050_css_blocking_page_loading",
+                "link": "/interview/frontend/browser/040render/040050_css_blocking_page_loading"
+              },
+              {
+                "text": "什么情况会阻塞渲染？",
+                "key": "/interview/frontend/browser/040render/040060_block_rendering",
+                "link": "/interview/frontend/browser/040render/040060_block_rendering"
+              },
+              {
+                "text": "什么是回流和重绘以及区别？",
+                "key": "/interview/frontend/browser/040render/040070_reflow_and_redraw",
+                "link": "/interview/frontend/browser/040render/040070_reflow_and_redraw"
+              },
+              {
+                "text": "什么会引起回流？",
+                "key": "/interview/frontend/browser/040render/040080_causing_reflux",
+                "link": "/interview/frontend/browser/040render/040080_causing_reflux"
+              },
+              {
+                "text": "如何减少和避免回流重绘？",
+                "key": "/interview/frontend/browser/040render/040090_avoid_reflow_redrawing",
+                "link": "/interview/frontend/browser/040render/040090_avoid_reflow_redrawing"
+              },
+              {
+                "text": "什么是渲染层合并 (Composite) ?",
+                "key": "/interview/frontend/browser/040render/040100_composite",
+                "link": "/interview/frontend/browser/040render/040100_composite"
+              },
+              {
+                "text": "什么是普通图层和复合图层？",
+                "key": "/interview/frontend/browser/040render/040110_normal_and_composite_layers",
+                "link": "/interview/frontend/browser/040render/040110_normal_and_composite_layers"
+              },
+              {
+                "text": "什么是关键渲染路径（CRP），如何优化？",
+                "key": "/interview/frontend/browser/040render/040120_critical_rendering_path",
+                "link": "/interview/frontend/browser/040render/040120_critical_rendering_path"
+              },
+              {
+                "text": "谈一谈浏览器渲染优化？",
+                "key": "/interview/frontend/browser/040render/040130_browser_rendering_optimization",
+                "link": "/interview/frontend/browser/040render/040130_browser_rendering_optimization"
+              }
+            ]
+          },
+          {
+            "text": "缓存 · 6",
+            "itemNums": 6,
+            "itemDepthNums": 6,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/050cache",
+            "items": [
+              {
+                "text": "谈一谈对浏览器的缓存机制的理解",
+                "key": "/interview/frontend/browser/050cache/050010_browser_caching_mechanism",
+                "link": "/interview/frontend/browser/050cache/050010_browser_caching_mechanism"
+              },
+              {
+                "text": "什么是协商缓存？",
+                "key": "/interview/frontend/browser/050cache/050020_negotiation_cache",
+                "link": "/interview/frontend/browser/050cache/050020_negotiation_cache"
+              },
+              {
+                "text": "什么是强缓存？",
+                "key": "/interview/frontend/browser/050cache/050030_strong_caching",
+                "link": "/interview/frontend/browser/050cache/050030_strong_caching"
+              },
+              {
+                "text": "协商缓存和强缓存的区别？",
+                "key": "/interview/frontend/browser/050cache/050040_negotiation_and_strong_caching",
+                "link": "/interview/frontend/browser/050cache/050040_negotiation_and_strong_caching"
+              },
+              {
+                "text": "为什么需要浏览器缓存？",
+                "key": "/interview/frontend/browser/050cache/050050_why_do_i_need_browser_caching",
+                "link": "/interview/frontend/browser/050cache/050050_why_do_i_need_browser_caching"
+              },
+              {
+                "text": "点击刷新按钮或者按 F5、按 Ctrl+F5 （强制刷新）、地址栏回车有什么区别？",
+                "key": "/interview/frontend/browser/050cache/050060_browser_various_refresh_difference",
+                "link": "/interview/frontend/browser/050cache/050060_browser_various_refresh_difference"
+              }
+            ]
+          },
+          {
+            "text": "本地存储 · 7",
+            "itemNums": 7,
+            "itemDepthNums": 7,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/060localstorage",
+            "items": [
+              {
+                "text": "浏览器本地存储方式及使用场景",
+                "key": "/interview/frontend/browser/060localstorage/060010_browser_local_storage",
+                "link": "/interview/frontend/browser/060localstorage/060010_browser_local_storage"
+              },
+              {
+                "text": "Cookie有哪些字段，作用分别是什么",
+                "key": "/interview/frontend/browser/060localstorage/060020_cookie",
+                "link": "/interview/frontend/browser/060localstorage/060020_cookie"
+              },
+              {
+                "text": "Cookie、LocalStorage、SessionStorage区别",
+                "key": "/interview/frontend/browser/060localstorage/060030_cookie_localstorage_sessionstorage",
+                "link": "/interview/frontend/browser/060localstorage/060030_cookie_localstorage_sessionstorage"
+              },
+              {
+                "text": "token为什么要设置过期时间，时限多长合适？",
+                "key": "/interview/frontend/browser/060localstorage/060040_token_expiration_time",
+                "link": "/interview/frontend/browser/060localstorage/060040_token_expiration_time"
+              },
+              {
+                "text": "Localstorage 会遇到什么安全问题",
+                "key": "/interview/frontend/browser/060localstorage/060050_localstorage_safety_problem",
+                "link": "/interview/frontend/browser/060localstorage/060050_localstorage_safety_problem"
+              },
+              {
+                "text": "前端储存的⽅式有哪些？",
+                "key": "/interview/frontend/browser/060localstorage/060060_frontend_storage",
+                "link": "/interview/frontend/browser/060localstorage/060060_frontend_storage"
+              },
+              {
+                "text": "IndexedDB有哪些特点？",
+                "key": "/interview/frontend/browser/060localstorage/060070_indexed_db",
+                "link": "/interview/frontend/browser/060localstorage/060070_indexed_db"
+              }
+            ]
+          },
+          {
+            "text": "同源策略 · 5",
+            "itemNums": 5,
+            "itemDepthNums": 5,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/070cors",
+            "items": [
+              {
+                "text": "strategy.md",
+                "key": "/interview/frontend/browser/070cors/070010_browser_homologous",
+                "link": "/interview/frontend/browser/070cors/070010_browser_homologous"
+              },
+              {
+                "text": "如何解决跨越问题",
+                "key": "/interview/frontend/browser/070cors/070020_solving_crossing_problems",
+                "link": "/interview/frontend/browser/070cors/070020_solving_crossing_problems"
+              },
+              {
+                "text": "正向代理和反向代理的区别",
+                "key": "/interview/frontend/browser/070cors/070030_forward_proxy_and_reverse_proxy",
+                "link": "/interview/frontend/browser/070cors/070030_forward_proxy_and_reverse_proxy"
+              },
+              {
+                "text": "什么是 Nginx，工作原理？",
+                "key": "/interview/frontend/browser/070cors/070040_nginx",
+                "link": "/interview/frontend/browser/070cors/070040_nginx"
+              },
+              {
+                "text": "浏览器对哪些跨域是允许的",
+                "key": "/interview/frontend/browser/070cors/070050_which_cross_domains_are_allowed_by_the_browser",
+                "link": "/interview/frontend/browser/070cors/070050_which_cross_domains_are_allowed_by_the_browser"
+              }
+            ]
+          },
+          {
+            "text": "事件机制 · 5",
+            "itemNums": 5,
+            "itemDepthNums": 5,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/080event",
+            "items": [
+              {
+                "text": "事件是什么？事件模型？",
+                "key": "/interview/frontend/browser/080event/080010_browser_event",
+                "link": "/interview/frontend/browser/080event/080010_browser_event"
+              },
+              {
+                "text": "介绍事件传播机制（事件流），事件传播的三个阶段？",
+                "key": "/interview/frontend/browser/080event/080020_browser_event_flow",
+                "link": "/interview/frontend/browser/080event/080020_browser_event_flow"
+              },
+              {
+                "text": "如何阻止事件传播（事件冒泡）",
+                "key": "/interview/frontend/browser/080event/080030_browser_event_bubbling",
+                "link": "/interview/frontend/browser/080event/080030_browser_event_bubbling"
+              },
+              {
+                "text": "如何取消默认事件",
+                "key": "/interview/frontend/browser/080event/080040_browser_cancel_default_event",
+                "link": "/interview/frontend/browser/080event/080040_browser_cancel_default_event"
+              },
+              {
+                "text": "什么是事件代理（事件委托），使用场景",
+                "key": "/interview/frontend/browser/080event/080050_browser_event_proxy",
+                "link": "/interview/frontend/browser/080event/080050_browser_event_proxy"
+              }
+            ]
+          },
+          {
+            "text": "垃圾回收 · 3",
+            "itemNums": 3,
+            "itemDepthNums": 3,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/090gc",
+            "items": [
+              {
+                "text": "浏览器垃圾是怎么样产生的，为什么需要回收",
+                "key": "/interview/frontend/browser/090gc/090010_browser_garbage_generation_and_recycling",
+                "link": "/interview/frontend/browser/090gc/090010_browser_garbage_generation_and_recycling"
+              },
+              {
+                "text": "浏览器怎么进行垃圾回收（V8 GC）",
+                "key": "/interview/frontend/browser/090gc/090020_browser_gc",
+                "link": "/interview/frontend/browser/090gc/090020_browser_gc"
+              },
+              {
+                "text": "浏览器中不同类型变量的内存都是何时释放？",
+                "key": "/interview/frontend/browser/090gc/090030_variable_memory_release",
+                "link": "/interview/frontend/browser/090gc/090030_variable_memory_release"
+              }
+            ]
+          },
+          {
+            "text": "内存泄漏 · 3",
+            "itemNums": 3,
+            "itemDepthNums": 3,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/100memoryleak",
+            "items": [
+              {
+                "text": "什么是内存泄漏",
+                "key": "/interview/frontend/browser/100memoryleak/100010_memory_leak",
+                "link": "/interview/frontend/browser/100memoryleak/100010_memory_leak"
+              },
+              {
+                "text": "哪些操作会造成内存泄漏",
+                "key": "/interview/frontend/browser/100memoryleak/100020_what_will_cause_memory_leak",
+                "link": "/interview/frontend/browser/100memoryleak/100020_what_will_cause_memory_leak"
+              },
+              {
+                "text": "浏览器中如何查看内存泄漏",
+                "key": "/interview/frontend/browser/100memoryleak/100030_how_to_view_memory_leak_for_browser",
+                "link": "/interview/frontend/browser/100memoryleak/100030_how_to_view_memory_leak_for_browser"
+              }
+            ]
+          },
+          {
+            "text": "其他 · 2",
+            "itemNums": 2,
+            "itemDepthNums": 2,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/browser/110other",
+            "items": [
+              {
+                "text": "window.onload 和 document.onDOMContentLoaded 有什么区别？",
+                "key": "/interview/frontend/browser/110other/110010_load_and_domcontentloaded",
+                "link": "/interview/frontend/browser/110other/110010_load_and_domcontentloaded"
+              },
+              {
+                "text": "defer 和 async ？",
+                "key": "/interview/frontend/browser/110other/110020_defer_async",
+                "link": "/interview/frontend/browser/110other/110020_defer_async"
+              }
+            ]
+          }
+        ]
+      },
       {
         "text": "CSS · 68",
         "itemNums": 12,
@@ -2258,21 +2688,198 @@
         ]
       },
       {
-        "text": "Vue · 105",
+        "text": "React · 24",
+        "itemNums": 9,
+        "itemDepthNums": 24,
+        "collapsed": true,
+        "collapsible": true,
+        "key": "interview/frontend/react",
+        "items": [
+          {
+            "text": "基础 · 16",
+            "itemNums": 16,
+            "itemDepthNums": 16,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/010base",
+            "items": [
+              {
+                "text": "React 版本线",
+                "key": "/interview/frontend/react/010base/010010_react_version_line",
+                "link": "/interview/frontend/react/010base/010010_react_version_line"
+              },
+              {
+                "text": "谈一谈对 React 的理解，它的理念是什么？",
+                "key": "/interview/frontend/react/010base/010020_react",
+                "link": "/interview/frontend/react/010base/010020_react"
+              },
+              {
+                "text": "React的生命周期有哪些？",
+                "key": "/interview/frontend/react/010base/010030_react_lifecycle",
+                "link": "/interview/frontend/react/010base/010030_react_lifecycle"
+              },
+              {
+                "text": "React 废弃了哪些生命周期？为什么？",
+                "key": "/interview/frontend/react/010base/010040_what_lifecycles_have_react_abandoned",
+                "link": "/interview/frontend/react/010base/010040_what_lifecycles_have_react_abandoned"
+              },
+              {
+                "text": "React 16.X 中 props 改变后在哪个生命周期中处理",
+                "key": "/interview/frontend/react/010base/010050_react16_props_in_which_lifecycle",
+                "link": "/interview/frontend/react/010base/010050_react16_props_in_which_lifecycle"
+              },
+              {
+                "text": "React 性能优化在哪个生命周期？它优化的原理是什么？",
+                "key": "/interview/frontend/react/010base/010060_performance_optimization_in_which_lifecycle",
+                "link": "/interview/frontend/react/010base/010060_performance_optimization_in_which_lifecycle"
+              },
+              {
+                "text": "state 和 props 触发更新的生命周期分别有什么区别？",
+                "key": "/interview/frontend/react/010base/010070_state_props_lifecycle_difference",
+                "link": "/interview/frontend/react/010base/010070_state_props_lifecycle_difference"
+              },
+              {
+                "text": "React中发起网络请求应该在哪个生命周期中进行？为什么？",
+                "key": "/interview/frontend/react/010base/010080_network_request_in_which_lifecycle",
+                "link": "/interview/frontend/react/010base/010080_network_request_in_which_lifecycle"
+              },
+              {
+                "text": "React必须使用JSX吗？",
+                "key": "/interview/frontend/react/010base/010090_must_react_use_jsx",
+                "link": "/interview/frontend/react/010base/010090_must_react_use_jsx"
+              },
+              {
+                "text": "为什么 React 要用 JSX？",
+                "key": "/interview/frontend/react/010base/010100_why_react_uses_jsx",
+                "link": "/interview/frontend/react/010base/010100_why_react_uses_jsx"
+              },
+              {
+                "text": "为什么使用 JSX 的组件中没有看到使用 React 却需要引入 React？",
+                "key": "/interview/frontend/react/010base/010110_why_should_jsx_introduce_react",
+                "link": "/interview/frontend/react/010base/010110_why_should_jsx_introduce_react"
+              },
+              {
+                "text": "谈谈对 immutable 的理解？如何应用在 react 项目中？",
+                "key": "/interview/frontend/react/010base/010120_immutable",
+                "link": "/interview/frontend/react/010base/010120_immutable"
+              },
+              {
+                "text": "React Refs？应用场景？",
+                "key": "/interview/frontend/react/010base/010130_react_refs",
+                "link": "/interview/frontend/react/010base/010130_react_refs"
+              },
+              {
+                "text": "React 16 解决了什么问题，增加了哪些东西",
+                "key": "/interview/frontend/react/010base/010140_react16_update",
+                "link": "/interview/frontend/react/010base/010140_react16_update"
+              },
+              {
+                "text": "React 17 解决了什么问题，增加了哪些东西",
+                "key": "/interview/frontend/react/010base/010150_react17_update",
+                "link": "/interview/frontend/react/010base/010150_react17_update"
+              },
+              {
+                "text": "React 18 解决了什么问题，增加了哪些东西",
+                "key": "/interview/frontend/react/010base/010160_react18_update",
+                "link": "/interview/frontend/react/010base/010160_react18_update"
+              }
+            ]
+          },
+          {
+            "text": "数据 · 0",
+            "itemNums": 0,
+            "itemDepthNums": 0,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/020data",
+            "items": []
+          },
+          {
+            "text": "组件 · 0",
+            "itemNums": 0,
+            "itemDepthNums": 0,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/030component",
+            "items": []
+          },
+          {
+            "text": "Hooks · 0",
+            "itemNums": 0,
+            "itemDepthNums": 0,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/040hooks",
+            "items": []
+          },
+          {
+            "text": "状态 · 0",
+            "itemNums": 0,
+            "itemDepthNums": 0,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/050state",
+            "items": []
+          },
+          {
+            "text": "路由 · 0",
+            "itemNums": 0,
+            "itemDepthNums": 0,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/060router",
+            "items": []
+          },
+          {
+            "text": "原理 · 0",
+            "itemNums": 0,
+            "itemDepthNums": 0,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/070source",
+            "items": []
+          },
+          {
+            "text": "实践 · 0",
+            "itemNums": 0,
+            "itemDepthNums": 0,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/080practice",
+            "items": []
+          },
+          {
+            "text": "其他 · 0",
+            "itemNums": 0,
+            "itemDepthNums": 0,
+            "collapsed": true,
+            "collapsible": true,
+            "key": "interview/frontend/react/090other",
+            "items": []
+          }
+        ]
+      },
+      {
+        "text": "Vue · 106",
         "itemNums": 8,
-        "itemDepthNums": 105,
+        "itemDepthNums": 106,
         "collapsed": true,
         "collapsible": true,
         "key": "interview/frontend/vue",
         "items": [
           {
-            "text": "基础 · 25",
-            "itemNums": 25,
-            "itemDepthNums": 25,
+            "text": "基础 · 26",
+            "itemNums": 26,
+            "itemDepthNums": 26,
             "collapsed": true,
             "collapsible": true,
             "key": "interview/frontend/vue/010base",
             "items": [
+              {
+                "text": "Vue 版本线",
+                "key": "/interview/frontend/vue/010base/010001_version_line",
+                "link": "/interview/frontend/vue/010base/010001_version_line"
+              },
               {
                 "text": "谈一谈你对 Vue 的理解，优缺点",
                 "key": "/interview/frontend/vue/010base/010010_vue",

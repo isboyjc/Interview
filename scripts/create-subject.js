@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-28 05:31:23
+ * @LastEditTime: 2023-07-04 00:51:06
  * @Description: 新增题目脚本
  * @Date: 2023-06-25 13:37:25
  * @Author: isboyjc
@@ -46,7 +46,10 @@ function writeTemplateFile(name) {
   let templatePath = path.join(__dirname, '../template/subject.md');
   let file = fs.readFileSync(templatePath, 'utf-8').toString();
 
-  if(name) file = file.replace(/(# \w+?)\n/, `$1 ${name}`)
+  if(name) {
+    file = file.replace(/^#\s+(.*)/gm, `# ${name}`)
+  }
+
 
   fs.writeFileSync(path.join(filePath, fileName), file);
   console.log(chalk.green(`文件名：${fileName} \n题目名：${name} \n创建成功！`));

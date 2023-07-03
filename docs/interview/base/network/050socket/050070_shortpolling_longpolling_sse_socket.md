@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 分别介绍短轮询、长轮询、SSE 和 Socket，以及区别？
 
 

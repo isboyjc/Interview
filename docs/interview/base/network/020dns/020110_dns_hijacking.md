@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 介绍下 DNS 劫持实现思路？
 
 

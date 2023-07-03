@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # GET 方法 URL 长度限制的原因
 
 

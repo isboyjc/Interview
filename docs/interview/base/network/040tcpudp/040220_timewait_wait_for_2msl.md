@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # TCP 中为什么四次挥手结束 TIME-WAIT 状态必须等待 2MSL 的时间呢？
 
 

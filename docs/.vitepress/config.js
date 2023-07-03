@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-29 16:42:02
+ * @LastEditTime: 2023-07-04 01:24:42
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -51,8 +51,6 @@ const {
   ignoreList: [
     'interview/notype', 
     'interview/base/algorithm',
-    // 'interview/base/network',
-    'interview/frontend/react', 
     'interview/frontend/framework_comparison',
   ],
   collapsed: true,
@@ -110,8 +108,30 @@ const {
     'interview/frontend/vue/060source': '原理',
     'interview/frontend/vue/070practice': '实践',
     'interview/frontend/vue/080other': '其他',
-
+    
     'interview/frontend/react': 'React',
+    'interview/frontend/react/010base': '基础',
+    'interview/frontend/react/020data': '数据',
+    'interview/frontend/react/030component': '组件',
+    'interview/frontend/react/040hooks': 'Hooks',
+    'interview/frontend/react/050state': '状态',
+    'interview/frontend/react/060router': '路由',
+    'interview/frontend/react/070source': '原理',
+    'interview/frontend/react/080practice': '实践',
+    'interview/frontend/react/090other': '其他',
+    
+    'interview/frontend/browser': '浏览器',
+    'interview/frontend/browser/010processthread': '进程&线程',
+    'interview/frontend/browser/020memory': '内存管理',
+    'interview/frontend/browser/030form': '组成',
+    'interview/frontend/browser/040render': '渲染',
+    'interview/frontend/browser/050cache': '缓存',
+    'interview/frontend/browser/060localstorage': '本地存储',
+    'interview/frontend/browser/070cors': '同源策略',
+    'interview/frontend/browser/080event': '事件机制',
+    'interview/frontend/browser/090gc': '垃圾回收',
+    'interview/frontend/browser/100memoryleak': '内存泄漏',
+    'interview/frontend/browser/110other': '其他',
 
 
     'interview/base': '基础 · 类',
@@ -224,6 +244,13 @@ const nav = [
         text: '框架 & 库',
         items: [
           getKeyForCatalogTreeToNav('interview/frontend/vue'),
+          getKeyForCatalogTreeToNav('interview/frontend/react'),
+        ]
+      },
+      {
+        text: '其他',
+        items: [
+          getKeyForCatalogTreeToNav('interview/frontend/browser'),
         ]
       }
     ]
@@ -244,6 +271,8 @@ const sidebar = {
   "/interview/frontend/css": getKeyForCatalogTree('interview/frontend/css', sidebarCatalogTree)?.items,
   "/interview/frontend/javascript": getKeyForCatalogTree('interview/frontend/javascript', sidebarCatalogTree)?.items,
   "/interview/frontend/vue": getKeyForCatalogTree('interview/frontend/vue', sidebarCatalogTree)?.items,
+  "/interview/frontend/react": getKeyForCatalogTree('interview/frontend/react', sidebarCatalogTree)?.items,
+  "/interview/frontend/browser": getKeyForCatalogTree('interview/frontend/browser', sidebarCatalogTree)?.items,
   "/interview/base/network": getKeyForCatalogTree('interview/base/network', sidebarCatalogTree)?.items
 }
 
@@ -443,31 +472,6 @@ export default withPwa(withMermaid(defineConfig(async () => {
           },
           autoInstall: true
         }),
-        // PWA({
-        //   outDir: '.vitepress/dist',
-        //   manifest: {
-        //     name: '不正经的前端|面试',
-        //     short_name: '不正经的前端|面试',
-        //     theme_color: '#ffffff',
-        //     icons: [
-        //       {
-        //         src: '/images/icon/apple-touch-icon.png',
-        //         sizes: '120x120',
-        //         type: 'image/png',
-        //       },
-        //       {
-        //         src: '/images/icon/android-chrome-192x192.png',
-        //         sizes: '192x192',
-        //         type: 'image/png',
-        //       },
-        //       {
-        //         src: '/images/icon/android-chrome-512x512.png',
-        //         sizes: '512x512',
-        //         type: 'image/png',
-        //       },
-        //     ],
-        //   },
-        // }),
         UnoCSS({
           // 详见 unocss.config.js
         })

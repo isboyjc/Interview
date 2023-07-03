@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # clear 属性清除浮动的原理？
 
 使用clear属性清除浮动，其语法如下：

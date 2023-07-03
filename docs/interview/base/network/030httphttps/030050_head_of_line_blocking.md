@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 介绍下 HTTP1.0/1.1/2.0 的队头阻塞问题
 
 

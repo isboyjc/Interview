@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # HTTP 都有哪些请求方法？
 
 

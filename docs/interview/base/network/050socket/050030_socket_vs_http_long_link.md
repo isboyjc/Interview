@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Socket 和 HTTP 长链接的区别，应用场景？
 
 

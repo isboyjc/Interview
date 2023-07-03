@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 页面有多张图片，HTTP 是怎样的加载表现？
 
 

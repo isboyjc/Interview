@@ -1,1 +1,5 @@
+---
+contributors: 'isboyjc'
+---
+
 # HTML5的文件离线储存怎么使用，工作原理是什么？

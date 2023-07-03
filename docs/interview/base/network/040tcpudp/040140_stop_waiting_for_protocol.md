@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 什么是停止等待协议？
 
 

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # HTTP 长连接和短连接使用场景分别是什么
 
 

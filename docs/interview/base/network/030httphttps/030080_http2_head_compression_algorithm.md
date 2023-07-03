@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # HTTP2 的头部压缩算法是怎样的？
 
 

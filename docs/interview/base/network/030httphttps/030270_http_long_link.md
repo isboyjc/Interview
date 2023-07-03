@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # HTTP 如何实现长链接？在什么时候会超时？
 
 

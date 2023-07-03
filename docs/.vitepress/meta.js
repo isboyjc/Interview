@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-29 16:25:28
+ * @LastEditTime: 2023-07-04 00:17:14
  * @Description: ...
  * @Date: 2023-06-26 00:39:07
  * @Author: isboyjc
@@ -8,7 +8,7 @@
 import { version, author, keywords as ks, description as desc } from '../../package.json'
 
 // base
-export const title = '不正经的前端 | 面试'
+export const title = '不正经的前端 | 八股'
 export const site = 'https://interview.isboyjc.com/'
 export const logo = '/img/site/logo.png'
 export const ico = '/img/site/logo.ico'

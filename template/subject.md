@@ -1,5 +1,5 @@
 ---
-contributors: [ 'isboyjc' ]
+contributors: 'isboyjc'
 ---
 
 # 

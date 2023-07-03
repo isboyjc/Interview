@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # GET 和 POST 的区别？应用场景？
 
 

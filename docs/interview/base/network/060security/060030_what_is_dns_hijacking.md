@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 什么是 DNS 劫持？
 
 

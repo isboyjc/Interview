@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # CSS 中各个元素的层叠顺序？
 
 层叠顺序，英文称作 stacking order，表示元素发生层叠时有着特定的垂直显示顺序。

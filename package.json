@@ -2,7 +2,7 @@
   "name": "interview",
   "version": "0.0.1",
   "private": true,
-  "description": "这是一份开放的面试题库",
+  "description": "八股是一份开放的面试题库，我们的愿景是覆盖 90%+ IT 知识点问答，节省面试者和面试官的时间！同时也是一份结构化的知识图谱，源于学习，而不是刷题！",
   "author": "Isboyjc",
   "packageManager": "pnpm@6.18.0",
   "license": "MIT",
@@ -24,7 +24,9 @@
   },
   "keywords": [
     "不正经的前端 | 面试",
+    "不正经的前端 | 八股",
     "不正经的前端",
+    "八股",
     "面试",
     "isboyjc",
     "前端面试",

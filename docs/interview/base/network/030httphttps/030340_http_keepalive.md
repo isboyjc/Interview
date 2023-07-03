@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈谈对 Keep-Alive 和非 Keep-Alive 的理解？
 
 

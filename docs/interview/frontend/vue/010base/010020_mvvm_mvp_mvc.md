@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈对 MVVM 的理解，MVC？MVP？
 
 

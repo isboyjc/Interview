@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 什么是简单请求和非简单请求？
 
 
