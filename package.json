@@ -59,7 +59,7 @@
     "busuanzi.pure.js": "^1.0.3",
     "chalk": "4.1.2",
     "child_process": "^1.0.2",
-    "dayjs": "^1.11.8",
+    "dayjs": "^1.11.9",
     "enquirer": "^2.3.6",
     "fast-glob": "^3.2.12",
     "md5": "^2.3.0",
