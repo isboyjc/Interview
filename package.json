@@ -61,7 +61,7 @@
     "child_process": "^1.0.2",
     "dayjs": "^1.11.8",
     "enquirer": "^2.3.6",
-    "fast-glob": "^3.2.12",
+    "fast-glob": "^3.3.0",
     "md5": "^2.3.0",
     "mermaid": "9.1.7",
     "node-fetch": "2",
