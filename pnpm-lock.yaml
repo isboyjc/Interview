@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/cli': ^7.22.5
   '@babel/core': ^7.22.5
-  '@babel/node': ^7.22.5
+  '@babel/node': ^7.22.6
   '@babel/plugin-transform-modules-commonjs': ^7.22.5
   '@babel/preset-env': ^7.22.5
   '@iconify-json/tabler': ^1.1.79
@@ -32,7 +32,7 @@ specifiers:
 devDependencies:
   '@babel/cli': 7.22.5_@babel+core@7.22.5
   '@babel/core': 7.22.5
-  '@babel/node': 7.22.5_@babel+core@7.22.5
+  '@babel/node': 7.22.6_@babel+core@7.22.5
   '@babel/plugin-transform-modules-commonjs': 7.22.5_@babel+core@7.22.5
   '@babel/preset-env': 7.22.5_@babel+core@7.22.5
   '@iconify-json/tabler': 1.1.79
@@ -522,8 +522,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@babel/node/7.22.5_@babel+core@7.22.5:
-    resolution: {integrity: sha512-rguSfZsRNsAhCQ/XjZhDK2CTWxp/jEKx2On8Ir+C6uCZERirg/Ae6fJaOSKQgTg11kA2LEvonpxY2Hb3zF5C8g==}
+  /@babel/node/7.22.6_@babel+core@7.22.5:
+    resolution: {integrity: sha512-Lt6v+RUQOTsEOXLv+KfjogLFkFfsLPPSoXZqmbngfVatkWjQPnFGHO0xjFRcN6XEvm3vsnZn+AWQiRpgZFsdIA==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
