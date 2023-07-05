@@ -26,7 +26,7 @@ specifiers:
   unplugin-vue-components: ^0.25.1
   vite-plugin-pwa: ^0.16.4
   vitepress: ^1.0.0-beta.2
-  vitepress-plugin-mermaid: ^2.0.8
+  vitepress-plugin-mermaid: ^2.0.11
   vue: ^3.2.47
   yargs: ^17.7.2
 
@@ -56,7 +56,7 @@ devDependencies:
   unplugin-vue-components: 0.25.1_vue@3.3.4
   vite-plugin-pwa: 0.16.4
   vitepress: 1.0.0-beta.3
-  vitepress-plugin-mermaid: 2.0.10_e5aab80ef89b73cc5bb4cbc0549c7c4b
+  vitepress-plugin-mermaid: 2.0.11_e5aab80ef89b73cc5bb4cbc0549c7c4b
   vue: 3.3.4
   yargs: 17.7.2
 
@@ -5019,14 +5019,16 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress-plugin-mermaid/2.0.10_e5aab80ef89b73cc5bb4cbc0549c7c4b:
-    resolution: {integrity: sha512-sujwlcuyK5vCyS9OfH3Fwq4V723nUFWlOsezDU+RcGtqO32Y8HHXpxejibIZSed5DsL9zdjTgScRmdZYG+PsSw==}
+  /vitepress-plugin-mermaid/2.0.11_e5aab80ef89b73cc5bb4cbc0549c7c4b:
+    resolution: {integrity: sha512-5/0y98x4btGb/HrQmFzFPlRZIPMmtDZBUeBSYw2gGJnG+UaLMjJJYfeooknLtUpyRD24EdrGLU2eZwu6sgJgTw==}
     peerDependencies:
-      mermaid: ^8.0.0 || ^9.0.0
+      mermaid: '10'
       vitepress: ^0.21.6 || ^1.0.0 || ^1.0.0-alpha
     dependencies:
       mermaid: 9.1.7
       vitepress: 1.0.0-beta.3
+    optionalDependencies:
+      '@mermaid-js/mermaid-mindmap': 9.3.0
     dev: true
 
   /vitepress/1.0.0-beta.3:
