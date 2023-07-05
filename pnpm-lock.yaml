@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/cli': ^7.22.5
+  '@babel/cli': ^7.22.6
   '@babel/core': ^7.22.5
   '@babel/node': ^7.22.5
   '@babel/plugin-transform-modules-commonjs': ^7.22.5
@@ -31,7 +31,7 @@ specifiers:
   yargs: ^17.7.2
 
 devDependencies:
-  '@babel/cli': 7.22.5_@babel+core@7.22.5
+  '@babel/cli': 7.22.6_@babel+core@7.22.5
   '@babel/core': 7.22.5
   '@babel/node': 7.22.5_@babel+core@7.22.5
   '@babel/plugin-transform-modules-commonjs': 7.22.5_@babel+core@7.22.5
@@ -224,8 +224,8 @@ packages:
       leven: 3.1.0
     dev: true
 
-  /@babel/cli/7.22.5_@babel+core@7.22.5:
-    resolution: {integrity: sha512-N5d7MjzwsQ2wppwjhrsicVDhJSqF9labEP/swYiHhio4Ca2XjEehpgPmerjnLQl7BPE59BLud0PTWGYwqFl/cQ==}
+  /@babel/cli/7.22.6_@babel+core@7.22.5:
+    resolution: {integrity: sha512-Be3/RfEDmkMRGT1+ru5nTkfcvWz5jDOYg1V9rXqTz2u9Qt96O1ryboGvxVBp7wOnYWDB8DNHIWb6DThrpudfOw==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
