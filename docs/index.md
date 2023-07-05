@@ -40,6 +40,9 @@ hero:
     - theme: alt
       text: 网络
       link: /interview/base/network/010base/010010_osi_model
+    - theme: alt
+      text: Java
+      link: /interview/backend/java/010base/010010_oop
 features:
   - title: 安全
     icon: 🌟

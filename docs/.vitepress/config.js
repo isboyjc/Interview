@@ -146,6 +146,11 @@ const {
     'interview/base/network/070other': '其他',
     
     'interview/base/algorithm': '算法',
+
+    'interview/backend': '后端 · 类',
+
+    'interview/backend/java': 'Java',
+    'interview/backend/java/010base': '基础',
   },
   generateDirectoryName: 'interview',
   generateDirectoryPath: resolve('./')
@@ -256,6 +261,18 @@ const nav = [
     ]
   },
   {
+    text: '后端 · 类',
+    activeMatch: `^/interview/backend`,
+    items: [
+      {
+        text: '语言',
+        items: [
+          getKeyForCatalogTreeToNav('interview/backend/java'),
+        ]
+      }
+    ]
+  },
+  {
     activeMatch: `^/about`,
     key: 'about',
     text: '关于面试',
@@ -273,7 +290,9 @@ const sidebar = {
   "/interview/frontend/vue": getKeyForCatalogTree('interview/frontend/vue', sidebarCatalogTree)?.items,
   "/interview/frontend/react": getKeyForCatalogTree('interview/frontend/react', sidebarCatalogTree)?.items,
   "/interview/frontend/browser": getKeyForCatalogTree('interview/frontend/browser', sidebarCatalogTree)?.items,
-  "/interview/base/network": getKeyForCatalogTree('interview/base/network', sidebarCatalogTree)?.items
+  "/interview/base/network": getKeyForCatalogTree('interview/base/network', sidebarCatalogTree)?.items,
+
+  "/interview/backend/java": getKeyForCatalogTree('interview/backend/java', sidebarCatalogTree)?.items,
 }
 
 
