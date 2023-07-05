@@ -15,6 +15,9 @@
 /docs/.vitepress/dist
 /docs/.vitepress/cache
 
+/docs/interview_dir.json
+/docs/interview_nav.json
+
 # misc
 .DS_Store
 
