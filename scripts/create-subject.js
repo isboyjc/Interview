@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-07-04 00:51:06
+ * @LastEditTime: 2023-07-06 03:44:54
  * @Description: 新增题目脚本
  * @Date: 2023-06-25 13:37:25
  * @Author: isboyjc
@@ -16,6 +16,7 @@ import chalk from 'chalk';
 // 获取命令行参数
 const argv = yargs.parse(process.argv.slice(2))
 let [filePath, fileName, name] = argv._;
+name = name.replace(/^"(.*)"$/, '$1')
 
 // 判断文件是否存在
 let fileExists = fs.existsSync(path.join(filePath, fileName));
@@ -45,12 +46,21 @@ if (fileExists) {
 function writeTemplateFile(name) {
   let templatePath = path.join(__dirname, '../template/subject.md');
   let file = fs.readFileSync(templatePath, 'utf-8').toString();
+  let newMarkdown;
 
   if(name) {
-    file = file.replace(/^#\s+(.*)/gm, `# ${name}`)
+    const lines = file.split('\n');
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].startsWith('# ')) {
+        lines[i] = `# ${name}`;
+        break;
+      }
+    }
+
+    newMarkdown = lines.join('\n');
   }
 
 
-  fs.writeFileSync(path.join(filePath, fileName), file);
+  fs.writeFileSync(path.join(filePath, fileName), newMarkdown);
   console.log(chalk.green(`文件名：${fileName} \n题目名：${name} \n创建成功！`));
 }
