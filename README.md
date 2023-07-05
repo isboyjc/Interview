@@ -4,16 +4,16 @@
 
 欢迎 Star！
 
-正在更新中...
+更新中...
 
 请查看 👉🏻 [interview.isboyjc.com](https://interview.isboyjc.com)
 
 
 ## 核心成员
 
-正在更新中...
+更新中...
 
 ## 贡献者
 
-正在更新中...
+更新中...
 
