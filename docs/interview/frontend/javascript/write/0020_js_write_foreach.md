@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现数组 forEach 方法
+
 
 ## 题干
 
@@ -23,7 +28,11 @@ forEach(callbackFn, thisArg)
 - 返回值 -       `undefined`
 
 
+
+
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 Array.prototype.myForEach = function (callback, thisArg) {
@@ -32,3 +41,16 @@ Array.prototype.myForEach = function (callback, thisArg) {
   }
 };
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

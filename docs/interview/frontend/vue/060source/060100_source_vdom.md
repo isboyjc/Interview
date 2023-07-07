@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈你对虚拟 DOM 的理解
 
 

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue 组件通信有哪些方式
 
 

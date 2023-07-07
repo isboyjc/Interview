@@ -1,6 +1,11 @@
+---
+contributors: 'isboyjc'
+---
+
 # No.0090
 
-# 题干
+
+## 题干
 
 ```js
 const length = 4; 
@@ -13,8 +18,27 @@ for (var i = 0; i < length; i++);{
 console.log(numbers)
 ```
 
-# 题解
+
+
+
+## 题解
+
+::: details 点我查看题解
 
 ```js
 console.log(numbers) // [5]
 ```
+
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

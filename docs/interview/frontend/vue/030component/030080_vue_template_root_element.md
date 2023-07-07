@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 为什么 Vue2.x 组件模板只能有一个根元素，Vue3.x 为什么可以多个
 
 

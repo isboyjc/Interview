@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 服务端渲染需要考虑些什么
 
 

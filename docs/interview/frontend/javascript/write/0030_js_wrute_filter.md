@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现数组 filter 方法
+
 
 ## 题干
 
@@ -40,7 +45,12 @@ ages.filter(checkAdult); // [32, 33, 40]
 
 
 
+
+
 ## 题解
+
+::: details 点我查看题解
+
 
 ```js
 Array.prototype.myFilter = function(callback, thisArg) {
@@ -60,3 +70,16 @@ function checkAdult(age) {
 }
 ages.myFilter(checkAdult); // [32, 33, 40]
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue中如何扩展一个组件
 
 

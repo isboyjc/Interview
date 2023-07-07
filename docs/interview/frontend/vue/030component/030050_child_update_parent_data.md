@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue 子组件可以直接改变父组件的数据吗
 
 

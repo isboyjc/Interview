@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue 中怎么缓存当前的组件？缓存后怎么更新
 
 

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # hash 模式和 history 模式的实现原理
 
 

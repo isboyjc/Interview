@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 如何使用 for...of 遍历普通对象？
 
 ## 题干

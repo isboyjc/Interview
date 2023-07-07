@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue 中为什么要使用异步组件
 
 

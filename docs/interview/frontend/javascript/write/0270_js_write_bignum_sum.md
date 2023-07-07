@@ -1,6 +1,11 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现大数相加方法
 
-题目：
+
+## 题干
 
 ```js
 let a = "9007199254740991";
@@ -11,7 +16,11 @@ function add(a ,b){
 }
 ```
 
-实现代码:
+
+
+## 题解
+
+::: details 点我查看题解
 
 ```js
 function bigIntAdd(a ,b){
@@ -37,6 +46,16 @@ function bigIntAdd(a ,b){
 }
 ```
 
+:::
+
+
+
+## 相同
+
+
 ## 相关
 
 [Number() 存储空间是多大？如后台发送一个超过最大存储数字怎么办？](../core/020datatype/020110_number_storage.md)
+
+## 扩展
+

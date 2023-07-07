@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vuex 和单纯的全局对象有什么区别
 
 

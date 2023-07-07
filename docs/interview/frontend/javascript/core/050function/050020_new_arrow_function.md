@@ -1,8 +1,15 @@
+---
+contributors: 'isboyjc'
+---
+ 
 # 如果 new 一个箭头函数的会怎样？
+
 
 ## 题干
 
 - new 一个箭头函数
+
+
 
 ## 题解
 
@@ -17,8 +24,17 @@ const Foo = () => {};
 const foo = new Foo(); // TypeError: Foo is not a constructor
 ```
 
+
 :::
+
+
+
+## 相同
+
 
 ## 相关
 
 [箭头函数与普通函数的区别](./050010_arrow_function.md)
+
+## 扩展
+

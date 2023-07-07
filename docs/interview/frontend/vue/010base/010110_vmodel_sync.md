@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # v-model 和 sync 修饰符有什么区别
 
 

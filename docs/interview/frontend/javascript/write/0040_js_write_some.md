@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现数组 some 方法
+
 
 ## 题干
 
@@ -37,7 +42,11 @@ ages.some(checkAdult); // true
 这个例子中，`some` 方法对 `ages` 数组中的每个元素执行 `checkAdult` 函数。由于数组中有一个元素（18）大于等于 18，所以整个表达式返回 `true`。
 
 
+
+
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 Array.prototype.mySome = function(callback, thisArg) {
@@ -54,3 +63,16 @@ function checkAdult(age) {
 }
 ages.mySome(checkAdult); // true
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

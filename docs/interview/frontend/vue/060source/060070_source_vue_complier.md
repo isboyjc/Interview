@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 Vue complier 的实现原理
 
 

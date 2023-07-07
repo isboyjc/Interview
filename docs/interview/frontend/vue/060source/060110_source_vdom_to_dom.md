@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈如何从虚拟 DOM 到真实 DOM
 
 

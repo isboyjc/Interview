@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 Vue SSR 的实现原理
 
 

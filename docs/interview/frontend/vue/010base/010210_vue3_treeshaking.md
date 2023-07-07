@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue3.x 中 Treeshaking 特性是如何做的
 
 

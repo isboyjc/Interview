@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈你对 Vue 组件化的理解
 
 

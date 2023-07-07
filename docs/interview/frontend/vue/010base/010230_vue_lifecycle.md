@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue 生命周期以及每个阶段做些什么
 
 

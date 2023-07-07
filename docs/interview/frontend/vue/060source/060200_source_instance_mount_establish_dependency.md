@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 Vue 实例挂载的过程中如何建立依赖关系
 
 

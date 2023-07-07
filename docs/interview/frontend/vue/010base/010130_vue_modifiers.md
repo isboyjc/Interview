@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 介绍下 Vue 中常用的修饰符
 
 

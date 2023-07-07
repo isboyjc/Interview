@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Pinia 和 Vuex 区别是什么
 
 

@@ -1,10 +1,20 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现数组去重方法
+
 
 ## 题干
 
 - 数组去重
 
+
+
 ## 题解
+
+::: details 点我查看题解
+
 ### Set && Array.from
 
 `Set` 是 `ES6` 新增的数据结构，它可以存储不重复的值，`Array.from` 可以将类数组对象转换为数组，结合起来就可以实现数组去重。
@@ -85,6 +95,17 @@ function unique(arr) {
 console.log(unique(arr)); // [1 ,2 ,3 ,4 ,5]
 ```
 
+
+:::
+
+
+
+## 相同
+
+
 ## 相关
 
 [JS 实现数组去重方法](../core/040array/040030_array_deduplication.md)
+
+## 扩展
+

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue2.x 中给 data 对象动态新增一个属性响应式还存在吗，Vue3.x 呢，为什么
 
 

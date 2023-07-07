@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue3.x 监测数组的时候可能触发多次 get/set，那么如何防止触发多次
 
 

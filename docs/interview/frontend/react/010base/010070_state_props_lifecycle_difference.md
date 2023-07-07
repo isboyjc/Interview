@@ -4,6 +4,8 @@ contributors: 'isboyjc'
 
 # state 和 props 触发更新的生命周期分别有什么区别？
 
+## 题干
+
 - 
 
 

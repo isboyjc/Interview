@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-07-04 01:24:42
+ * @LastEditTime: 2023-07-06 04:14:46
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -14,7 +14,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 // vite插件
 // md 转换
 import { MarkdownTransform } from '../.vitepress/plugins/markdownTransform'
-import { Contributors } from '../.vitepress/plugins/contributors'
+// import { Contributors } from '../.vitepress/plugins/contributors'
 
 // PWA
 import { withPwa } from '@vite-pwa/vitepress'
@@ -33,7 +33,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 // icon 加载 loader
 import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 
-import { getChangeLog, getContributorsAt} from '../../utils/changelog'
+// import { getChangeLog, getContributorsAt} from '../../utils/changelog'
 
 import {catalogGeneration, getKeyForCatalogTree, getCatalogDepthLast} from "./plugins/catalogGeneration"
 
@@ -307,7 +307,7 @@ export default withPwa(withMermaid(defineConfig(async () => {
 
   // const contributors = await getContributorsAt("docs/interview/frontend/javascript/core/040array/040010_arraytype_judgment.md")
   // const contributors = await getContributorsAt("docs/.vitepress/plugins/catalogGeneration.js")
-  const contributors = await getContributorsAt("./")
+  // const contributors = await getContributorsAt("./")
 
   return {
     pwa,

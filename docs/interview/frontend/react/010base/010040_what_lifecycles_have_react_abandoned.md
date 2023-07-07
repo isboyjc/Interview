@@ -4,6 +4,8 @@ contributors: 'isboyjc'
 
 # React 废弃了哪些生命周期？为什么？
 
+## 题干
+
 - 
 
 

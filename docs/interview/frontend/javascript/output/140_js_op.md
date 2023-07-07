@@ -1,6 +1,11 @@
+---
+contributors: 'isboyjc'
+---
+
 # No.0140
 
-# 题干
+
+## 题干
 
 ```js
 Promise.resolve().then(() => {
@@ -23,7 +28,11 @@ Promise.resolve().then(() => {
 });
 ```
 
-# 题解
+
+
+## 题解
+
+::: details 点我查看题解
 
 ```js
 // 0
@@ -34,3 +43,16 @@ Promise.resolve().then(() => {
 // 5
 // 6
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

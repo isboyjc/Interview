@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 Vue2.x 中的 Mixin，为什么 Vue3.x 中不需要了
 
 

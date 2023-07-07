@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # v-if 和 v-for 为什么不能连用
 
 

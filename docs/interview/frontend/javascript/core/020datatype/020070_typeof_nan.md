@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # typeof NaN 的结果是什么？
 
 ## 题干

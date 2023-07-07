@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue3.x setup 中为什么没有 beforeCreate 和 created
 
 

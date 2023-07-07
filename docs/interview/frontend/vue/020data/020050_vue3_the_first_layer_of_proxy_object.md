@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue3.x 怎样处理 Proxy 只会代理对象的第一层的问题
 
 

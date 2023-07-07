@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue Router 有哪几种导航守卫
 
 

@@ -1,10 +1,19 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现类型判断方法
 
+
 ## 题干
+
+- 
 
 
 
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 function DataType(tgt, type) {
@@ -19,6 +28,16 @@ DataType([], "array");  // true
 DataType({}, "array");  // false
 ```
 
+:::
+
+
+
+## 相同
+
+
 ## 相关
 
 [JS 数据类型判断的方式有哪些？](../core/020datatype/020020_datatype_judgment.md)
+
+## 扩展
+

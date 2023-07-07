@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 Vue 子组件和父组件创建和挂载顺序
 
 

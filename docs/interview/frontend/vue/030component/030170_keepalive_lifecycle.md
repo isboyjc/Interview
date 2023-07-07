@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 设置 keep-alive 缓存的组件完整生命周期流程是什么
 
 
