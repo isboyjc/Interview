@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-07-04 01:30:54
+ * @LastEditTime: 2023-07-13 19:52:06
  * @Description:  迭代新增题目脚本
  * @Date: 2023-06-25 17:24:42
  * @Author: isboyjc
@@ -8,12 +8,18 @@
 import { run } from '../utils/process'
 
 let fileArr = [
-  ["面向对象特性？", "_oop"],
-  ["a = a + b 与 a += b 的区别", "_a_b_difference"],
+  ["对 React SSR 的理解", "_react_ssr"],
+  ["React.Children.map 和 JS 的 map 有什么区别？", "_react_children_map_vs_js_map"],
+  ["同时引用这三个库 react.js、react-dom.js 和 babel.js 它们都有什么作用？", "_react_babel"],
+  ["React 的严格模式如何使用，有什么用处？", "_react_strict_mode"],
+  ["React 中 constructor 和 getInitialState 的区别?", "_react_constructor_vs_getinitialstate"],
+  ["React 中如何捕获异常？", "_react_capture_exceptions"],
+  ["React 中引入 CSS 有哪些方式？区别？", "_react_lead_into_css"],
+  ["React 性能优化?", "_react_performance_optimization"],
 ]
 
-let fileNamePrefix = "010"
-let folderPath = "docs/interview/backend/java/010base"
+let fileNamePrefix = "090"
+let folderPath = "docs/interview/frontend/react/090other"
 let count = 10;
 
 
