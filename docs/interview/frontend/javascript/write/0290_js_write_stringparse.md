@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现模板字符串解析方法
+
 
 ## 题干
 
@@ -19,10 +24,28 @@ stringParse(template, data) // 我是isboyjc，年龄99，性别undefined
 
 
 
+
+
+
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 function stringParse(template, data){
   // TODO...
 }
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

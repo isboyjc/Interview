@@ -1,4 +1,19 @@
+---
+contributors: 'isboyjc'
+---
+
 # CSS 盒模型？
+
+
+## 题干
+
+- 
+
+
+
+## 题解
+
+::: details 点我查看题解
 
 CSS3中的盒模型有以下两种：
 
@@ -17,3 +32,17 @@ CSS3中的盒模型有以下两种：
 
 - box-sizeing: content-box表示标准盒模型（默认值）
 - box-sizeing: border-box表示IE盒模型（怪异盒模型）
+
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

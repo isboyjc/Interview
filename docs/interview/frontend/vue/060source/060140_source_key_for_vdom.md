@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈虚拟 DOM 中 key 的作用
 
 

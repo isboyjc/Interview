@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vuex 中 action 和 mutation 的区别是什么？为什么要区分它们
 
 

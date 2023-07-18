@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现 instanceof 操作符
+
 
 ## 题干
 
@@ -37,7 +42,11 @@ console.log(o instanceof D); // false，D.prototype 不在 o 的原型链上
 ```
 
 
+
+
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 function myInstanceof(left, right) {
@@ -57,3 +66,16 @@ console.log(myInstanceof([], Array));     // true
 console.log(myInstanceof([], Object));    // true
 console.log(myInstanceof([], Function));  // false
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

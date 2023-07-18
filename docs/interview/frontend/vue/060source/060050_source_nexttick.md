@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 nextTick 的作用以及实现原理
+
 
 
 ## 题干

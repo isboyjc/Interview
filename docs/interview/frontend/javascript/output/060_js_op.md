@@ -1,6 +1,12 @@
+---
+contributors: 'isboyjc'
+---
+
 # No.0060
 
-# 题干
+
+## 题干
+
 
 ```js
 function Foo(){
@@ -25,7 +31,12 @@ new Foo.getName();
 new Foo().getName();
 ```
 
-# 题解
+
+
+
+## 题解
+
+::: details 点我查看题解
 
 ```js
 Foo.getName(); // 2
@@ -35,3 +46,16 @@ getName(); // 1
 new Foo.getName(); // 2
 new Foo().getName(); // 3
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

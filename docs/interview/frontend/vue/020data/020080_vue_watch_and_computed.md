@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 什么是 watch，什么是 computed，区别以及使用场景
 
 

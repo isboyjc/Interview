@@ -1,6 +1,11 @@
+---
+contributors: 'isboyjc'
+---
+
 # No.0055
 
-# 题干
+
+## 题干
 
 ```js
 var foo = function () {
@@ -25,9 +30,26 @@ function foo() {
 foo()
 ```
 
-# 题解
+
+
+
+## 题解
+
+::: details 点我查看题解
 
 ```js
 // foo1 foo2 foo2 foo2
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
 

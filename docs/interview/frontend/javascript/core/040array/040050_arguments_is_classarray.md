@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 为什么函数的 arguments 参数是类数组而不是数组？如何遍历类数组?
 
 ## 题干

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 如何让 CSS 值在当前的组件中起作用
 
 

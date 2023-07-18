@@ -1,30 +1,19 @@
-# Interview
+# 不正经的前端 | 八股
 
-[interview.isboyjc.com](https://interview.isboyjc.com)
+八股是一份开放的面试题库，我们的愿景是覆盖 90%+ IT 知识点问答，节省面试者和面试官的时间！同时也是一份结构化的知识图谱，源于学习，而不是刷题！
 
-这是一份开放的面试题库
+欢迎 Star！
 
-Updating...
+更新中...
+
+请查看 👉🏻 [interview.isboyjc.com](https://interview.isboyjc.com)
 
 
-## Core Team
+## 核心成员
 
-Updating...
+更新中...
 
-## Contributors
+## 贡献者
 
-Updating...
+更新中...
 
-## 关于共建
-
-### 如何提交题目
-
-请提 Issues
-
-### 如何提交答案
-
-请 PR
-
-### 如何更正信息
-
-请提 Issues 或 PR

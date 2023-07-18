@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 介绍下深拷贝、浅拷贝，两者区别，object.assign 是哪种？
 
 ## 题干

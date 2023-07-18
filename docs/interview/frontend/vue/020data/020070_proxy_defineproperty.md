@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Proxy 相比 defineProperty 的优势在哪里
 
 

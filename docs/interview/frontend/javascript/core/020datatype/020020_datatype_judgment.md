@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 数据类型判断的方式有哪些？
 
 ## 题干

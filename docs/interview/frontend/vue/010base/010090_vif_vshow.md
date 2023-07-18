@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 v-if 与 v-show 的区别
 
 ## 题干

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 Vue3.x 以及 Vue3.x 的一些新特性
 
 

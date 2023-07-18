@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 如何解决 Vue 非工程化项目，网速慢时初始化页面闪动问题
 
 

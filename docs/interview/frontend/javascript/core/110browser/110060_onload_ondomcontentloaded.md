@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # window.onload 和 document.onDOMContentLoaded 有什么区别？
 
 
@@ -17,8 +21,11 @@
 
 
 
+## 相同
+
+
 ## 相关
 
 
-
 ## 扩展
+

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue2.x 中存在过滤器，为什么 Vue3.x 中移除了
 
 

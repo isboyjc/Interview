@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # CSS Scoped 的实现原理
 
 

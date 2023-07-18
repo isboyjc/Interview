@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 中什么是变量提升？导致了什么问题？
 
 ## 题干

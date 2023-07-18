@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现对象压平方法
+
 
 ## 题干
 
@@ -34,10 +39,30 @@ objectFlatten(obj)
 ```
 
 
+
+
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 function objectFlatten(obj){
   // TODO...
 }
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+
+
+
+

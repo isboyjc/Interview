@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # isNaN 和 Number.isNaN 函数的区别？
 
 ## 题干

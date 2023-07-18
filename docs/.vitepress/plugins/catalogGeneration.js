@@ -1,6 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
+// TODO 该文件暂放，暂不属于 Vite 插件，待更改
+
 /**
  * @param { String } fullPath 根文件夹目录完整绝对地址
  * @param { Array } options.base 根目录，默认 /docs
@@ -123,20 +125,14 @@ export function getSidebar(options) {
         items
       }
     }else{
-      // console.log(dir)
       // 文件
       const file = fs.readFileSync(path.resolve(fullPath, dir)).toString()
       let text = dir
-      let lines = file.split('\n')
-      const line = lines.shift()
-      if(line.startsWith('# ')){
-        text = line.replace('# ','')
-      }else if(line.startsWith('---')){
-        const index = lines.findIndex(v => v.startsWith('---'))
-        lines = lines.slice(index + 1).filter(v => v)
-        if(lines[0].startsWith('# ')){
-          text = lines[0].replace('# ','')
-        }
+
+      const match = file.match(/^# (\S.*)$/gm)
+
+      if(match){
+        text = match[0].replace(/^#\s/, '')
       }else{
         text = text.replace('.md','')
       }

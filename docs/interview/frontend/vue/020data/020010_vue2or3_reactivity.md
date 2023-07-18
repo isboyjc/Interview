@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈你对 Vue2.x 和 Vue3.x 响应式的理解
 
 

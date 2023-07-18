@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue3.x 中 setup 和 created 谁先执行？
 
 

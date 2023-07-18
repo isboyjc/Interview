@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue 中 OptionsAPI 组件 data 为什么必须是函数
 
 

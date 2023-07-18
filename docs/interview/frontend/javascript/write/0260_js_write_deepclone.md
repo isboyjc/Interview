@@ -1,10 +1,18 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现深拷贝方法（考虑 Symbol 类型、循环引用）
 
 ## 题干
 
 - 深拷贝 deepClone
 
+
+
 ## 题解
+
+::: details 点我查看题解
 
 深拷贝则是创建一个新的对象，完全复制原对象的所有属性值，包括引用类型的属性值，因此修改其中一个对象的引用类型属性不会影响到另一个对象的属性值。
 
@@ -79,8 +87,18 @@ console.log(obj); // {a: 1, b: 2, c: {a: 3}, d: Symbol(d), Symbol('e'): 4, loop:
 console.log(obj3); // {a: 1, b: 2, c: {-8}, d: Symbol(d), Symbol('e'): 4, loop: [Circular]}
 ```
 
+:::
+
+
+
+## 相同
+
+
 ## 相关
 
 [介绍下深拷贝、浅拷贝，两者区别，object.assign 是哪种](../core/030object/030060_object_deepcopy_lightcopy.md)
 
 [JS 实现浅拷贝方法](./0250_js_write_lightclone.md)
+
+## 扩展
+

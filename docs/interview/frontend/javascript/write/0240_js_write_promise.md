@@ -1,10 +1,31 @@
+---
+contributors: 'isboyjc'
+---
+ 
 # JS 实现 Promise（包含 all、race）
 
+
 ## 题干
+
+- 
+
 
 
 ## 题解
 
-```js
+::: details 点我查看题解
 
-```
+  TODO
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

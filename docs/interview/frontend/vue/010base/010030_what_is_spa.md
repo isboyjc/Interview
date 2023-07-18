@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 什么是 SPA 应用，优缺点
 
 

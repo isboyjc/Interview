@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 数组原生方法都有哪些？
 
 ## 题干

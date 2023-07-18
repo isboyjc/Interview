@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue Router 的完整的导航解析流程是什么
 
 

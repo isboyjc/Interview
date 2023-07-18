@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue2.x 中如何检测数组的变化
 
 

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 如何解决 Vue2.x 中给 data 对象动态新增属性页面无响应的问题
 
 

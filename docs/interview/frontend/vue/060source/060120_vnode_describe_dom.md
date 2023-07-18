@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈如何用 VNode 描述一个 DOM 结构
 
 

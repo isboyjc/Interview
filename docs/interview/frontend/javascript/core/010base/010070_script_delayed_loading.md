@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 脚本延迟加载的方式有哪些？
 
 

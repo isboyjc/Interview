@@ -1,10 +1,19 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现浅拷贝方法
+
 
 ## 题干
 
 - 浅拷贝 lightcopy
 
+
+
 ## 题解
+
+::: details 点我查看题解
 
 浅拷贝只复制对象的引用，而不是对象本身，因此复制后的对象和原对象共享同一个引用类型的属性，修改其中一个对象的引用类型属性会影响到另一个对象的属性值。
 
@@ -107,8 +116,19 @@ console.log(obj); // {a: 1, b: 2, c: {-4}}
 console.log(obj3); // {a: 1, b: 2, c: {-4}}
 ```
 
+
+:::
+
+
+
+## 相同
+
+
 ## 相关
 
 [介绍下深拷贝、浅拷贝，两者区别，object.assign 是哪种](../core/030object/030060_object_deepcopy_lightcopy.md)
 
 [JS 实现深拷贝方法（考虑 Symbol 类型、循环引用）](./0260_js_write_deepclone.md)
+
+## 扩展
+

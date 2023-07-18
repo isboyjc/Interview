@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 如果让你从零开始写一个 Vue Router，说说你的思路
 
 

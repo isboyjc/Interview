@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈 new Vue 实例初始化都发生了什么
 
 

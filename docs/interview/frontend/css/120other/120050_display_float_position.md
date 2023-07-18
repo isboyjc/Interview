@@ -1,4 +1,18 @@
+---
+contributors: 'isboyjc'
+---
+
 # display、float、position 的关系?
+
+## 题干
+
+- 
+
+
+
+## 题解
+
+::: details 点我查看题解
 
 - 首先判断display属性是否为none，如果为none，则position和float属性的值不影响元素最后的表现。
 
@@ -9,3 +23,17 @@
 - 如果float的值为none，则判断元素是否为根元素，如果是根元素则display属性按照上面的规则转换，如果不是，则保持指定的display属性值不变。
 
 总的来说，可以把它看作是一个类似优先级的机制，"position:absolute"和"position:fixed"优先级最高，有它存在的时候，浮动不起作用，'display'的值也需要调整；其次，元素的'float'特性的值不是"none"的时候或者它是根元素的时候，调整'display'的值；最后，非根元素，并且非浮动元素，并且非绝对定位的元素，'display'特性值同设置值。
+
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue 中自定义指令有哪些钩子，分别有什么作用
 
 

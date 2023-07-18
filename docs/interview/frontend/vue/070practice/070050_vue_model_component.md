@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 谈一谈封装一个 Vue 弹框组件的思路
 
 

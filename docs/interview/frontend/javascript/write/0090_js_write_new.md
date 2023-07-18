@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现 new 操作符
+
 
 ## 题干
 
@@ -31,7 +36,12 @@ console.log(p.age); // 30
 这个例子中，我们定义了一个 `Person` 构造函数，它接受两个参数：`name` 和 `age`。然后我们使用 `new` 操作符调用 `Person` 构造函数，创建一个新的 `Person` 对象即实例对象。最后我们可以访问实例对象的 `name` 和 `age` 属性。
 
 
+
+
+
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 function myNew(constructor, ...args) {
@@ -51,3 +61,16 @@ let p = myNew(Person, 'John', 30);
 console.log(p.name); // 'John'
 console.log(p.age); // 30
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

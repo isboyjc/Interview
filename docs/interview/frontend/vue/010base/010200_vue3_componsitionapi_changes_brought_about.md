@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue3.x 中新引入的 CompositionAPI 带来的变化
 
 

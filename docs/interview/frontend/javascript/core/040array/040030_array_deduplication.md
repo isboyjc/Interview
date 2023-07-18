@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 数组去重的方式有哪些？
 
 

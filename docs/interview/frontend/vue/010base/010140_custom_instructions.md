@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue 中自定义指令有哪些应用场景，如何自定义指令
 
 

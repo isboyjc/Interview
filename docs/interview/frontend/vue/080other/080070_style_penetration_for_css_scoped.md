@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # CSS Scoped 是如何实现样式穿透的
 
 

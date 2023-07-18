@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # 数组的哪些 API 不会改变原数组？
 
 ## 题干

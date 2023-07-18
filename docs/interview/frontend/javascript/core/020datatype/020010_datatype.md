@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 有哪些数据类型，区别是？
 
 ## 题干

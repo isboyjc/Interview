@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现 compose 方法
+
 
 ## 题干
 
@@ -52,7 +57,11 @@ console.log(a(1)); // 1+4+3+2+1 = 11
 ```
 
 
+
+
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 function compose(...fn) {
@@ -73,3 +82,16 @@ const operate = compose(div2, mul3, add1, add1)
 console.log(operate(0)) //=>相当于div2(mul3(add1(add1(0))))
 console.log(operate(2)) //=>相当于div2(mul3(add1(add1(2))))
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

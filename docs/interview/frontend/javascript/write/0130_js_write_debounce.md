@@ -1,4 +1,9 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现防抖 debounce 方法
+
 
 ## 题干
 
@@ -16,7 +21,11 @@ function debounce (callback, delay) { }
 它返回一个新的函数，当这个新函数被连续调用时，只有在最后一次调用后的等待时间内没有再次被调用，才会执行原函数。
 
 
+
+
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 function debounce (callback, delay) {
@@ -44,3 +53,16 @@ function search(event) {
   // TODO
 } 
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

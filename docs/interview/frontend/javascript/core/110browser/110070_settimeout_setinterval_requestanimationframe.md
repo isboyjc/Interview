@@ -1,5 +1,8 @@
-# setTimeout、setInterval、requestAnimationFrame 各有什么特点？
+---
+contributors: 'isboyjc'
+---
 
+# setTimeout、setInterval、requestAnimationFrame 各有什么特点？
 
 ## 题干
 
@@ -17,8 +20,11 @@
 
 
 
+## 相同
+
+
 ## 相关
 
 
-
 ## 扩展
+

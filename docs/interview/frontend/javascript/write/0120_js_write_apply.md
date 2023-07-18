@@ -1,10 +1,19 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 实现 apply 方法
 
+
 ## 题干
+
+- 
 
 
 
 ## 题解
+
+::: details 点我查看题解
 
 ```js
 Function.prototype.myApply = function (context) {
@@ -23,3 +32,16 @@ Function.prototype.myApply = function (context) {
   return result
 }
 ```
+
+:::
+
+
+
+## 相同
+
+
+## 相关
+
+
+## 扩展
+

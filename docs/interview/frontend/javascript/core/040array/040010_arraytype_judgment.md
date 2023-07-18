@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # JS 判断数组类型的方式有哪些？
 
 ## 题干

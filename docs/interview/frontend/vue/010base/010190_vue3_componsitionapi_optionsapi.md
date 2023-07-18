@@ -1,3 +1,7 @@
+---
+contributors: 'isboyjc'
+---
+
 # Vue3.x 中 CompositionAPI 和 OptionsAPI 区别在哪
 
 
