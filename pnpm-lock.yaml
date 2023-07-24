@@ -16,7 +16,7 @@ specifiers:
   child_process: ^1.0.2
   dayjs: ^1.11.8
   enquirer: ^2.3.6
-  fast-glob: ^3.2.12
+  fast-glob: ^3.3.1
   md5: ^2.3.0
   mermaid: 9.1.7
   node-fetch: '2'
@@ -46,7 +46,7 @@ devDependencies:
   child_process: 1.0.2
   dayjs: 1.11.8
   enquirer: 2.3.6
-  fast-glob: 3.2.12
+  fast-glob: 3.3.1
   md5: 2.3.0
   mermaid: 9.1.7
   node-fetch: 2.6.11
@@ -1967,7 +1967,7 @@ packages:
       chokidar: 3.5.3
       colorette: 2.0.20
       consola: 3.1.0
-      fast-glob: 3.2.12
+      fast-glob: 3.3.1
       magic-string: 0.30.0
       pathe: 1.1.1
       perfect-debounce: 1.0.0
@@ -2007,7 +2007,7 @@ packages:
       '@unocss/config': 0.53.3
       '@unocss/core': 0.53.3
       css-tree: 2.3.1
-      fast-glob: 3.2.12
+      fast-glob: 3.3.1
       magic-string: 0.30.0
       postcss: 8.4.24
     dev: true
@@ -2122,7 +2122,7 @@ packages:
       '@unocss/scope': 0.53.3
       '@unocss/transformer-directives': 0.53.3
       chokidar: 3.5.3
-      fast-glob: 3.2.12
+      fast-glob: 3.3.1
       magic-string: 0.30.0
     transitivePeerDependencies:
       - rollup
@@ -3407,8 +3407,8 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
 
-  /fast-glob/3.2.12:
-    resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
+  /fast-glob/3.3.1:
+    resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==}
     engines: {node: '>=8.6.0'}
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -4921,7 +4921,7 @@ packages:
       '@rollup/pluginutils': 5.0.2
       chokidar: 3.5.3
       debug: 4.3.4
-      fast-glob: 3.2.12
+      fast-glob: 3.3.1
       local-pkg: 0.4.3
       magic-string: 0.30.0
       minimatch: 9.0.2
@@ -4978,7 +4978,7 @@ packages:
       vite: ^3.1.0 || ^4.0.0
     dependencies:
       debug: 4.3.4
-      fast-glob: 3.2.12
+      fast-glob: 3.3.1
       pretty-bytes: 6.1.0
       workbox-build: 7.0.0
       workbox-window: 7.0.0
