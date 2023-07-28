@@ -43,6 +43,15 @@ for (let item of iterable) {
 }
 ```
 
+🌰：
+```js
+const arr = [1, 2, 3];
+for (const item of arr) {
+  console.log(item);
+}
+// 输出：1 2 3
+```
+
 
 ### for...in
 
@@ -53,6 +62,21 @@ for (let item of iterable) {
 ```js
 for (let key in object) {
   // 循环体
+}
+```
+
+🌰：
+```js
+function Person() {
+  this.name = 'John';
+}
+
+Person.prototype.age = 30;
+
+const person = new Person();
+
+for (const key in person) {
+  console.log(key); // 输出：name 和 age
 }
 ```
 
@@ -69,6 +93,15 @@ array.forEach(function callback(currentValue, index, array) {
 });
 ```
 
+🌰：
+```js
+const arr = [1, 2, 3];
+arr.forEach((item) => {
+  console.log(item);
+});
+// 输出：1 2 3
+```
+
 
 ### map()
 
@@ -80,6 +113,14 @@ array.forEach(function callback(currentValue, index, array) {
 let newArray = array.map(function callback(currentValue, index, array) {
   // 循环体
 });
+```
+
+🌰：
+```js
+const arr = [1, 2, 3];
+const doubled = arr.map((item) => item * 2);
+console.log(doubled);
+// 输出：[2, 4, 6]
 ```
 
 

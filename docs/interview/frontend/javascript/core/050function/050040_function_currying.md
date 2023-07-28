@@ -14,7 +14,7 @@ contributors: 'isboyjc'
 
 ::: details 点我查看题解
 
-### 柯里化
+什么是？
 
 柯里化（`Currying`）是一种函数式编程的技术，它指的是将一个接受多个参数的函数转化为一系列接受单一参数的函数的过程。也就是说，将一个多元函数转化为一元函数的过程。
 
@@ -36,7 +36,8 @@ function curriedAdd(a) {
 }
 ```
 
-### 应用场景
+
+应用场景？
 
 - 参数复用
 - 延迟执行
@@ -143,18 +144,9 @@ let fn = curriedCompose(double, square, addOne);
 
 console.log(fn(2)); // ((2 + 1) ^ 2) * 2 = 18
 ```
-
-
 :::
-
-
-
-## 相同
 
 
 ## 相关
 
 [JS 实现柯里化 curry 方法](../../write/0170_js_write_curry.md)
-
-## 扩展
-

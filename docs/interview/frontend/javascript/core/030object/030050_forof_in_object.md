@@ -59,8 +59,11 @@ for(let item of obj) {
 
 :::
 
+## 相同
+
+[手写实现让普通对象支持 for...of 遍历](../../write/0300_js_write_object_support_forof.md)
+
+
 ## 相关
 
 [for...of、 for...in 和 forEach、map 的区别](../040array/040060_foreach_map_forof_forin.md)
-
-[手写实现让普通对象支持 for...of 遍历](../../write/0300_js_write_object_support_forof.md)

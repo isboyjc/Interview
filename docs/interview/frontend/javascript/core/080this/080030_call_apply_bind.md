@@ -7,7 +7,11 @@ contributors: 'isboyjc'
 
 ## 题干
 
-- 
+- call
+
+- apply
+
+- bind
 
 
 

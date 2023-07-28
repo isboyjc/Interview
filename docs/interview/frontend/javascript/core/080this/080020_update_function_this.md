@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-- 
+- 改变函数内部的 this 指向
 
 
 

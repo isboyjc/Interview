@@ -120,15 +120,8 @@ console.log(obj3); // {a: 1, b: 2, c: {-4}}
 :::
 
 
-
-## 相同
-
-
 ## 相关
 
 [介绍下深拷贝、浅拷贝，两者区别，object.assign 是哪种](../core/030object/030060_object_deepcopy_lightcopy.md)
 
 [JS 实现深拷贝方法（考虑 Symbol 类型、循环引用）](./0260_js_write_deepclone.md)
-
-## 扩展
-

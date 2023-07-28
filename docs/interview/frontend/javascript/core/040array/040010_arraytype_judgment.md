@@ -45,4 +45,8 @@ console.log(Object.prototype.toString.call([])) // [object Array]
 
 ## 相关
 
+[JS 数据类型判断的方式有哪些](../020datatype/020020_datatype_judgment.md)
+
 [JS 实现类型判断方法](../../write/0125_js_type_judgment.md)
+
+[如何判断一个对象是否属于某个类](../030object/030030_object_in_class.md)

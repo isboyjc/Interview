@@ -19,3 +19,9 @@ contributors: 'isboyjc'
 在 `JS` 中二进制前三位都为 0 的话会被判定为 `object` 类型，而 `null` 值被表示为二进制即零（000 开头），因此 `null` 的类型标签也为 0，会被识别为对象。
 :::
 
+
+## 相关
+
+[JS 数据类型判断的方式有哪些](./020020_datatype_judgment.md)
+
+[null 和 undefined 区别](./020030_null_undefined.md)

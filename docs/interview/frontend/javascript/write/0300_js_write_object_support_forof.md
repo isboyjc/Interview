@@ -67,12 +67,10 @@ for(let item of obj) {
 
 ## 相同
 
+[如何使用 for...of 遍历普通对象](../core/030object/030050_forof_in_object.md)
 
 ## 相关
 
-[如何使用 for...of 遍历普通对象](../core/030object/030050_forof_in_object.md)
 
 [for...of、 for...in 和 forEach、map 的区别](../core/040array/040060_foreach_map_forof_forin.md)
-
-## 扩展
 

@@ -16,7 +16,7 @@ contributors: 'isboyjc'
 类数组是一种类似于数组的对象，它们具有数字索引和 `length` 属性，但它们并不具有数组对象的方法，例如 `push`、`pop`、`splice` 等。常见的类数组对象包括函数的 `arguments` 对象、`DOM` 元素集合（例如通过 `document.getElementsByTagName()` 获取的元素集合）等。
 
 
-数组类&数组区别：
+类数组&数组区别：
 
 - 类数组的原型链上没有 `Array.prototype`，因此不能直接调用数组的方法，如 `push`、`pop` 等。
 

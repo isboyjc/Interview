@@ -34,3 +34,7 @@ contributors: 'isboyjc'
 ## 相关
 
 [JS 实现大数字相加方法](../../write/0270_js_write_bignum_sum.md)
+
+[JS 中 0.1+0.2 != 0.3](./020060_0.1_0.2_sum.md)
+
+[怎样让 0.1+0.2 等于 0.3](./020060_0.1_0.2_sum2.md)

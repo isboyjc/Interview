@@ -40,3 +40,14 @@ console.log(person instanceof Object); // 输出 true，因为所有对象都是
 在上面的示例中，我们定义了一个 `Person` 类，然后创建了一个 `person` 对象。最后，我们使用 `instanceof` 操作符来判断 `person` 是否是 `Person` 类的实例，结果返回 `true`。
 
 :::
+
+
+## 相关
+
+[JS 数据类型判断的方式有哪些](../020datatype/020020_datatype_judgment.md)
+
+[JS 实现类型判断方法](../../write/0125_js_type_judgment.md)
+
+[JS 判断数组类型的方式有哪些](../040array/040010_arraytype_judgment.md)
+
+[intanceof 操作符实现原理](../020datatype/020050_instanceof.md)

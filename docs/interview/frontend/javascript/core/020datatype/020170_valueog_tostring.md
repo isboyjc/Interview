@@ -31,3 +31,8 @@ console.log(arr.toString()); // ""
 数组的 `toString` 方法返回的是由数组元素组成的字符串，如果数组元素是对象，那么 `toString` 方法会调用该对象的 toString 方法，如果数组元素是 `null` 或 `undefined`，那么它们会被转换成空字符串。
 
 :::
+
+
+## 相关
+
+[介绍基本数据类型的封箱与拆箱](./020100_sealing_unboxing.md)

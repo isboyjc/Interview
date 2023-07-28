@@ -27,3 +27,8 @@ contributors: 'isboyjc'
 总之，`WeakMap` 和 `WeakSet` 主要用于需要引用对象但又不想影响垃圾回收的场景，比如缓存、事件监听等。而 `Map` 和 `Set` 则适用于一般的数据结构需求。
 
 :::
+
+
+## 相关
+
+[JS 中 Map 和 Object、Set 和 Array](../020datatype/020140_map_set.md)

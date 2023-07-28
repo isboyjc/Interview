@@ -20,3 +20,6 @@ contributors: 'isboyjc'
 `NaN` 通常是一些无效的数学运算的结果，如果想判断一个值是否是 `NaN`，可以使用 `isNaN()` 函数，它返回 `true` 或 `false`。
 :::
 
+## 相关
+
+[JS 数据类型判断的方式有哪些](./020020_datatype_judgment.md)

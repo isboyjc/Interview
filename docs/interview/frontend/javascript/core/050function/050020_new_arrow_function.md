@@ -7,7 +7,9 @@ contributors: 'isboyjc'
 
 ## 题干
 
-- new 一个箭头函数
+- new 
+
+- 箭头函数
 
 
 
@@ -23,18 +25,9 @@ contributors: 'isboyjc'
 const Foo = () => {};
 const foo = new Foo(); // TypeError: Foo is not a constructor
 ```
-
-
 :::
-
-
-
-## 相同
-
 
 ## 相关
 
 [箭头函数与普通函数的区别](./050010_arrow_function.md)
-
-## 扩展
 

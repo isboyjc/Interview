@@ -11,9 +11,6 @@ contributors: 'isboyjc'
 
 - 普通函数
 
-
-
-
 ## 题解
 
 ::: details 点我查看题解
@@ -101,14 +98,7 @@ const g = gen(); // 报错
 
 :::
 
-
-
-## 相同
-
-
 ## 相关
 
 [如果 new 一个箭头函数的会怎样](./050020_new_arrow_function.md)
-
-## 扩展
 

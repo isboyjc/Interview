@@ -86,12 +86,7 @@ console.log(operate(2)) //=>相当于div2(mul3(add1(add1(2))))
 :::
 
 
-
-## 相同
-
-
 ## 相关
 
-
-## 扩展
+[什么是函数组合，应用场景](../core/050function/050070_function_compose.md)
 

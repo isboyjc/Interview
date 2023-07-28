@@ -90,15 +90,9 @@ console.log(obj3); // {a: 1, b: 2, c: {-8}, d: Symbol(d), Symbol('e'): 4, loop: 
 :::
 
 
-
-## 相同
-
-
 ## 相关
 
 [介绍下深拷贝、浅拷贝，两者区别，object.assign 是哪种](../core/030object/030060_object_deepcopy_lightcopy.md)
 
 [JS 实现浅拷贝方法](./0250_js_write_lightclone.md)
-
-## 扩展
 

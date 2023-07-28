@@ -164,3 +164,9 @@ console.log(Object.prototype.toString.call(document))       // [object HTMLDocum
 ## 相关
 
 [JS 实现类型判断方法](../../write/0125_js_type_judgment.md)
+
+[intanceof 操作符实现原理](./020050_instanceof.md)
+
+[如何判断一个对象是否属于某个类](../030object/030030_object_in_class.md)
+
+[JS 判断数组类型的方式有哪些](../040array/040010_arraytype_judgment.md)

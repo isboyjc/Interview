@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-- 
+- 类型判断
 
 
 
@@ -31,13 +31,9 @@ DataType({}, "array");  // false
 :::
 
 
-
-## 相同
-
-
 ## 相关
 
 [JS 数据类型判断的方式有哪些？](../core/020datatype/020020_datatype_judgment.md)
 
-## 扩展
+[JS 判断数组类型的方式有哪些](../core/040array/040010_arraytype_judgment.md)
 

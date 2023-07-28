@@ -60,3 +60,8 @@ foo(1, 2, 3); // 都会打印出 1 2 3
 ## 相关
 
 [类数组是什么，和数组有什么区别，如何转化成数组？](./040040_classarray.md)
+
+
+## 扩展
+
+[JS 作者 Brendan Eich 谈 arguments 录音](https://web.archive.org/web/20110822021124/http://minutewith.s3.amazonaws.com/amwb-20101115.mp3)

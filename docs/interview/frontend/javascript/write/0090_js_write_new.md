@@ -19,9 +19,7 @@ contributors: 'isboyjc'
 
 4. 如果构造函数返回一个对象，则返回该对象；否则返回新创建的对象。
 
-### 🌰.01
-
-下面是一个简单的例子，它使用 `new` 操作符创建一个 `Person` 类型的对象：
+🌰.01，下面是一个简单的例子，它使用 `new` 操作符创建一个 `Person` 类型的对象：
 
 ```js
 function Person(name, age) {
@@ -34,8 +32,6 @@ console.log(p.name); // 'John'
 console.log(p.age); // 30
 ```
 这个例子中，我们定义了一个 `Person` 构造函数，它接受两个参数：`name` 和 `age`。然后我们使用 `new` 操作符调用 `Person` 构造函数，创建一个新的 `Person` 对象即实例对象。最后我们可以访问实例对象的 `name` 和 `age` 属性。
-
-
 
 
 
@@ -65,12 +61,10 @@ console.log(p.age); // 30
 :::
 
 
-
-## 相同
-
-
 ## 相关
 
+[new 操作符的原理或者说执行过程](../core/030object/030020_new.md)
 
 ## 扩展
 
+[MDN new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)
