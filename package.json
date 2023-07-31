@@ -62,7 +62,7 @@
     "chalk": "4.1.2",
     "child_process": "^1.0.2",
     "dayjs": "^1.11.8",
-    "enquirer": "^2.3.6",
+    "enquirer": "^2.4.1",
     "fast-glob": "^3.2.12",
     "md5": "^2.3.0",
     "mermaid": "9.1.7",
