@@ -76,6 +76,9 @@ Function.prototype.myCall = function(thisArg, ...args) {
 
 ## 相关
 
+[如何改变函数内部的 this 指针的指向？](../core/080this/080020_update_function_this.md)
+
+[call、apply 及 bind 函数区别](../core/080this/080030_call_apply_bind.md)
 
 ## 扩展
 
