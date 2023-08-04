@@ -63,11 +63,6 @@ window.onresize = throttle(() => {
 
 
 
-## 相同
-
-
 ## 相关
 
-
-## 扩展
-
+[防抖、节流的作用，分别在什么场景使用？](../core/120other/120010_debounce_throttle.md)

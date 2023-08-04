@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-`JavaScript` 数组原型方法 [some](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some) 用于检测数组中是否有元素符合指定条件（通过函数提供）。`some` 方法使用指定函数检测数组中的元素：如果数组中检测到有一个元素满足条件，则整个表达式返回 `true`，且剩余的元素不会再进行检测。如果所有元素都不满足条件，则返回 `false`。
+`JavaScript` 数组原型方法 `some` 用于检测数组中是否有元素符合指定条件（通过函数提供）。`some` 方法使用指定函数检测数组中的元素：如果数组中检测到有一个元素满足条件，则整个表达式返回 `true`，且剩余的元素不会再进行检测。如果所有元素都不满足条件，则返回 `false`。
 
 语法：
 
@@ -68,11 +68,6 @@ ages.mySome(checkAdult); // true
 
 
 
-## 相同
-
-
-## 相关
-
-
 ## 扩展
 
+[MDN - some](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)

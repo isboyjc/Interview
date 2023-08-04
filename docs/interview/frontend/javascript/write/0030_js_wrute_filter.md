@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-`JavaScript` 数组原型方法 [filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 用于创建一个新的数组，其中包含所有通过指定函数测试的元素。
+`JavaScript` 数组原型方法 `filter` 用于创建一个新的数组，其中包含所有通过指定函数测试的元素。
 
 `filter` 方法使用指定函数检测数组中的元素：如果元素满足条件，则将其添加到新数组中。如果所有元素都不满足条件，则返回一个空数组。
 
@@ -74,12 +74,6 @@ ages.myFilter(checkAdult); // [32, 33, 40]
 :::
 
 
-
-## 相同
-
-
-## 相关
-
-
 ## 扩展
 
+[MDN - filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)

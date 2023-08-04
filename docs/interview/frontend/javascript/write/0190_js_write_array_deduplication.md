@@ -100,12 +100,7 @@ console.log(unique(arr)); // [1 ,2 ,3 ,4 ,5]
 
 
 
-## 相同
-
 
 ## 相关
 
-[JS 实现数组去重方法](../core/040array/040030_array_deduplication.md)
-
-## 扩展
-
+[数组去重的方式有哪些？](../core/040array/040030_array_deduplication.md)

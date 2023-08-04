@@ -41,16 +41,9 @@ console.log(a); // { bar: 'hello' }
 console.log(b); // undefined
 ```
 
+`foo2` 中 `return` 为空，默认 `undefined`
 
 :::
 
 
-
-## 相同
-
-
-## 相关
-
-
-## 扩展
 

@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-`JavaScript` 中的 [new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new) 操作符用于创建一个指定类型的新对象。它通常与构造函数一起使用，用于创建一个特定类型的对象。
+`JavaScript` 中的 `new` 操作符用于创建一个指定类型的新对象。它通常与构造函数一起使用，用于创建一个特定类型的对象。
 
 当使用 `new` 操作符调用构造函数时，会执行以下步骤：
 
@@ -67,4 +67,4 @@ console.log(p.age); // 30
 
 ## 扩展
 
-[MDN new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)
+[MDN - new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)

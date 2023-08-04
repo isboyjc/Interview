@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-- 
+- settimeout 模拟实现 setinterval
 
 
 

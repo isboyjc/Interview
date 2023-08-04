@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-`JavaScript` 中数组原型方法 [forEach](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) 可以用于遍历数组并对每个元素执行指定操作。
+`JavaScript` 中数组原型方法 `forEach` 可以用于遍历数组并对每个元素执行指定操作。
 
 `forEach` 方法不会返回新的数组，而是在原始数组上执行指定操作。
 
@@ -46,11 +46,6 @@ Array.prototype.myForEach = function (callback, thisArg) {
 
 
 
-## 相同
-
-
-## 相关
-
-
 ## 扩展
 
+[MDN - forEach](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)

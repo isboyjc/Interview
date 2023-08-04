@@ -48,3 +48,6 @@ function isReallyNaN(x) {
 :::
 
 
+## 相关
+
+[No.0050](../../output/050_js_op.md)

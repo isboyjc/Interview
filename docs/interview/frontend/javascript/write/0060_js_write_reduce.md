@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-`JavaScript` 中数组原型方法 [reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) 方法对数组中的每个元素执行一个由您提供的 `reducer` 函数(升序执行)，将其结果汇总为单个返回值。
+`JavaScript` 中数组原型方法 `reduce` 方法对数组中的每个元素执行一个由您提供的 `reducer` 函数(升序执行)，将其结果汇总为单个返回值。
 
 其语法为：
 
@@ -68,11 +68,6 @@ console.log([1,2,3,4,5].myReduce((pre, cur, curIdx, arr) => pre + cur, 10)) // 2
 
 
 
-## 相同
-
-
-## 相关
-
-
 ## 扩展
 
+[MDN - reduce](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)

@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-`JavaScript` 中的 [instanceof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof) 运算符用于检测 `constructor.prototype` 是否存在于参数 `object` 的原型链上。如果是，返回 `true`，否则返回 `false`。
+`JavaScript` 中的 `instanceof` 运算符用于检测 `constructor.prototype` 是否存在于参数 `object` 的原型链上。如果是，返回 `true`，否则返回 `false`。
 
 特点：
 
@@ -71,11 +71,7 @@ console.log(myInstanceof([], Function));  // false
 
 
 
-## 相同
-
-
-## 相关
-
 
 ## 扩展
 
+[MDN - instanceof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof)

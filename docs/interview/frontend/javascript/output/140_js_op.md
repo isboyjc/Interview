@@ -47,12 +47,6 @@ Promise.resolve().then(() => {
 :::
 
 
-
-## 相同
-
-
-## 相关
-
-
 ## 扩展
 
+[「硬核JS」图解Promise迷惑行为｜运行机制补充](https://juejin.cn/post/6997968693414084644)

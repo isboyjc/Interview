@@ -28,4 +28,4 @@ contributors: 'isboyjc'
 
 [数组的哪些 API 会改变原数组](./040025_update_originalarray.md)
 
-
+[No.0010](../../output/010_js_op.md)

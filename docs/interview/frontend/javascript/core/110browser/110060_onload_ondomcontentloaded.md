@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 
 区别：
+
 - 触发时机：`window.onload` 在页面及其所有资源加载完成后触发，而 `document.onDOMContentLoaded` 在初始的 HTML 文档被解析完成后触发。
 - 等待时间：`window.onload` 需要等待页面所有资源加载完成，包括图片、样式表、脚本等，而 `document.onDOMContentLoaded` 只需要等待 HTML 文档解析完成，不需要等待其他资源加载完成。
 - 执行顺序：`window.onload` 只会在页面所有资源都加载完成后触发一次，而 `document.onDOMContentLoaded` 只会在文档结构解析完成后触发一次。
@@ -47,5 +48,3 @@ document.addEventListener('DOMContentLoaded', function() {
 ## 相关
 
 [JS 脚本延迟加载的方式有哪些](../010base/010070_script_delayed_loading.md)
-
-

@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-- 
+- JS 中常用的设计模式
 
 
 
@@ -15,17 +15,11 @@ contributors: 'isboyjc'
 
 ::: details 点我查看题解
 
-  TODO
+TODO
 
 :::
 
-
-
-## 相同
-
-
 ## 相关
 
-
-## 扩展
+[什么是设计模式？](./120070_design_patterns.md)
 

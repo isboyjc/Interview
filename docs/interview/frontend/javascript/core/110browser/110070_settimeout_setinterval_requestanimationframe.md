@@ -18,7 +18,7 @@ contributors: 'isboyjc'
 
 ::: details 点我查看题解
 
-`setTimeout`、`setInterval` 和 `requestAnimationFrame` 是 JavaScript 中用于执行定时任务的三个函数，它们之间有以下区别：
+`setTimeout`、`setInterval` 和 `requestAnimationFrame` 是 JS 中用于执行定时任务的三个函数，它们之间有以下区别：
 
 1. `setTimeout`：用于在指定的时间间隔后执行一次任务。它接受两个参数，第一个参数是要执行的函数或要执行的代码，第二个参数是延迟的毫秒数。`setTimeout` 只会执行一次任务。
 

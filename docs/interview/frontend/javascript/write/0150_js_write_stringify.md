@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-- 
+- JSON.stringify
 
 
 

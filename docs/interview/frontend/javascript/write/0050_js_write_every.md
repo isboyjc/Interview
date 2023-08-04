@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-`JavaScript` 数组原型方法 [every](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every) 用于检测数组所有元素是否都符合指定条件（通过函数提供）。`every` 方法使用指定函数检测数组中的所有元素：如果数组中检测到有一个元素不满足，则整个表达式返回 `false`，且剩余的元素不会再进行检测。如果所有元素都满足条件，则返回 `true`。
+`JavaScript` 数组原型方法 `every` 用于检测数组所有元素是否都符合指定条件（通过函数提供）。`every` 方法使用指定函数检测数组中的所有元素：如果数组中检测到有一个元素不满足，则整个表达式返回 `false`，且剩余的元素不会再进行检测。如果所有元素都满足条件，则返回 `true`。
 
 语法：
 
@@ -69,11 +69,6 @@ ages.myEvery(checkAdult); // false
 
 
 
-## 相同
-
-
-## 相关
-
-
 ## 扩展
 
+[MDN - every](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every)

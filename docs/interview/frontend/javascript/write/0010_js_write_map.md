@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-`JavaScript` 中数组原型方法 [map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map) 可以用于遍历数组并返回一个新数组，新数组中的元素为原始数组调用函数处理过后的值。
+`JavaScript` 中数组原型方法 `map` 可以用于遍历数组并返回一个新数组，新数组中的元素为原始数组调用函数处理过后的值。
 
 `map` 方法返回一个新数组，这个新数组由原数组中的每个元素调用一个指定方法后的返回值组成。
 
@@ -50,12 +50,6 @@ Array.prototype.myMap = function (callback, thisArg) {
 
 
 
-## 相同
-
-
-## 相关
-
-
 ## 扩展
 
-
+[MDN - map](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)

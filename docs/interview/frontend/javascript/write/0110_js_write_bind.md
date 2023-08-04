@@ -7,7 +7,7 @@ contributors: 'isboyjc'
 
 ## 题干
 
-- 
+- bind
 
 
 
@@ -35,11 +35,6 @@ Function.prototype.myBind = function (context) {
 
 :::
 
-
-
-## 相同
-
-
 ## 相关
 
 [如何改变函数内部的 this 指针的指向](../core/080this/080020_update_function_this.md)
@@ -47,5 +42,3 @@ Function.prototype.myBind = function (context) {
 [call、apply 及 bind 函数区别](../core/080this/080030_call_apply_bind.md)
 
 [如果一个构造函数 bind 一个对象，用此构造函数创建出的实例会继承这个对象的属性吗？为什么？](../core/090prototype/090030_constructor_bind_and_inherit.md)
-## 扩展
-
