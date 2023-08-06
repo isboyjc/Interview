@@ -21,7 +21,7 @@ contributors: 'isboyjc'
 
 `DocumentFragment` 对象继承了 `Node` 和 `ParentNode` 的属性和方法，还有一些特有的属性和方法，如 `childElementCount`、`children`、`querySelector`、`querySelectorAll` 等。
 
-`DocumentFragment` 对象在 Web 组件（`Web components`）中也非常有用： <template> 元素在其 `HTMLTemplateElement.content` 属性中包含了一个 `DocumentFragment` 对象。
+`DocumentFragment` 对象在 Web 组件（`Web components`）中也非常有用： \<template> 元素在其 `HTMLTemplateElement.content` 属性中包含了一个 `DocumentFragment` 对象。
 
 :::
 

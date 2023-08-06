@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-06-28 05:30:49
+ * @LastEditTime: 2023-08-07 06:46:45
  * @Description: 获取仓库信息，贡献者及版本日志
  * @Date: 2023-06-26 22:04:56
  * @Author: isboyjc
@@ -106,7 +106,7 @@ export async function getGithubUsername(email) {
     }
   });
   const data = await response.json();
-  console.log(data)
+  // console.log(data)
   const user = data.items.find(item => item.email === email);
   return user ? user.login : null;
 }

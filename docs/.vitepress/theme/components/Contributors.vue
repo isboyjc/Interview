@@ -19,7 +19,7 @@ const contributors = computed(() => {
   let propsC = (JSON.parse(props.list) || []).map(v => v.name)
   let mergedC = localC.concat(propsC).map(v => v.toLowerCase()).filter(v => v)
   
-  console.log(localC, propsC, Array.from(new Set(mergedC)))
+  // console.log('contributors', localC, propsC, Array.from(new Set(mergedC)))
 
   return Array.from(new Set(mergedC))
 })
