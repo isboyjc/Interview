@@ -1,5 +1,5 @@
 /*
- * @LastEditTime: 2023-07-06 04:14:46
+ * @LastEditTime: 2023-08-07 04:51:04
  * @Description: ...
  * @Date: 2023-02-15 01:12:53
  * @Author: isboyjc
@@ -52,6 +52,7 @@ const {
     'interview/notype', 
     'interview/base/algorithm',
     'interview/frontend/framework_comparison',
+    'interview/backend'
   ],
   collapsed: true,
   // collapsible: false,
@@ -260,18 +261,18 @@ const nav = [
       }
     ]
   },
-  {
-    text: '后端 · 类',
-    activeMatch: `^/interview/backend`,
-    items: [
-      {
-        text: '语言',
-        items: [
-          getKeyForCatalogTreeToNav('interview/backend/java'),
-        ]
-      }
-    ]
-  },
+  // {
+  //   text: '后端 · 类',
+  //   activeMatch: `^/interview/backend`,
+  //   items: [
+  //     {
+  //       text: '语言',
+  //       items: [
+  //         getKeyForCatalogTreeToNav('interview/backend/java'),
+  //       ]
+  //     }
+  //   ]
+  // },
   {
     activeMatch: `^/about`,
     key: 'about',

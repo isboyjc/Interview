@@ -6,9 +6,9 @@ import sidebarCatalogTree from "/interview_dir.json"
 import navbarCatalogTree from "/interview_nav.json"
 
 let coreData = [
-  ...navbarCatalogTree.find(v => v.key === 'interview/frontend')?.items,
-  ...navbarCatalogTree.find(v => v.key === 'interview/backend')?.items,
-  ...navbarCatalogTree.find(v => v.key === 'interview/base')?.items
+  ...navbarCatalogTree.find(v => v.key === 'interview/frontend')?.items || [],
+  ...navbarCatalogTree.find(v => v.key === 'interview/backend')?.items || [],
+  ...navbarCatalogTree.find(v => v.key === 'interview/base')?.items || []
 ]
 
 

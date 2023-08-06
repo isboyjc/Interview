@@ -20,17 +20,9 @@ contributors: 'isboyjc'
 
 ::: details 点我查看题解
 
-  TODO
+```html
+<pre><code><div>Hello, world!</div></code></pre>
+```
 
 :::
-
-
-
-## 相同
-
-
-## 相关
-
-
-## 扩展
 
