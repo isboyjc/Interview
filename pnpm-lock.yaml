@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/cli': ^7.22.5
   '@babel/core': ^7.22.5
-  '@babel/node': ^7.22.5
+  '@babel/node': ^7.22.10
   '@babel/plugin-transform-modules-commonjs': ^7.22.5
   '@babel/preset-env': ^7.22.5
   '@iconify-json/tabler': ^1.1.79
@@ -33,7 +33,7 @@ specifiers:
 devDependencies:
   '@babel/cli': 7.22.5_@babel+core@7.22.5
   '@babel/core': 7.22.5
-  '@babel/node': 7.22.5_@babel+core@7.22.5
+  '@babel/node': 7.22.10_@babel+core@7.22.5
   '@babel/plugin-transform-modules-commonjs': 7.22.5_@babel+core@7.22.5
   '@babel/preset-env': 7.22.5_@babel+core@7.22.5
   '@iconify-json/tabler': 1.1.79
@@ -524,8 +524,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@babel/node/7.22.5_@babel+core@7.22.5:
-    resolution: {integrity: sha512-rguSfZsRNsAhCQ/XjZhDK2CTWxp/jEKx2On8Ir+C6uCZERirg/Ae6fJaOSKQgTg11kA2LEvonpxY2Hb3zF5C8g==}
+  /@babel/node/7.22.10_@babel+core@7.22.5:
+    resolution: {integrity: sha512-FpSgdjIPabpEetDxtKYAcXCs0qRh12S2D40rhpRoo0w5h7/7Tu2ZroaX99cbKFNDODiSs484sZ1q0kutJbZ2iQ==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
@@ -536,7 +536,7 @@ packages:
       commander: 4.1.1
       core-js: 3.31.0
       node-environment-flags: 1.0.6
-      regenerator-runtime: 0.13.11
+      regenerator-runtime: 0.14.0
       v8flags: 3.2.0
     dev: true
 
@@ -4381,6 +4381,10 @@ packages:
 
   /regenerator-runtime/0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
+    dev: true
+
+  /regenerator-runtime/0.14.0:
+    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
     dev: true
 
   /regenerator-transform/0.15.1:
