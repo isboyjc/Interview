@@ -8,7 +8,7 @@ specifiers:
   '@babel/preset-env': ^7.22.5
   '@iconify-json/tabler': ^1.1.79
   '@mermaid-js/mermaid-mindmap': 9.3.0
-  '@unocss/transformer-directives': ^0.53.3
+  '@unocss/transformer-directives': ^0.55.4
   '@unocss/transformer-variant-group': ^0.53.3
   '@vite-pwa/vitepress': ^0.2.0
   busuanzi.pure.js: ^1.0.3
@@ -38,7 +38,7 @@ devDependencies:
   '@babel/preset-env': 7.22.5_@babel+core@7.22.5
   '@iconify-json/tabler': 1.1.79
   '@mermaid-js/mermaid-mindmap': 9.3.0
-  '@unocss/transformer-directives': 0.53.3
+  '@unocss/transformer-directives': 0.55.4
   '@unocss/transformer-variant-group': 0.53.3
   '@vite-pwa/vitepress': 0.2.0_vite-plugin-pwa@0.16.4
   busuanzi.pure.js: 1.0.3
@@ -1987,6 +1987,10 @@ packages:
     resolution: {integrity: sha512-28xxgZZBaGeDUULoNrpmSP4ZtNn41b2NlBnOe2ta+TnA4F0R5v8bW0w8CxHoYGiHS8mbCq4Aw1ReNlqVhfar8Q==}
     dev: true
 
+  /@unocss/core/0.55.4:
+    resolution: {integrity: sha512-U4Jzw6ID92gUAyHsojvAJtUCr22vOTcSbF5pHcDtaJkwnisM+RZAYgSf+KiHT5ylGr7o7fajfJT4hAom3Qfp5Q==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants/0.53.3:
     resolution: {integrity: sha512-EyCwebLU4WDDNlrN3BbN9mjCszyRAwn0kP2YVOsCcj6IJD0Y3AjzWPoToTPP6jSN4nRk0iZd/8TrN2sqUHrn4w==}
     dependencies:
@@ -2100,6 +2104,13 @@ packages:
     resolution: {integrity: sha512-FIPdg8z3OMHEDu9RqbCFcl+84HaELDWKU1ecYTvZQkLzdpugCJfqls4FUg0gPwwzKJbJze2hSqECpWSFk883oA==}
     dependencies:
       '@unocss/core': 0.53.3
+      css-tree: 2.3.1
+    dev: true
+
+  /@unocss/transformer-directives/0.55.4:
+    resolution: {integrity: sha512-Eim06MC5p4uwgEEPrz5JhqSO8TTrp1nW7henwxpqyCxAIbPblMpbdraQm1agXsn0MXMGQuYylqH1N6Ng5D7cAw==}
+    dependencies:
+      '@unocss/core': 0.55.4
       css-tree: 2.3.1
     dev: true
 
