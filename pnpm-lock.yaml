@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/cli': ^7.22.5
   '@babel/core': ^7.22.5
-  '@babel/node': ^7.22.5
+  '@babel/node': ^7.22.19
   '@babel/plugin-transform-modules-commonjs': ^7.22.5
   '@babel/preset-env': ^7.22.5
   '@iconify-json/tabler': ^1.1.79
@@ -33,7 +33,7 @@ specifiers:
 devDependencies:
   '@babel/cli': 7.22.5_@babel+core@7.22.5
   '@babel/core': 7.22.5
-  '@babel/node': 7.22.5_@babel+core@7.22.5
+  '@babel/node': 7.22.19_@babel+core@7.22.5
   '@babel/plugin-transform-modules-commonjs': 7.22.5_@babel+core@7.22.5
   '@babel/preset-env': 7.22.5_@babel+core@7.22.5
   '@iconify-json/tabler': 1.1.79
@@ -524,19 +524,19 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@babel/node/7.22.5_@babel+core@7.22.5:
-    resolution: {integrity: sha512-rguSfZsRNsAhCQ/XjZhDK2CTWxp/jEKx2On8Ir+C6uCZERirg/Ae6fJaOSKQgTg11kA2LEvonpxY2Hb3zF5C8g==}
+  /@babel/node/7.22.19_@babel+core@7.22.5:
+    resolution: {integrity: sha512-VsKSO9aEHdO16NdtqkJfrXZ9Sxlna1BVnBbToWr1KGdI3cyIk6KqOoa8mWvpK280lJDOwJqxvnl994KmLhq1Yw==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.22.5
-      '@babel/register': 7.22.5_@babel+core@7.22.5
+      '@babel/register': 7.22.15_@babel+core@7.22.5
       commander: 4.1.1
       core-js: 3.31.0
       node-environment-flags: 1.0.6
-      regenerator-runtime: 0.13.11
+      regenerator-runtime: 0.14.0
       v8flags: 3.2.0
     dev: true
 
@@ -1417,8 +1417,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /@babel/register/7.22.5_@babel+core@7.22.5:
-    resolution: {integrity: sha512-vV6pm/4CijSQ8Y47RH5SopXzursN35RQINfGJkmOlcpAtGuf94miFvIPhCKGQN7WGIcsgG1BHEX2KVdTYwTwUQ==}
+  /@babel/register/7.22.15_@babel+core@7.22.5:
+    resolution: {integrity: sha512-V3Q3EqoQdn65RCgTLwauZaTfd1ShhwPmbBv+1dkZV/HpCGMKVyn6oFcRlI7RaKqiDQjX2Qd3AuoEguBgdjIKlg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -4381,6 +4381,10 @@ packages:
 
   /regenerator-runtime/0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
+    dev: true
+
+  /regenerator-runtime/0.14.0:
+    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
     dev: true
 
   /regenerator-transform/0.15.1:
