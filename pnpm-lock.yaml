@@ -14,7 +14,7 @@ specifiers:
   busuanzi.pure.js: ^1.0.3
   chalk: 4.1.2
   child_process: ^1.0.2
-  dayjs: ^1.11.8
+  dayjs: ^1.11.10
   enquirer: ^2.3.6
   fast-glob: ^3.2.12
   md5: ^2.3.0
@@ -44,7 +44,7 @@ devDependencies:
   busuanzi.pure.js: 1.0.3
   chalk: 4.1.2
   child_process: 1.0.2
-  dayjs: 1.11.8
+  dayjs: 1.11.10
   enquirer: 2.3.6
   fast-glob: 3.2.12
   md5: 2.3.0
@@ -3199,8 +3199,8 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /dayjs/1.11.8:
-    resolution: {integrity: sha512-LcgxzFoWMEPO7ggRv1Y2N31hUf2R0Vj7fuy/m+Bg1K8rr+KAs1AEy4y9jd5DXe8pbHgX+srkHNS7TH6Q6ZhYeQ==}
+  /dayjs/1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
     dev: true
 
   /debug/4.3.4:
