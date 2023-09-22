@@ -8,7 +8,7 @@ specifiers:
   '@babel/preset-env': ^7.22.5
   '@iconify-json/tabler': ^1.1.79
   '@mermaid-js/mermaid-mindmap': 9.3.0
-  '@unocss/transformer-directives': ^0.53.3
+  '@unocss/transformer-directives': ^0.56.1
   '@unocss/transformer-variant-group': ^0.53.3
   '@vite-pwa/vitepress': ^0.2.0
   busuanzi.pure.js: ^1.0.3
@@ -38,7 +38,7 @@ devDependencies:
   '@babel/preset-env': 7.22.5_@babel+core@7.22.5
   '@iconify-json/tabler': 1.1.79
   '@mermaid-js/mermaid-mindmap': 9.3.0
-  '@unocss/transformer-directives': 0.53.3
+  '@unocss/transformer-directives': 0.56.1
   '@unocss/transformer-variant-group': 0.53.3
   '@vite-pwa/vitepress': 0.2.0_vite-plugin-pwa@0.16.4
   busuanzi.pure.js: 1.0.3
@@ -1987,6 +1987,10 @@ packages:
     resolution: {integrity: sha512-28xxgZZBaGeDUULoNrpmSP4ZtNn41b2NlBnOe2ta+TnA4F0R5v8bW0w8CxHoYGiHS8mbCq4Aw1ReNlqVhfar8Q==}
     dev: true
 
+  /@unocss/core/0.56.1:
+    resolution: {integrity: sha512-2qmb/+hQ2CXmIgSqaeL6Pw2reO2MxsZlLMFuu71J8T3+UKrkI9NAwkZ4sdb38EoOisVIr2lvE48uc44XBfaOdg==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants/0.53.3:
     resolution: {integrity: sha512-EyCwebLU4WDDNlrN3BbN9mjCszyRAwn0kP2YVOsCcj6IJD0Y3AjzWPoToTPP6jSN4nRk0iZd/8TrN2sqUHrn4w==}
     dependencies:
@@ -2074,6 +2078,13 @@ packages:
     resolution: {integrity: sha512-DilchevgPVH7Kiiwg/yU8xV6admL/FeV1rwf5sFBEd4THiQSasQXYiqE0e9RyOAF4bJA4c3ZGE9x0cb8T37Fwg==}
     dev: true
 
+  /@unocss/rule-utils/0.56.1:
+    resolution: {integrity: sha512-mmmbx10eELAyhYZqBWlQFPOafnL1hHp2fo18rUbZLedvMJWds3Z23Q/u3VKEpJnCszNkr03BXVwscR5+ZdF4uw==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.56.1
+    dev: true
+
   /@unocss/scope/0.53.3:
     resolution: {integrity: sha512-i41vTORGTLYmT6HKi6mpv2OLf5ewUvWP2w52ISrRGw8oatl0QQKyLk/vGwt9z06/Xy5QStDYoFt1QRc9tLnzBQ==}
     dev: true
@@ -2100,6 +2111,14 @@ packages:
     resolution: {integrity: sha512-FIPdg8z3OMHEDu9RqbCFcl+84HaELDWKU1ecYTvZQkLzdpugCJfqls4FUg0gPwwzKJbJze2hSqECpWSFk883oA==}
     dependencies:
       '@unocss/core': 0.53.3
+      css-tree: 2.3.1
+    dev: true
+
+  /@unocss/transformer-directives/0.56.1:
+    resolution: {integrity: sha512-Pwh+JUxxn8ECqpEWETeD38OON5Y2oYAOC1CFKAyXoK22J7f51THoS07z2rZpDNdQA2T/szxenNCdRt72/NJ/pg==}
+    dependencies:
+      '@unocss/core': 0.56.1
+      '@unocss/rule-utils': 0.56.1
       css-tree: 2.3.1
     dev: true
 
