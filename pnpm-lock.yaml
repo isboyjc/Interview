@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/cli': ^7.22.5
+  '@babel/cli': ^7.23.0
   '@babel/core': ^7.22.5
   '@babel/node': ^7.22.5
   '@babel/plugin-transform-modules-commonjs': ^7.22.5
@@ -31,7 +31,7 @@ specifiers:
   yargs: ^17.7.2
 
 devDependencies:
-  '@babel/cli': 7.22.5_@babel+core@7.22.5
+  '@babel/cli': 7.23.0_@babel+core@7.22.5
   '@babel/core': 7.22.5
   '@babel/node': 7.22.5_@babel+core@7.22.5
   '@babel/plugin-transform-modules-commonjs': 7.22.5_@babel+core@7.22.5
@@ -224,8 +224,8 @@ packages:
       leven: 3.1.0
     dev: true
 
-  /@babel/cli/7.22.5_@babel+core@7.22.5:
-    resolution: {integrity: sha512-N5d7MjzwsQ2wppwjhrsicVDhJSqF9labEP/swYiHhio4Ca2XjEehpgPmerjnLQl7BPE59BLud0PTWGYwqFl/cQ==}
+  /@babel/cli/7.23.0_@babel+core@7.22.5:
+    resolution: {integrity: sha512-17E1oSkGk2IwNILM4jtfAvgjt+ohmpfBky8aLerUfYZhiPNg7ca+CRCxZn8QDxwNhV/upsc2VHBCqGFIR+iBfA==}
     engines: {node: '>=6.9.0'}
     hasBin: true
     peerDependencies:
@@ -234,7 +234,7 @@ packages:
       '@babel/core': 7.22.5
       '@jridgewell/trace-mapping': 0.3.18
       commander: 4.1.1
-      convert-source-map: 1.9.0
+      convert-source-map: 2.0.0
       fs-readdir-recursive: 1.1.0
       glob: 7.2.3
       make-dir: 2.1.0
@@ -2637,6 +2637,10 @@ packages:
 
   /convert-source-map/1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
+    dev: true
+
+  /convert-source-map/2.0.0:
+    resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
     dev: true
 
   /core-js-compat/3.31.0:
