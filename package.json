@@ -52,7 +52,7 @@
     "@babel/core": "^7.22.5",
     "@babel/node": "^7.22.5",
     "@babel/plugin-transform-modules-commonjs": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-env": "^7.23.2",
     "@iconify-json/tabler": "^1.1.79",
     "@mermaid-js/mermaid-mindmap": "9.3.0",
     "@unocss/transformer-directives": "^0.53.3",
