@@ -6,7 +6,7 @@ specifiers:
   '@babel/node': ^7.22.5
   '@babel/plugin-transform-modules-commonjs': ^7.22.5
   '@babel/preset-env': ^7.22.5
-  '@iconify-json/tabler': ^1.1.79
+  '@iconify-json/tabler': ^1.1.95
   '@mermaid-js/mermaid-mindmap': 9.3.0
   '@unocss/transformer-directives': ^0.53.3
   '@unocss/transformer-variant-group': ^0.53.3
@@ -36,7 +36,7 @@ devDependencies:
   '@babel/node': 7.22.5_@babel+core@7.22.5
   '@babel/plugin-transform-modules-commonjs': 7.22.5_@babel+core@7.22.5
   '@babel/preset-env': 7.22.5_@babel+core@7.22.5
-  '@iconify-json/tabler': 1.1.79
+  '@iconify-json/tabler': 1.1.95
   '@mermaid-js/mermaid-mindmap': 9.3.0
   '@unocss/transformer-directives': 0.53.3
   '@unocss/transformer-variant-group': 0.53.3
@@ -1720,8 +1720,8 @@ packages:
     dev: true
     optional: true
 
-  /@iconify-json/tabler/1.1.79:
-    resolution: {integrity: sha512-O3RtNqP5ZaP8abkLR/JJuqPY2JjsuV1ttK3xttbcCE9Uz11Pu1WpmbGJ8jv75DoAGYoZ784VUgL8oiJcINLblw==}
+  /@iconify-json/tabler/1.1.95:
+    resolution: {integrity: sha512-Qg+VpKgSImpA9g2ger17cWIBvirlixUplTXshu/miegBCfaicYEyyX2pCilCJEuujeNVh47+ySD7CoBJS2f6pQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
