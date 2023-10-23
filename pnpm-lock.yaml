@@ -9,7 +9,7 @@ specifiers:
   '@iconify-json/tabler': ^1.1.79
   '@mermaid-js/mermaid-mindmap': 9.3.0
   '@unocss/transformer-directives': ^0.53.3
-  '@unocss/transformer-variant-group': ^0.53.3
+  '@unocss/transformer-variant-group': ^0.57.0
   '@vite-pwa/vitepress': ^0.2.0
   busuanzi.pure.js: ^1.0.3
   chalk: 4.1.2
@@ -39,7 +39,7 @@ devDependencies:
   '@iconify-json/tabler': 1.1.79
   '@mermaid-js/mermaid-mindmap': 9.3.0
   '@unocss/transformer-directives': 0.53.3
-  '@unocss/transformer-variant-group': 0.53.3
+  '@unocss/transformer-variant-group': 0.57.0
   '@vite-pwa/vitepress': 0.2.0_vite-plugin-pwa@0.16.4
   busuanzi.pure.js: 1.0.3
   chalk: 4.1.2
@@ -1987,6 +1987,10 @@ packages:
     resolution: {integrity: sha512-28xxgZZBaGeDUULoNrpmSP4ZtNn41b2NlBnOe2ta+TnA4F0R5v8bW0w8CxHoYGiHS8mbCq4Aw1ReNlqVhfar8Q==}
     dev: true
 
+  /@unocss/core/0.57.0:
+    resolution: {integrity: sha512-vjLnE3PnbFQY0du8jC1hZorFNFlVBBeqo7AoO+69Jqx7aJx3gtBlg4QQV607LIJgU+hsul3RUy8r/pKb7y1MoA==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants/0.53.3:
     resolution: {integrity: sha512-EyCwebLU4WDDNlrN3BbN9mjCszyRAwn0kP2YVOsCcj6IJD0Y3AjzWPoToTPP6jSN4nRk0iZd/8TrN2sqUHrn4w==}
     dependencies:
@@ -2107,6 +2111,12 @@ packages:
     resolution: {integrity: sha512-0yzV6sVkxwRmhf1wp3F8Vt+dxFaVYZ1wlyUqQVDjlupjvBoMWvARkGQwMaif2h9E/Qb/NTZRs91fbE2g+qBg+A==}
     dependencies:
       '@unocss/core': 0.53.3
+    dev: true
+
+  /@unocss/transformer-variant-group/0.57.0:
+    resolution: {integrity: sha512-2Id/6OMM66EelbR8uq4tm/mkVFDK2MY7lFCOY7hWo1twQTGK9vviTm7STl+Xivlo34UWC8JBP0nC/Ezqg3RJTQ==}
+    dependencies:
+      '@unocss/core': 0.57.0
     dev: true
 
   /@unocss/vite/0.53.3:
