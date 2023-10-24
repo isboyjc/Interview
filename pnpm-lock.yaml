@@ -8,7 +8,7 @@ specifiers:
   '@babel/preset-env': ^7.22.5
   '@iconify-json/tabler': ^1.1.79
   '@mermaid-js/mermaid-mindmap': 9.3.0
-  '@unocss/transformer-directives': ^0.53.3
+  '@unocss/transformer-directives': ^0.57.1
   '@unocss/transformer-variant-group': ^0.53.3
   '@vite-pwa/vitepress': ^0.2.0
   busuanzi.pure.js: ^1.0.3
@@ -38,7 +38,7 @@ devDependencies:
   '@babel/preset-env': 7.22.5_@babel+core@7.22.5
   '@iconify-json/tabler': 1.1.79
   '@mermaid-js/mermaid-mindmap': 9.3.0
-  '@unocss/transformer-directives': 0.53.3
+  '@unocss/transformer-directives': 0.57.1
   '@unocss/transformer-variant-group': 0.53.3
   '@vite-pwa/vitepress': 0.2.0_vite-plugin-pwa@0.16.4
   busuanzi.pure.js: 1.0.3
@@ -1968,7 +1968,7 @@ packages:
       colorette: 2.0.20
       consola: 3.1.0
       fast-glob: 3.2.12
-      magic-string: 0.30.0
+      magic-string: 0.30.5
       pathe: 1.1.1
       perfect-debounce: 1.0.0
     transitivePeerDependencies:
@@ -1985,6 +1985,10 @@ packages:
 
   /@unocss/core/0.53.3:
     resolution: {integrity: sha512-28xxgZZBaGeDUULoNrpmSP4ZtNn41b2NlBnOe2ta+TnA4F0R5v8bW0w8CxHoYGiHS8mbCq4Aw1ReNlqVhfar8Q==}
+    dev: true
+
+  /@unocss/core/0.57.1:
+    resolution: {integrity: sha512-cqQW/4gCuk+bFMPg9lBanuRNQ9Lx1l4PpMN/6uKxI5WROpq7ce/Xb4uGvAxKLh3ITtFSpXs2cLfsy7QD6cVD/Q==}
     dev: true
 
   /@unocss/extractor-arbitrary-variants/0.53.3:
@@ -2008,7 +2012,7 @@ packages:
       '@unocss/core': 0.53.3
       css-tree: 2.3.1
       fast-glob: 3.2.12
-      magic-string: 0.30.0
+      magic-string: 0.30.5
       postcss: 8.4.24
     dev: true
 
@@ -2074,6 +2078,14 @@ packages:
     resolution: {integrity: sha512-DilchevgPVH7Kiiwg/yU8xV6admL/FeV1rwf5sFBEd4THiQSasQXYiqE0e9RyOAF4bJA4c3ZGE9x0cb8T37Fwg==}
     dev: true
 
+  /@unocss/rule-utils/0.57.1:
+    resolution: {integrity: sha512-Hdicz7YORZx7SHICldzOGjPNeJwk/Xhy3cycqiPbg6nB6d639bpgZn5BsbDzHCPKpguwDomUqTZS6+C3s7tUVg==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.57.1
+      magic-string: 0.30.5
+    dev: true
+
   /@unocss/scope/0.53.3:
     resolution: {integrity: sha512-i41vTORGTLYmT6HKi6mpv2OLf5ewUvWP2w52ISrRGw8oatl0QQKyLk/vGwt9z06/Xy5QStDYoFt1QRc9tLnzBQ==}
     dev: true
@@ -2103,6 +2115,14 @@ packages:
       css-tree: 2.3.1
     dev: true
 
+  /@unocss/transformer-directives/0.57.1:
+    resolution: {integrity: sha512-rIk3XEU2NywEJUOkngBSmJfvS3IVgxkkqgMvuIqz8ZDbwWhepuMxsiI0QR3ypkipGr/eKK5DJ7eK0OVlo6FPFA==}
+    dependencies:
+      '@unocss/core': 0.57.1
+      '@unocss/rule-utils': 0.57.1
+      css-tree: 2.3.1
+    dev: true
+
   /@unocss/transformer-variant-group/0.53.3:
     resolution: {integrity: sha512-0yzV6sVkxwRmhf1wp3F8Vt+dxFaVYZ1wlyUqQVDjlupjvBoMWvARkGQwMaif2h9E/Qb/NTZRs91fbE2g+qBg+A==}
     dependencies:
@@ -2123,7 +2143,7 @@ packages:
       '@unocss/transformer-directives': 0.53.3
       chokidar: 3.5.3
       fast-glob: 3.2.12
-      magic-string: 0.30.0
+      magic-string: 0.30.5
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -2173,7 +2193,7 @@ packages:
       '@vue/reactivity-transform': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.0
+      magic-string: 0.30.5
       postcss: 8.4.24
       source-map-js: 1.0.2
     dev: true
@@ -2196,7 +2216,7 @@ packages:
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.0
+      magic-string: 0.30.5
     dev: true
 
   /@vue/reactivity/3.3.4:
@@ -4025,6 +4045,13 @@ packages:
 
   /magic-string/0.30.0:
     resolution: {integrity: sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /magic-string/0.30.5:
+    resolution: {integrity: sha512-7xlpfBaQaP/T6Vh8MO/EqXSW5En6INHEvEXQiuff7Gku0PWjU3uf6w/j9o7O+SpB5fOAkrI5HeoNgwjEO0pFsA==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
