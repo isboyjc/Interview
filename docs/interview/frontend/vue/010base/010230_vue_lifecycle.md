@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
   - 给出概念
   - 列举生命周期各阶段
@@ -21,7 +21,7 @@ contributors: 'isboyjc'
   - 结合实践
   - 扩展：vue3变化
 
-:::
+<!-- ::: -->
 
 
 

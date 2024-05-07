@@ -34,7 +34,7 @@ console.log(b)
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 console.log(a); // { bar: 'hello' } 
@@ -43,7 +43,7 @@ console.log(b); // undefined
 
 `foo2` 中 `return` 为空，默认 `undefined`
 
-:::
+<!-- ::: -->
 
 
 

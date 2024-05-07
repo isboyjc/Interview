@@ -14,7 +14,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 在 `JavaScript` 中，`defer` 和 `async` 是用于控制脚本加载和执行的两个属性，常用于 `<script>` 标签中。
 
@@ -33,7 +33,7 @@ contributors: 'isboyjc'
 
 在上面的示例中，`script1.js` 使用 `defer` 属性，`script2.js` 使用 `async` 属性。浏览器会在文档解析过程中异步加载 `script1.js`，并在文档解析完成后按顺序执行。而 `script2.js` 则会异步加载并立即执行，不会阻塞页面的解析和渲染过程。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

@@ -23,7 +23,7 @@ console.log(numbers)
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 console.log(numbers) // [5]
@@ -49,6 +49,6 @@ while (i < length) {
 console.log(numbers) // [5]
 ```
 
-:::
+<!-- ::: -->
 
 

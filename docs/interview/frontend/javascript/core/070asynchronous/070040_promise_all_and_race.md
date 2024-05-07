@@ -15,7 +15,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `Promise.all` 和 `Promise.race` 是两个用于处理多个 `Promise` 的方法。
 `Promise.all` 用于等待所有 `Promise` 完成，并返回一个包含所有 `Promise` 结果的新 `Promise`。
@@ -63,7 +63,7 @@ Promise.race(promises)
 
 `Promise.all` 和 `Promise.race` 的返回值都是一个新的 `Promise`。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

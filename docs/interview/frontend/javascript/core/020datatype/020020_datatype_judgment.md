@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 ### typeof
 
 - 基本类型（除 `null、undefined` 外）通过字面量创建的值打印类型后还是原来的基本类型，而使用内置对象方式创建的值打印类型都是对象。
@@ -157,7 +157,7 @@ console.log(Object.prototype.toString.call(document))       // [object HTMLDocum
 - `toString` 适用于所有类型判断。
 
 
-:::
+<!-- ::: -->
 
 
 

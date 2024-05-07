@@ -18,7 +18,7 @@ console.log(clothes[0]);
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 console.log(clothes[0]); // undefined
@@ -45,4 +45,4 @@ console.log(Object.keys(clothes)); // 输出["0", "1"]，因为Object.keys方法
 console.log(clothes.pop()); // 输出t-shirt，因为pop方法可以删除并返回数组中的最后一个元素
 ```
 
-:::
+<!-- ::: -->

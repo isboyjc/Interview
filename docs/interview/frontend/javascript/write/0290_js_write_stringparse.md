@@ -29,7 +29,7 @@ stringParse(template, data) // 我是isboyjc，年龄99，性别undefined
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 function stringParse(template, data){
@@ -37,7 +37,7 @@ function stringParse(template, data){
 }
 ```
 
-:::
+<!-- ::: -->
 
 
 

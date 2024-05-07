@@ -15,7 +15,7 @@ console.log([1, 2, NaN, 3].indexOf(NaN));
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 // -1
@@ -23,6 +23,6 @@ console.log([1, 2, NaN, 3].indexOf(NaN));
 
 `NaN` 与任何值都不相等，包括它自己
 
-:::
+<!-- ::: -->
 
 

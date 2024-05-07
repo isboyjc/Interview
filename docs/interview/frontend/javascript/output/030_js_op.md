@@ -15,7 +15,7 @@ console.log([].concat[1, 2, 3]);
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 
 ```js
@@ -53,6 +53,6 @@ console.log(fn[1,2,3]) // undefined
 
 // fn() == [].concat
 ```
-:::
+<!-- ::: -->
 
 

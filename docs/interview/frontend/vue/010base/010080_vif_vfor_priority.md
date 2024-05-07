@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
   - 给出结论
   - 为什么
@@ -22,7 +22,7 @@ contributors: 'isboyjc'
 
   TODO
 
-:::
+<!-- ::: -->
 
 
 

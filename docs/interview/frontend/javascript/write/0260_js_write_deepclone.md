@@ -12,7 +12,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 深拷贝则是创建一个新的对象，完全复制原对象的所有属性值，包括引用类型的属性值，因此修改其中一个对象的引用类型属性不会影响到另一个对象的属性值。
 
@@ -87,7 +87,7 @@ console.log(obj); // {a: 1, b: 2, c: {a: 3}, d: Symbol(d), Symbol('e'): 4, loop:
 console.log(obj3); // {a: 1, b: 2, c: {-8}, d: Symbol(d), Symbol('e'): 4, loop: [Circular]}
 ```
 
-:::
+<!-- ::: -->
 
 
 ## 相关

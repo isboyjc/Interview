@@ -15,7 +15,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 如果一个构造函数使用 `bind` 方法绑定了一个对象，用该构造函数创建的实例不会继承这个对象的属性。这是因为 `bind` 方法只会创建一个新的函数，而不会影响原始构造函数的原型链。
 
@@ -40,7 +40,7 @@ console.log(person.age); // 输出：undefined
 
 在上例中，`BoundPerson` 是通过将 `Person` 构造函数绑定到 `obj` 对象而创建的新函数。当使用 `BoundPerson` 构造函数创建实例 `person` 时，实例只会继承 `Person` 构造函数原型上的属性和方法，而不会继承 `obj` 对象的属性。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

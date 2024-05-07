@@ -16,7 +16,7 @@ console.log(["1","2","3"].map(parseInt))
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 // [1, NaN, NaN]
@@ -47,5 +47,5 @@ console.log(["1","2","3"].map(parseInt))
 
 因此，最终的输出结果是 `[1, NaN, NaN]`。
 
-:::
+<!-- ::: -->
 

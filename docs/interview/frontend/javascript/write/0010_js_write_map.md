@@ -34,7 +34,7 @@ map(callbackFn, thisArg)
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 Array.prototype.myMap = function (callback, thisArg) {
@@ -46,7 +46,7 @@ Array.prototype.myMap = function (callback, thisArg) {
 };
 ```
 
-:::
+<!-- ::: -->
 
 
 

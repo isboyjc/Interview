@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `for...of`、`for...in`、`forEach` 和 `map` 都是 `JS` 中用于遍历数组的方法，但它们的用法和效果略有不同。
 
@@ -136,7 +136,7 @@ console.log(doubled);
 
 - `forEach` 无返回值，`map` 有返回值且返回一个新的数组。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

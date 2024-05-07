@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - 构建项目，创建项目基本结构
 - 引入必要的插件：
@@ -22,7 +22,7 @@ contributors: 'isboyjc'
 - 其他常用：svg-loader，vueuse，nprogress
 - 常见目录结构
 
-:::
+<!-- ::: -->
 
 
 

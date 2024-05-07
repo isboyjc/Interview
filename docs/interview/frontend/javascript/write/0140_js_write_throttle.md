@@ -22,7 +22,7 @@ function throttle (callback, delay) { }
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 // 时间戳版本
@@ -59,7 +59,7 @@ window.onresize = throttle(() => {
 }, 500);
 ```
 
-:::
+<!-- ::: -->
 
 
 

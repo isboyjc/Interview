@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 柯里化是一种将多个参数的函数转换为一系列单参数函数的技术，具体实现如下：
 
@@ -54,7 +54,7 @@ console.log(curriedAdd(1, 2)(3)); // 6
 console.log(curriedAdd(1)(2, 3)); // 6
 console.log(curriedAdd(1, 2, 3)); // 6
 ```
-:::
+<!-- ::: -->
 
 
 ## 相关

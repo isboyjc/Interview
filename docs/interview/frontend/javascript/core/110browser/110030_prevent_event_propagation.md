@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 按照 `W3C` 标准，阻止事件传播（事件冒泡）可以使用 `stopPropagation()` 方法，该方法可以阻止事件在捕获和冒泡阶段中的进一步传播，但是不能阻止事件的默认行为。
 
@@ -28,7 +28,7 @@ contributors: 'isboyjc'
 - 执行时机：`stopImmediatePropagation` 会立即生效，并且会影响当前节点中的事件监听器，即如果在其中一个事件监听器中执行 `stopImmediatePropagation`，那么剩下的事件监听器都不会被调用。而 `stopPropagation` 不会影响当前节点中的事件监听器，只会影响后续节点中的事件监听器。
 - React 中：`React` 事件是合成事件，`React` 没有对 `stopImmediatePropagation` 进行封装，在 `React` 的事件中没有 `stopImmediatePropagation` 函数。但是可以通过 `event.nativeEvent.stopImmediatePropagation` 进行调用。而 `stopPropagation` 是有对应的函数的。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

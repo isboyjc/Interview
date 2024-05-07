@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `instanceof` 运算符用于检测构造函数的 `prototype` 属性是否出现在某个实例对象的原型链上。如果在实例对象的原型链上找到了该构造函数的 `prototype` 属性，则 `instanceof` 运算符返回 `true`，否则返回 `false`。
 
@@ -42,7 +42,7 @@ function myInstanceof(left, right) {
   }
 }
 ```
-:::
+<!-- ::: -->
 
 
 ## 相关

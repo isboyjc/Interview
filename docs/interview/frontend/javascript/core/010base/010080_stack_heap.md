@@ -15,7 +15,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 在 `JavaScript` 中，栈（`Stack`）和堆（`Heap`）是两种不同的内存区域，用于存储不同类型的数据。
 
@@ -40,4 +40,4 @@ contributors: 'isboyjc'
 
 了解栈和堆的区别有助于理解 `JavaScript` 中的内存管理机制，以及如何正确地使用和释放内存。
 
-:::
+<!-- ::: -->

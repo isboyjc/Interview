@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - `push()`：向数组末尾添加一个或多个元素。
 
@@ -31,7 +31,7 @@ contributors: 'isboyjc'
 - `copyWithin()`：从数组中复制一段元素，并将其插入到另一个位置。
 
 
-:::
+<!-- ::: -->
 
 
 

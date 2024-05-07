@@ -47,7 +47,7 @@ ages.every(checkAdult); // false
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 Array.prototype.myEvery = function(callback, thisArg) {
@@ -65,7 +65,7 @@ function checkAdult(age) {
 ages.myEvery(checkAdult); // false
 ```
 
-:::
+<!-- ::: -->
 
 
 

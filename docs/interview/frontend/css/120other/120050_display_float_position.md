@@ -12,7 +12,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - 首先判断display属性是否为none，如果为none，则position和float属性的值不影响元素最后的表现。
 
@@ -25,7 +25,7 @@ contributors: 'isboyjc'
 总的来说，可以把它看作是一个类似优先级的机制，"position:absolute"和"position:fixed"优先级最高，有它存在的时候，浮动不起作用，'display'的值也需要调整；其次，元素的'float'特性的值不是"none"的时候或者它是根元素的时候，调整'display'的值；最后，非根元素，并且非浮动元素，并且非绝对定位的元素，'display'特性值同设置值。
 
 
-:::
+<!-- ::: -->
 
 
 

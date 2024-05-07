@@ -32,7 +32,7 @@ Promise.resolve().then(() => {
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 // 0
@@ -44,7 +44,7 @@ Promise.resolve().then(() => {
 // 6
 ```
 
-:::
+<!-- ::: -->
 
 
 ## 扩展

@@ -25,7 +25,7 @@ console.log(typeof b);
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 console.log(typeof a); // undefined
@@ -48,6 +48,6 @@ console.log(typeof a); // 输出undefined，因为a是foo函数内部的局部�
 console.log(typeof b); // 输出number，因为b是全局变量，可以在任何地方访问
 ```
 
-:::
+<!-- ::: -->
 
 

@@ -12,7 +12,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 在 `JS` 中，`Map` 和 `Set` 是两种常用的数据结构，`WeakMap` 和 `WeakSet` 则是它们的 "弱化" 版本，它们之间的区别主要有以下几点：
 
@@ -26,7 +26,7 @@ contributors: 'isboyjc'
 
 总之，`WeakMap` 和 `WeakSet` 主要用于需要引用对象但又不想影响垃圾回收的场景，比如缓存、事件监听等。而 `Map` 和 `Set` 则适用于一般的数据结构需求。
 
-:::
+<!-- ::: -->
 
 
 ## 相关

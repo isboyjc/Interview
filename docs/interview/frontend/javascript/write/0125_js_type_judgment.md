@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 function DataType(tgt, type) {
@@ -28,7 +28,7 @@ DataType([], "array");  // true
 DataType({}, "array");  // false
 ```
 
-:::
+<!-- ::: -->
 
 
 ## 相关

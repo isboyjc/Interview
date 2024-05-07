@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - diff算法是干什么的
 - 必要性
@@ -21,7 +21,7 @@ contributors: 'isboyjc'
 - 具体执行方式
 - vue3中的diff优化
 
-:::
+<!-- ::: -->
 
 
 

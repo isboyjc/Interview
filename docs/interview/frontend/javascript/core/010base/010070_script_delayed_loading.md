@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 - 脚本延迟加载
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - 将 `script` 脚本放到页面底部加载。
 
@@ -28,7 +28,7 @@ contributors: 'isboyjc'
 
   - 使用 `IntersectionObserver API`，创建一个观察器对象，用来监视一个目标元素是否进入视口，当目标元素可见时，触发一个回调函数，加载和执行脚本。
 
-:::
+<!-- ::: -->
 
 
 

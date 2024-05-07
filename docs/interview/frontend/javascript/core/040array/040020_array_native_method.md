@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ### 转换方法
 
@@ -94,4 +94,4 @@ contributors: 'isboyjc'
 
 等等。。。
 
-:::
+<!-- ::: -->

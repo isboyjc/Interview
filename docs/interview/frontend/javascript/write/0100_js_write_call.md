@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 Function.prototype.myCall = function(thisArg, ...args) {
@@ -30,7 +30,7 @@ Function.prototype.myCall = function(thisArg, ...args) {
 
 这个方法接受两个参数：第一个参数是指定的 `this` 值，剩余的参数是传递给函数的参数。在方法内部，我们首先在 `thisArg` 对象上定义一个临时属性 `fn`，并将其值设置为当前函数（也就是调用 `myCall` 方法的函数）。然后，我们调用这个临时方法，并传入参数。最后，我们删除这个临时属性，并返回结果。
 
-:::
+<!-- ::: -->
 
 
 

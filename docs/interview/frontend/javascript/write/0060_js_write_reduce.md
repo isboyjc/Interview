@@ -44,7 +44,7 @@ array.reduce((sum, curr) => sum + curr, 0); // 15
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 Array.prototype.myReduce = function (callback, initialValue) {
@@ -64,7 +64,7 @@ console.log([1,2,3,4,5].myReduce((pre, cur, curIdx, arr) => pre + cur)) // 15
 console.log([1,2,3,4,5].myReduce((pre, cur, curIdx, arr) => pre + cur, 10)) // 25
 ```
 
-:::
+<!-- ::: -->
 
 
 

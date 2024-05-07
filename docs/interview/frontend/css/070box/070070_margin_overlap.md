@@ -24,7 +24,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 对于折叠的情况，主要有两种：兄弟之间重叠和父子之间重叠
 
@@ -40,7 +40,7 @@ contributors: 'isboyjc'
   - 子元素加入浮动属性或定位
 
 
-:::
+<!-- ::: -->
 
 
 

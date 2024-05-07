@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `for...of` 是 `ES6` 新增的遍历语法，具有迭代器（`iterator`）接口，就可以用其循环遍历它的成员 (属性值 `value`)。可以中断该循环。
 
@@ -57,7 +57,7 @@ for(let item of obj) {
 }
 ```
 
-:::
+<!-- ::: -->
 
 ## 相同
 

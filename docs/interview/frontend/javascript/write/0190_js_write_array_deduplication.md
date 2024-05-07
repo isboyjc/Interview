@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ### Set && Array.from
 
@@ -96,7 +96,7 @@ console.log(unique(arr)); // [1 ,2 ,3 ,4 ,5]
 ```
 
 
-:::
+<!-- ::: -->
 
 
 

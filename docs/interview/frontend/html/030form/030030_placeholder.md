@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `placeholder` 属性是 HTML5 中的一个新属性，它用于为 `input` 元素提供一个简短的提示信息，可以描述输入字段的预期值或格式。这个提示信息会在输入字段为空时显示，当用户在输入字段中输入内容时，提示信息会消失。
 
@@ -29,7 +29,7 @@ contributors: 'isboyjc'
 - `placeholder` 属性只适用于以下类型的 `input` 元素：`text`、`search`、`url`、`tel`、`email` 和 `password`。其他类型的 `input` 元素不支持 `placeholder` 属性。
 - `placeholder` 属性的值应该简短而清晰，避免使用过长或过于复杂的文本。如果需要更详细的说明，可以使用其他元素或属性来提供，比如 `title`、`aria-label` 或者 `aria-describedby` 等。
 
-:::
+<!-- ::: -->
 
 
 ## 相关

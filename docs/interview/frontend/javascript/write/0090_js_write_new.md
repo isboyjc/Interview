@@ -37,7 +37,7 @@ console.log(p.age); // 30
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 function myNew(constructor, ...args) {
@@ -58,7 +58,7 @@ console.log(p.name); // 'John'
 console.log(p.age); // 30
 ```
 
-:::
+<!-- ::: -->
 
 
 ## 相关

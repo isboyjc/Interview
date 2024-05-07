@@ -36,7 +36,7 @@ new Foo().getName();
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 Foo.getName(); // 2
@@ -47,5 +47,5 @@ new Foo.getName(); // 2
 new Foo().getName(); // 3
 ```
 
-:::
+<!-- ::: -->
 

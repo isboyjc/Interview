@@ -26,7 +26,7 @@ console.log(firstEven);
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 console.log(firstEven); // 6
@@ -51,4 +51,4 @@ console.log(firstEven); // 最后一次更新firstEven的值是6，所以输出6
 如果你想要正确地实现你的目的，即找到数组中第一个偶数，并且在找到后结束循环，你可以使用 `break` 。
 
 
-:::
+<!-- ::: -->

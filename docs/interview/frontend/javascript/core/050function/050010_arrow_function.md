@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - 箭头函数的语法更简洁，可以省略 `function` 关键字，参数的括号和返回值的 `return`。
 
@@ -96,7 +96,7 @@ const gen = () => {
 const g = gen(); // 报错
 ```
 
-:::
+<!-- ::: -->
 
 ## 相关
 

@@ -14,7 +14,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - nextTick是做什么的
 - 为什么需要它
@@ -22,7 +22,7 @@ contributors: 'isboyjc'
 - 如何使用nextTick
 - 原理解读，结合异步更新和nextTick生效方式
 
-:::
+<!-- ::: -->
 
 
 

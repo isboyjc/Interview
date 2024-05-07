@@ -5,32 +5,25 @@ contributors: 'isboyjc'
 # 导入 CSS 时 link 和 @import 区别？
 ## 题干
 
-- 
+- link VS @import
 
 
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
-两者都是外部引用CSS的方式，它们的区别如下：
+`link` 和 `@import` 都是用来引入外部 CSS 文件的方法，但是它们有一些本质的区别，主要体现在以下几个方面：
 
-- link是XHTML标签，除了加载CSS外，还可以定义RSS等其他事务；@import属于CSS范畴，只能加载CSS。
-- link引用CSS时，在页面载入时同时加载；@import需要页面网页完全载入以后加载。
-- link是XHTML标签，无兼容问题；@import是在CSS2.1提出的，低版本的浏览器不支持。
-- link支持使用Javascript控制DOM去改变样式；而@import不支持。
+- **从属关系**：`link` 是 HTML 的标签，不仅可以加载 CSS 文件，还可以定义 RSS、rel 连接属性等；而 `@import` 是 CSS 的语法，只有导入样式表的作用。
+- **加载顺序**：页面被加载时，`link` 会和 HTML 同时被加载；而 `@import` 引入的 CSS 将在页面加载完毕后被加载。
+- **兼容性**：`@import` 是 CSS2.1 才有的语法，所以只能在 IE5 以上才能识别；而 `link` 是 HTML 标签，所以不存在兼容性问题。
+- **DOM 可控性**：JavaScript 可以通过 DOM 操作 `link` 标签来改变样式；而 `@import` 的样式不是 DOM 可控的。
+- **权重**：如果两种方式引入的样式有冲突，那么 `link` 引入的样式权重高于 `@import` 引入的样式。
 
-
-
-:::
-
-
-
-## 相同
-
+<!-- ::: -->
 
 ## 相关
 
-
-## 扩展
+[CSS 加载方式有几种？](./010010_css_load.md)
 

@@ -49,7 +49,7 @@ ages.filter(checkAdult); // [32, 33, 40]
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 
 ```js
@@ -71,7 +71,7 @@ function checkAdult(age) {
 ages.myFilter(checkAdult); // [32, 33, 40]
 ```
 
-:::
+<!-- ::: -->
 
 
 ## 扩展

@@ -13,14 +13,14 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - 是什么
 - vdom的优缺点
 - vdom如何生成，如何成为dom
 - 在后续的diff中的作用
 
-:::
+<!-- ::: -->
 
 
 

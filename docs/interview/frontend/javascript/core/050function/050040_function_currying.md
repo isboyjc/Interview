@@ -12,7 +12,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 什么是？
 
@@ -144,7 +144,7 @@ let fn = curriedCompose(double, square, addOne);
 
 console.log(fn(2)); // ((2 + 1) ^ 2) * 2 = 18
 ```
-:::
+<!-- ::: -->
 
 
 ## 相关

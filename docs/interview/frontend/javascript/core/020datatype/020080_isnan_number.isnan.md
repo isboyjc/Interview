@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 `isNaN` 函数会先将参数转换成数值，然后再判断是否是 `NaN`。如果参数不能转换成数值，也会返回 `true`。
 
 🌰：
@@ -45,7 +45,7 @@ function isReallyNaN(x) {
 }
 ```
 
-:::
+<!-- ::: -->
 
 
 ## 相关

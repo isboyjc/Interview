@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 JS 中的函数对象提供了 `call()` 和 `apply()` 方法，它们可以显式地指定函数执行时的 `this` 值。
 
@@ -99,7 +99,7 @@ obj.sayHello(); // 输出：Hello, Alice!
 
 在上例中，`sayHello` 方法内部定义了一个箭头函数 `arrowFunc`，它继承了外部作用域的 `this` 值，因此在箭头函数中的 `this` 指向 `obj` 对象。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

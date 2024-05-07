@@ -10,7 +10,7 @@ hero:
   text: Eight-Part Essay
   tagline: 八股是一份开放的面试题库，我们的愿景是覆盖 90%+ IT 知识点问答，节省面试者和面试官的时间！同时也是一份结构化的知识图谱，源于学习，而不是刷题！
   image:
-    src: https://qiniu.isboyjc.com/picgo/202306170350886.svg
+    src: https://cdn.sentenceend.com/picgo/202306170350886.svg
     alt: isboyjc
   actions:
     - theme: brand

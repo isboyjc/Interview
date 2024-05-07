@@ -15,7 +15,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `Promise` 和 `setTimeout` 是用于处理异步操作的两种不同机制。
 
@@ -29,7 +29,7 @@ contributors: 'isboyjc'
 
 `Promise` 提供了更精确的控制流程的能力。通过 `Promise` 的方法（如 `Promise.all`、`Promise.race`、`async/await`）可以更好地控制多个异步操作的执行顺序和并发性。而 `setTimeout` 只能通过嵌套回调函数或者使用定时器的计数器来实现类似的控制流程，代码可读性较差。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

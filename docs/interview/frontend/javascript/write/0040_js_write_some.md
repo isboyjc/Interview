@@ -46,7 +46,7 @@ ages.some(checkAdult); // true
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 Array.prototype.mySome = function(callback, thisArg) {
@@ -64,7 +64,7 @@ function checkAdult(age) {
 ages.mySome(checkAdult); // true
 ```
 
-:::
+<!-- ::: -->
 
 
 

@@ -15,7 +15,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `window.onload` 和 `document.onDOMContentLoaded` 是 `JavaScript` 中用于监听页面加载完成事件的两个事件。
 
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 一般来说，如果只需要在文档结构准备好后进行操作，而不需要等待所有资源加载完成，可以使用 `document.onDOMContentLoaded` 事件，因为它会更早地触发，提供更快的响应速度。如果需要等待页面所有资源加载完成后再进行操作，可以使用 `window.onload` 事件。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

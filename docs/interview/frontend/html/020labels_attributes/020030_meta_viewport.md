@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `meta viewport` 是一种用于控制页面在不同设备上的显示方式和缩放比例的标签，它可以让页面适应不同大小和分辨率的屏幕，提高页面的可访问性和用户体验。
 
@@ -34,7 +34,7 @@ contributors: 'isboyjc'
 - maximum-scale：控制页面允许放大的最大比例，可以是一个 0.1 到 10 之间的数字。
 - user-scalable：控制用户是否可以通过手势来缩放页面，可以是 yes 或 no。
 
-:::
+<!-- ::: -->
 
 
 

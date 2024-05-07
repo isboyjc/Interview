@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - Array.isArray()
 
@@ -39,7 +39,7 @@ console.log(new Date() instanceof Date) // true
 ```js
 console.log(Object.prototype.toString.call([])) // [object Array]
 ```
-:::
+<!-- ::: -->
 
 
 

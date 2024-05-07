@@ -11,7 +11,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 在 JS 中，`let`、`const`、`var` 是用来声明变量的关键字，它们之间有以下区别：
 
 
@@ -27,7 +27,7 @@ contributors: 'isboyjc'
 
 
 总的来说，`let`、`const` 相比 `var` 更加安全，因为它们避免了变量提升和重复声明等问题，并且 `const` 还可以避免意外修改变量的值。因此，在开发中我们应该尽可能地使用 `let` 和 `const`，而避免使用 `var`。
-:::
+<!-- ::: -->
 
 
 ## 相关

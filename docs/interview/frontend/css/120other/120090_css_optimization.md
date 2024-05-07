@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 
 
@@ -51,7 +51,7 @@ contributors: 'isboyjc'
 1. 将具有相同属性的样式抽离出来，整合并通过class在页面中进行使用，提高css的可维护性。
 2. 样式与内容分离：将css代码定义到外部css中。
 
-:::
+<!-- ::: -->
 
 
 

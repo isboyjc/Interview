@@ -17,7 +17,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 你好，这是Bing。我可以帮你解答这个问题。😊
 
@@ -27,5 +27,5 @@ contributors: 'isboyjc'
 - **axios**：`axios` 是一个基于 `Promise` 的 `HTTP` 库，它是对 `ajax` 的封装和拓展。`axios` 可以在浏览器和 `Node.js` 中使用，也可以拦截请求和响应，以及取消请求。`axios` 还可以自动转换 `JSON` 数据，并提供了一些额外的功能，如超时设置、错误处理等。`axios` 的缺点是它不支持低版本的 IE 浏览器（IE9 及以下），并且体积相对较大。
 - **fetch**：`fetch` 是一种新的网络请求标准，它也是基于 `Promise` 的，但它使用了更简洁和语义化的 API。`fetch` 可以很容易地使用 `async/await` 语法来实现异步操作，也可以与 `Service Worker` 配合实现离线缓存等功能。`fetch` 的缺点是它不兼容旧版的浏览器，需要使用 `polyfill` 来填充；并且它对 `HTTP` 错误状态（如 404、500 等）不会拒绝（`reject`），而是正常地返回（`resolve`），需要手动检查响应状态；另外，它也不支持中断请求和超时设置等功能。
 
-:::
+<!-- ::: -->
 

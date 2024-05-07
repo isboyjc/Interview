@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 在 img 标签中：
 
@@ -23,7 +23,7 @@ contributors: 'isboyjc'
 
 - `title` 属性是可选的，可以根据需要添加或省略。`alt` 属性是必须的，如果没有提供，会导致 `HTML` 文档不合法。
 
-:::
+<!-- ::: -->
 
 
 

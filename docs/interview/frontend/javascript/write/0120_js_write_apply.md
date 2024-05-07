@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 Function.prototype.myApply = function (context) {
@@ -33,7 +33,7 @@ Function.prototype.myApply = function (context) {
 }
 ```
 
-:::
+<!-- ::: -->
 
 
 

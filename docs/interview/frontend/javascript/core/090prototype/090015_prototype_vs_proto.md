@@ -16,7 +16,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `prototype` 和 `__proto__` 是 JS 中两个与原型相关的属性，它们有不同的作用和用途。
 
@@ -74,7 +74,7 @@ console.log(Object.getPrototypeOf(person) === Person.prototype); // 输出：tru
 - `__proto__` 属性是每个对象（包括函数对象）都有的属性，指向对象的原型，用于访问对象的原型对象并沿着原型链查找属性和方法。
 - 尽管 `__proto__` 是标准属性，但它不是官方推荐的访问原型的方式，推荐使用 `Object.getPrototypeOf()` 方法来获取对象的原型。
 
-:::
+<!-- ::: -->
 
 
 ## 相关

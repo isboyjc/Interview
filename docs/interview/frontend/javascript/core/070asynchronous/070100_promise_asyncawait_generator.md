@@ -15,7 +15,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `Promise` 是 JS 中最早引入的异步编程机制。它表示一个异步操作的最终完成或失败，并提供了一种处理异步操作结果的方式。通过使用 `Promise`，我们可以通过链式调用 `.then()` 和 `.catch()` 方法来处理异步操作的成功和失败情况。
 
@@ -33,7 +33,7 @@ contributors: 'isboyjc'
 - `Generator` 是一种特殊的函数，它可以生成迭代器对象，实现了可中断和可恢复的执行过程。`Generator` 函数的执行需要配合迭代器对象的调用，通过多次调用 `next()` 方法来逐步执行 `Generator` 函数内部的代码。
 - `async/await` 是一种语法糖，它基于 `Promise` 提供了一种更简洁的方式来处理异步操作。`async` 函数内部可以使用 `await` 关键字来等待 `Promise` 的完成，并以同步的方式获取 `Promise` 的结果。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

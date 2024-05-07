@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `meta` 标签由 `name` 和 `content` 属性定义，用来描述网页文档的属性，比如网页的作者，网页描述，关键词等，除了 `HTTP` 标准固定了一些 `name` 作为大家使用的共识，开发者还可以自定义 `name`。
 
@@ -60,7 +60,7 @@ contributors: 'isboyjc'
 - user-scalable：控制用户是否可以通过手势来缩放页面，可以是 yes 或 no。
 
 
-:::
+<!-- ::: -->
 
 ## 相关
 

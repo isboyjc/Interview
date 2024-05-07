@@ -18,11 +18,11 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```html
 <pre><code><div>Hello, world!</div></code></pre>
 ```
 
-:::
+<!-- ::: -->
 

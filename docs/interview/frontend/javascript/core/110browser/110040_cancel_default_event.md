@@ -12,7 +12,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 使用 `W3C` 标准中的 `preventDefault()` 方法，可以阻止事件的默认行为，比如点击链接跳转，右键呼出菜单，表单提交等。但是，它不能阻止事件的传播，如果要阻止事件的传播，还需要使用 `stopPropagation()` 或 `stopImmediatePropagation()` 方法。
 
@@ -20,7 +20,7 @@ contributors: 'isboyjc'
 
 另：在 `jQuery` 中，可以在事件处理函数中返回一个布尔值 `false`，来同时阻止事件的默认行为和传播。在原生 JS 中，这个方法也可以阻止默认行为，但是不能阻止传播。
 
-:::
+<!-- ::: -->
 
 ## 相关
 

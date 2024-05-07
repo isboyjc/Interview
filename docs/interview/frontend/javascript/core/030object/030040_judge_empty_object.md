@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 - `JSON.stringify()` 将 JS 对象值转换为 `JSON` 字符串，再判断该字符串是否为 `'{}'`
 
@@ -50,5 +50,5 @@ return true;
 console.log(b()); // true 为空， false 不为空
 ```
 
-:::
+<!-- ::: -->
 

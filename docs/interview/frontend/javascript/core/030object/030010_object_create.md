@@ -10,7 +10,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 在 `JS` 中，创建对象的方式有以下几种：
 
@@ -89,4 +89,4 @@ const obj = Object.create(Object.prototype, {
 
 - `Object.create()` 方法可以指定对象的原型，可以创建复杂的对象，但需要手动设置属性的特性。
 
-:::
+<!-- ::: -->

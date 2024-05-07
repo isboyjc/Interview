@@ -20,7 +20,7 @@ function add(a ,b){
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 ```js
 function bigIntAdd(a ,b){
@@ -46,7 +46,7 @@ function bigIntAdd(a ,b){
 }
 ```
 
-:::
+<!-- ::: -->
 
 
 

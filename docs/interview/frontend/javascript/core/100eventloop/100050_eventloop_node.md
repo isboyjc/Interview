@@ -15,7 +15,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 NodeJS 中的事件循环是由 `libuv` 库实现的，它有六个阶段，分别是 `timers`、`pending callbacks`、`idle/prepare`、`poll`、`check` 和 `close callbacks`。每个阶段都有一个 `FIFO` 队列来执行回调。
 
@@ -51,7 +51,7 @@ NodeJS 中事件循环简述（与开发者相关）：
 `process.nextTick` 是 NodeJS 中特有的一个异步函数，它不属于任何事件循环阶段，而是在当前操作完成后立即执行。它比其他微任务优先级更高，会在任何异步操作之前执行。`process.nextTick` 的执行顺序是按照调用顺序来的，如果递归调用 `process.nextTick`，会导致其他异步操作被饿死，所以要避免这种情况。
 
 
-:::
+<!-- ::: -->
 
 
 ## 相关

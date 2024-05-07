@@ -13,7 +13,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 `DocumentFragment` (文档碎片)是一个轻量版的 Document 对象，它可以存储由节点（nodes）组成的文档结构，但是它不是真实 DOM 树的一部分，它的变化不会触发 `DOM` 树的重新渲染，也不会对性能产生影响。
 
@@ -23,5 +23,5 @@ contributors: 'isboyjc'
 
 `DocumentFragment` 对象在 Web 组件（`Web components`）中也非常有用： \<template> 元素在其 `HTMLTemplateElement.content` 属性中包含了一个 `DocumentFragment` 对象。
 
-:::
+<!-- ::: -->
 

@@ -15,7 +15,7 @@ contributors: 'isboyjc'
 
 ## 题解
 
-::: details 点我查看题解
+<!-- ::: details 点我查看题解 -->
 
 如果 `new` 一个箭头函数，会抛出一个 `TypeError` 异常，因为箭头函数没有 `prototype` 属性，也没有 `[[Construct]]` 内部方法，不能作为构造函数使用。
 
@@ -25,7 +25,7 @@ contributors: 'isboyjc'
 const Foo = () => {};
 const foo = new Foo(); // TypeError: Foo is not a constructor
 ```
-:::
+<!-- ::: -->
 
 ## 相关
 
