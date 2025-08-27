@@ -7,11 +7,15 @@
  */
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import yargs from 'yargs';
 
 import { prompt } from 'enquirer';
 import chalk from 'chalk';
 
+// ESM 模块中获取 __dirname 的等价方法
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // 获取命令行参数
 const argv = yargs.parse(process.argv.slice(2))
